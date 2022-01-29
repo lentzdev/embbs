@@ -1,0 +1,531 @@
+     Volume 2, Number 28                                   9 July 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        EuroCon IV Agenda and Routing Information  ................  2
+     3. NOTICES  ..................................................  7
+        Calendar of Events  .......................................  7
+        EMBBS Distribution & Support Sites  .......................  8
+        EMBBS Article Submission Guidelines  ...................... 10
+
+                                 - - - - -
+     EMBBS 2-28                   Page 1                    9 Jul 1990
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     BOOOOOOOH  to  Argentine.  Bad sports, including President Menem.
+     
+     See  you  next week at EuroCon IV in Antwerp!  If you have a look
+     at our Calendar of Events, you will notice that that same weekend
+     exactly marks the first full year of EMBBS' existance.
+
+     -----------------------------------------------------------------
+     EMBBS 2-28                   Page 2                    9 Jul 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+            B-)-NET, the Belgian Sysop Association presents ...
+                                                       __
+                ****************                      /  \
+               *   EUROCON-IV   *                    /|oo \
+                ****************                    (_|  /_)
+                                                     _`@/_ \    _
+                Antwerp, Belgium                    |     | \   \\
+                July 14-15, 1990                    | (*) |  \   ))
+                                       ______       |__U__| /  \//
+                                      / Fido \       _//|| _\   /
+                                     (________)     (_/(_|(____/ (tm)
+     
+     
+            E U R O C O N - IV : C O N F E R E N C E   A G E N D A
+           ********************************************************
+     
+     Day-1 : Friday July 13th
+     
+        14:00 Registration opens in VIP-room Pullman Hotel
+        17:30 Reception Town Hall by the mayor of Antwerp
+        19:00 Social get-together in the Pullman-hotel
+     
+     Day-2 : Saturday July 14th
+     
+        09:15 Opening-address by the mayor of Antwerp
+        09:30 Start session-1 : "Political Politics"
+     
+           09:30-09:40 = Introduction
+           09:40-10:15 = Changing-policy in the great internal market
+           10:15-10:30 = FidoNet into the former Eastern Bloc
+           10:30-10:45 = Coffee-break
+           10:45-11:15 = Auto-censoring, privacy and ownership of
+                         public electronic mail information
+           11:15-11:45 = The private computer-communication market
+                         after 1992
+           11:45-12:00 = Questions and answers
+     
+        12:00-13:30 Lunch
+     
+        13:30 Start session-2 : "FidoNet Politics"
+     
+           13:30-14:00 = Telephone companies and future European
+                         approval standards for telecommunications
+                         hardware
+           14:00-14:45 = Democracy within FidoNet
+           14:45-15:00 = Coffee break
+           15:00-15:30 = FidoNet in the world - or how to survive
+                         without IFNA
+           15:30-16:30 = Complaint procedure
+           16:30-17:00 = Questions and answers
+           17:00-18:00 = Blowing-off steam
+     EMBBS 2-28                   Page 3                    9 Jul 1990
+
+
+        18:00-22:00 = Dinner/Cruise
+     
+        22:01-..... = Let's hit town (But please be back before
+                      9 am on Sunday)
+     
+     Day-3 : Sunday July 15th
+     
+        09:15 Start session-3 : "Workshops"
+     
+           09:15-10:15 = Workshop session-A
+                         - E-mail routing
+                         - E-mail policy
+                         - European Fidonet Association
+                         - Technical standards committee
+                         - ................
+           10:15-10:30 = Coffee-break
+           10:30-11:30 = Workshop session-B
+           11:30-12:00 = Plenary session with working-party
+                             chairmen reporting.
+     
+        12:00-13:30 = Lunch
+     
+        13:30 : Start session-4 : "Questions & answers, conclusions
+                                    & solutions"
+     
+           13:30-14:30 = Creation European FidoNet Association
+           14:30-14:45 = Coffee-break
+           14:45-15:30 = Elections Board EFNA
+           15:30-16:00 = Appointing Eurocon-V site
+           16:00-17:00 = Unfinished business
+           17:00-17:15 = Closing statement(s)
+           17:15-18:00 = Closing reception at Pullman Hotel
+     
+        19:00 : "Olympic hard-disc throwing trials"
+     
+     Day-4 : Monday July 15th
+     
+        08:00-12:00 = Office in VIP-room is available for people
+                      needing assistance.
+     
+           12:00:01  you're on your own ... see you next year in ???
+     
+     
+     
+            E U R O C O N - IV : H O W   T O   G E T   T H E R E
+           ******************************************************
+     
+     HOW TO GET TO EUROCON-IV BY CAR
+     -------------------------------
+     
+     1. Coming from the north via Breda (The Netherlands) :
+     ------------------------------------------------------
+     Stay  on  the  highway  coming  from  The Netherlands, take exit
+     "Berchem" (goto point 3)
+      
+     2. Coming from the east via Eindhoven (The Netherlands) or
+     EMBBS 2-28                   Page 4                    9 Jul 1990
+
+
+        Aachen (Germany) :
+     ----------------------------------------------------------
+     Stay  on  the  highway  until reaching Antwerpen, go to direction
+     "GENT" and stay on the "Ring". Take exit "Berchem" (goto point 3)
+      
+     3. Exit "Berchem" (southbound) :
+     --------------------------------
+     At  the end of the exit turn right, but go immediately left again
+     in  front  of  the small 12th century little church. Continue for
+     some  2  kilometers,  Pullman  is  on the right shortly after the
+     small tunnel.
+      
+     4. Coming from Brussels :
+     -------------------------
+     Take  the  leftmost  lane  of  the  4 lanes when leaving the long
+     tunnel.  At  the  traffic-lights,  turn  left. Pullman is on your
+     right side just after the next traffic lights.
+      
+     5. Coming from the west (from Gent or Ostend) :
+     -----------------------------------------------
+     Stay  on  the  highway and drive through the Kennedy-tunnel under
+     the river Schelde. Take the second exit after leaving the tunnel,
+     it's  called  "Berchem" as well, but it's the northbound exit. At
+     the end of the exit you have traffic lights (on your right is the
+     Crest-hotel).  Turn left at the traffic lights, and go left again
+     on  the next traffic lights. Pullman Hotel is immediately on your
+     right.
+      
+     There  are  parking facilities under the hotel, so just enter it.
+     No need for a permit.
+     Take  the elevator to the lobby and report to our welcome-team in
+     the VIP-room in the main lobby.
+     
+     
+     HOW TO GET TO EUROCON-IV BY TRAIN
+     ---------------------------------
+     
+     First you have to arrive by train in Antwerp Centraal-Station. Go
+     to  the  main  lobby  and  take  the  stairs  further down to the
+     pre-metro.  Take  tram  number-2 direction "Hoboken". The fare is
+     about  30  Bfr I think and you have to pay the driver. Get off at
+     stop "Conservatorium".  Go to the left, this is the 'Desguinlei',
+     Pullman is about 100-200 meters further on the left.
+     
+     
+     HOW TO GET TO EUROCON-IV BY PLANE
+     ---------------------------------
+     
+     1. Arriving in Brussels :
+     -------------------------
+     There  is a bus leaving to Antwerp Centraal-Station every hour on
+     the  our just outside the arrivals hall. Running time is about 50
+     minutes  and  the  fare  is  200  Bfr  to be paid directly to the
+     driver.
+     In  Antwerp  take  the  down-escalator  in front of the Centraal-
+     Station from street-level. (goto 3)
+     EMBBS 2-28                   Page 5                    9 Jul 1990
+
+
+      
+     2. Arriving in Antwerp :
+     ------------------------
+     Take  bus number 16 into the city, it terminates at the Centraal-
+     Station. Take the down-escalator in front of the Centraal-Station
+     from street-level.
+      
+     3. Tram-2 :
+     -----------
+     Take  tram number-2 direction "Hoboken". The fare is about 30 Bfr
+     I  think  and  you have to pay directly to the driver. Get off at
+     stop  "Conservatorium". Go to the left, this is the 'Desguinlei',
+     Pullman is about 100-200 meters further on the left.
+     
+     
+     HOW TO GET TO EUROCON-IV BY TAXI
+     --------------------------------
+     People  arriving by train, or airport-bus from either Antwerp- or
+     Brussels  airport  can  of-course  decide  to  take a taxi to the
+     Pullman Hotel from the Centraal-Station.
+     The fare will be somewhere between 400 and 500 Bfr.
+     
+     
+     YOUTH HOSTEL / CAMPGROUND
+     -------------------------
+     The Youth-Hostel and the municipal camp-ground are within 5 to 10
+     minutes  walking distance from the Pullman Hotel.
+     Those  people  who  at  this  (late)  date requested Youth Hostel
+     accomodation are confirmed, so no need to worry.
+     People who are planning to go to the nearby municipal-campground,
+     please be advised that they have a new rule giving camping places
+     on a first-come first-served basis.
+     For  those of whom we know they'll be camping, we'll send someone
+     to  the campground in the morning to try and hold your place, but
+     please don't come too late.
+     
+     
+     
+            E U R O C O N - IV : A C C O M O D A T I O N   D A T A
+           ********************************************************
+     
+     We  suggest  that  everybody  comes to Pullman to register first,
+     pick  up  your conference documents and then go to where-ever you
+     are staying.
+     
+     There'll  be  a phone-connection to the office in the VIP-room at
+     the Pullman Hotel. So if someone has to get in touch with you, we
+     can  be  reached  via the hotel-switchboard and subsequently will
+     look for you in one of the conference rooms.
+      
+     
+     Hotel & Conference venue : Pullman Hotel
+                                Desguinlei 94
+                                2018 Antwerp
+                                Ph.: +32-3-216.48.00
+                                Fx.: +32-3-216.47.12
+     EMBBS 2-28                   Page 6                    9 Jul 1990
+
+
+                                Tx.: 33368
+      
+     Youth Hostel :             "Op Sinjoorke" VJH
+                                Eric Sasselaan 2
+                                2020 Antwerpen
+                                Ph.: +32-3-216.29.32
+      
+     Camping ground :           Municipal Camping Ground
+                                Jan Van Rijswijcklaan
+                                2020 Antwerpen
+                                Ph.: +32-3-238.57.17
+     
+     For further details, please send a netmail to 2:2/999.
+     We'll be happy to help you out.
+
+     -----------------------------------------------------------------
+     EMBBS 2-28                   Page 7                    9 Jul 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     13 Jul 1990 - 16 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        Friday   13th: Evening, registration.
+        Saturday 14th: 1st day of real conference.
+        Sunday   15th: 2nd day of real conference.
+        Monday   16th: Morning, going home.
+        For information, see elsewhere in this EMBBS edition...
+     
+     10 Jul 1990
+        First edition (1-01) of EMBBS was printed and released exactly
+        one year ago!
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-28                   Page 8                    9 Jul 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/255 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+     EMBBS 2-28                   Page 9                    9 Jul 1990
+
+
+           ++47-71-34304 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-28                   Page 10                   9 Jul 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/255.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-28                   Page 11                   9 Jul 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/255.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

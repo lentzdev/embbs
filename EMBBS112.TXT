@@ -1,0 +1,629 @@
+     Volume 1, Number 12                             25 September 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May be distributed  and/or duplicated  freely for  non-commercial
+     use and via Bulletin Board Systems only.
+     For other uses, please contact:   Arjen G. Lentz, Langegracht 7B,
+     3811 BT  Amersfoort, The Netherlands (see also BBS address below)
+     
+     Article  submissions will be  greatly appreciated,  and should be
+     mailed or uploaded to  AINEX-RBBS Holland, FidoNet Node 2:286/201
+     Telephone ++31-33-633916 (open 24 hrs/day 1200/2400/HST9600/MNP5)
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        The era we live in  .......................................  2
+        WP 5.0 macros - Part II  ..................................  3
+        Processing of Data - Part III  ............................  5
+     3. WEEKLY PUZZLE  ............................................  7
+        Puzzle 8912 (Names on a motorcycle) & Solutions 8907 / 8908  7
+     4. COLUMNS  ..................................................  9
+        Happy Hacker's view on computers  .........................  9
+        No point in talking, let's write  ......................... 10
+     5. NOTICES  .................................................. 11
+        Calendar of Events  ....................................... 11
+        EMBBS Distribution Sites  ................................. 12
+
+                                 - - - - -
+     EMBBS 1-12                   Page 1                   25 Sep 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     Haidy folks,
+     
+     So,  already  the  12th  issue..  You  know, when we started with
+     EMBBS,  our  friendly Zone coordinator Ron Dwight told us that if
+     we  made  to  the  12th  issue,  we  could  consider ourselves in
+     business. Other european magazines didn't even get past the first
+     two  or  three.  So we would do better.. The big question is, DID
+     we?  Ok,  we  made it to the magic 12th, but has something really
+     changed?
+     
+     Unfortunately not. The magazine is distributed throughout Europe,
+     but the little response I got only came from England and Belgium.
+     Most  articles  still  come  from people who were involved in the
+     project  from  the beginning. Of course, there are people helping
+     us.  They  distribute  the  magazine,  solve  our puzzles, and so
+     on.  (And  we  are  very  grateful for this support!) But whether
+     the  magazine  is liked or disliked? I really don't know..
+     
+     We  are  amateurs  (meaning  we  don't do this for a living), and
+     can't  get  a bunch of PR guys to promote the product, nor can we
+     find  out  what  you  think of our magazine any other way than by
+     what  YOU  tell  us  directly.. (or through a distribution site.)
+     Using  NetMail  or  Echomail, tell us what you do and don't like,
+     what  you  would  like  to  read  about.  Or  even  better, write
+     something  about  your  hobbies, that new program you wrote, that
+     fancy  application  you  just  explored.... Anything! EMBBS isn't
+     limited  to  bulletinboard or communication subjects only.. Nope!
+     It's  only  limited  by  the  imagination  and  interests  of its
+     writers.. meaning you...
+     
+     Gerhard Hoogterp.
+
+     -----------------------------------------------------------------
+     EMBBS 1-12                   Page 2                   25 Sep 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     The era we live in.
+     By Johan Siegers
+     FidoNet 2:286/201.16
+     
+     Some  time ago I read an article in a magazine for radio-amateurs
+     about  the beginning of radio. It covered the complete story from
+     the  early beginning with transmitters using spark-bridges to the
+     era that we are in now, where radio and television are  as normal
+     as  eating.  We  are  no longer astonished when we see live full-
+     colour television from anywhere in the world.
+     
+     The era described in that article was quite different. It was the
+     time  that  pioneers  built their own receivers and transmitters.
+     It took a lot of experiments to have one's first contact.
+     
+     All  this  was  before  my  time, and I felt I actually missed an
+     interesting era. To me, a radio is just a piece of furniture, not
+     an interesting electronic item.
+     
+     This  article  made  me  think  about  the  way we use computers.
+     Computer technology is much newer, and although I haven't been in
+     on it from the beginning, I still feel I belong to the generation
+     that doesn't see computers simply as a tool.
+     
+     I built my first computer myself. It had 2 k or RAM, and the only
+     way to program it, was entering the hex code for the machine-code
+     language. Still it was fun. Just like many others I learned how a
+     computer  actually  works. We can write our own programmes in one
+     or  more  languages. We're still having memory problems, which we
+     try to solve by bank switching, etc.
+     
+     I  felt  I was lucky to live through this era. One day there will
+     be  a generation which will use a computer without knowing what's
+     inside.  The  operation  system  will be very user-friendly, will
+     support  multitasking, and there will be no such thing as a 640 k
+     memory limit.
+     
+     But, where's the fun ?  It will be no more than a tool, and there
+     will  be  programmes  for  almost  everything  we  can  think of.
+     Probably  we will select a new program without actually realising
+     that  we  start  a  program. (Do you wonder if the synthesizer in
+     your television will lock when you switch to another channel ?)
+     
+     No, as far as computers are conerned, I think we are in the right
+     era.
+
+     -----------------------------------------------------------------
+     EMBBS 1-12                   Page 3                   25 Sep 1989
+
+
+     Wp 50 macros - Part II.
+     By Gerhard Hoogterp
+     FidoNet 2:286/201.6
+     
+     Last  week  I described how to make a simple macro. This week I'm
+     going  to  add  some more advanced options to our macros. Imagine
+     you  want  to  make a macro which puts a standard form for a memo
+     onto  the  screen  to  let you fill in the required fields before
+     giving  control  back to WP so you can type the body of the memo.
+     The  current  date  is filled in automagicaly.. Adding more bells
+     and whistles is possible. Whatever you like...
+     
+     But  first the plain vanilla form. Most memos look something like
+     this :
+     
+     From     :
+     To       :
+     Subject  :
+     Date     :
+     
+     ----------------------------------------------------------------
+     
+     <Memo text>
+     
+     
+     To make this form we put macro recording on. Let's call the macro
+     Alt-M  and  describe  it  as "memo making macro". By the way, the
+     best  way to design macro's is on an empty screen. So first clear
+     the memory by going to Document 2 (Shift-F3) or by F7-NY..
+     
+     Start  typing  the  layout  as  shown  above.. (Without the <Memo
+     Text>)  Don't bother about typing errors, just correct them. Even
+     better, make some typing errors! We'll correct them later..
+     
+     After  you've  written the line (---) you position the cursor one
+     space after the "from" field. So the line looks like :
+     
+     From      : _
+     
+     And  now the trick comes, you press Control-PgUp. This brings you
+     into  a  little  menu with some options. In this case you use the
+     pause option. (No. 1) This means that the macro temporarily stops
+     when  it  reaches this position to give you a chance to type some
+     text. You will hear the computer beep. Press return now and go on
+     to  the  "to"  field  and do exacly the same there. The "subject"
+     field  gets  the  same treatment. To fill in the current date you
+     position  the  cursor  after the date field and press Shift-F5-1.
+     This  puts  the "current date" text command into the macro. After
+     this  you position the cursor two lines below the line and finish
+     the macro with Control-F10. Finished! Clear the file now (F7-n-y)
+     and press Alt-M to see what happens. As you see, the form is draw
+     on  the screen and the cursor is positioned after the from field.
+     Here  the computer beeps and waits for some user input. Type your
+     name  and  press return. Fill in the other two fields in the same
+     way.  Now  your cursor is below the line and you can start typing
+     your memotext.
+     EMBBS 1-12                   Page 4                   25 Sep 1989
+
+
+     So,  as  you  saw,  the  Control-PgUp  key  can  be used to put a
+     userinput  mark  into  the  macro. But why does one have to press
+     return  after  the  Control-PgUp, pause combination you may ask..
+     While  defining the macro you may already enter some data between
+     those  two  keystrokes,  just like when the macro is played back.
+     The  return identifies the end of userinput and enables the macro
+     to  go  on  playing or being defined. I hope you made some errors
+     typing  in the macro.. because now you have the chance to correct
+     them..  We  go on to fire-up the build in macro-editor. To invoke
+     it,  press  Control-F10.  When  WP  asks you for a name you press
+     Alt-M  again. As WP finds the already existing macro you now have
+     the  possibility  to  replacing or editing the macro. Choose Edit
+     (2)  which  will put you into the macro editor. Here you may edit
+     the description (Choice 1) or the macro action itself (Choice 2).
+     
+     As  we like to edit the action of the macro we take choice 2. The
+     cursor  is  put  into  the  window and you can scroll through the
+     text.  As  you  see,  not only the text which is contained by the
+     macro  is  available but also control codes. Let's say you have a
+     line
+     
+      Fron{Backspace}m    :
+     
+     in  your macro, this is the place to remove the n{Backspace} part
+     from to clean things up. You can also add text. To finish editing
+     you  press  the exit key (F7) which brings you back into the main
+     screen and you can use your macro again.
+     
+     Play  with it a little, add text to your macro. The points in the
+     macro  are spaces, when you press return, the cursor in the macro
+     editor  is  put  at the next line. To insert a "hard return" into
+     the macro you have to use Control-V-Return.
+     
+     So far for part two. Next week the story continues with some more
+     macro-editor possibilities.
+
+     -----------------------------------------------------------------
+     EMBBS 1-12                   Page 5                   25 Sep 1989
+
+
+     Processing of Data - Part III
+     By Jeroen van Drie
+     FidoNet 2:512/30.3
+     
+     This  series goes into the information interpretation differences
+     between  a  computer  and  a  human, and the problems encountered
+     trying  to teach a computer. These articles are just some general
+     brainstorming,  and  are *not* to be taken as an authority on the
+     subject.  The  profoundness of this part might be amusing to some
+     of  you,  but  I  would  rather  recommend  those  who  do  amuse
+     themselves  because of that to read an introduction on how to use
+     your time efficiently ;-)
+     
+     The  computer  you  and  I  are  working  on  have  but  one main
+     processor;  the processor can be shared if you use a multitasker,
+     but  all the data is processed by this one processor. When we are
+     talking about AI (ie artificial intelligence), we have to compare
+     the  computer  on  which  we run this AI software to what we know
+     about  intelligence,  and the first thing we think about then are
+     our  own  brains. We can consider our brains as a multi-processor
+     computer, which are connected by, and communicate through several
+     parallel ports. The computers, based on that principle, work like
+     our brains do. We all know the basic thing a computer does:
+     
+     Input--Computer--Output
+     
+     The multi-processor computer does the same, but between input and
+     output, some other things happen than just:
+     
+     Input--processor--Output
+     
+     When  we,  for  example,  would  take more than one processor and
+     construct  a multi-processor computer out of that, something like
+     this could happen: (X represents a processor)
+     
+     Input---X--X--X  X       or   X--X--X  X          or whatever.
+                |  |                     |
+             X  X--X  X            X  X  X--X--Output
+                   |
+             X--X--X--X--Output    X  X  X  X
+             |
+             X--X  X  X            X  X  X  X
+                |
+                Output
+     
+     To illustrate this: Depending on the input, a processor can route
+     the  data to any processor it's connected to, so the route in the
+     illustration  could  be  totally different. It's not very hard to
+     see  the  number  of  possibilities  in  such  a  two dimensional
+     network,  let  alone  a  three  dimensional one. Before I give an
+     example,  we  should  first  know  that  a  processor changes the
+     voltage   over   a   line  when  that  is  required  by  incoming
+     instructions.  Compare that to you driving a car: You see a child
+     cross  the  street  very  close, and you would hit the brakes. (I
+     am  indeed  biassed  by  assuming  you  are a normal person, yes)
+     This is an example of you reacting to a change in your input, the
+     EMBBS 1-12                   Page 6                   25 Sep 1989
+
+
+     eyes tell you there is a difference (input), the brains recognise
+     it  as  a child crossing the street closely (processing), and the
+     result  is  that  some  muscle is activated by a changing voltage
+     over  the  nerve,  which  cause  the  'muscle'  to  hit the brake
+     (output).
+     
+     The example: When we would take 8-bit processors for our network,
+     we  could connect a dataline to any other 8bit processor, so each
+     processor  could  become  accessible  by eight different sorts of
+     input,  coming  from  another  processor or from a device (modem,
+     keyboard,  whatever).  One  processor  could  get four lines from
+     other  processors,  one  from  a  modem, and three from a barcode
+     reader.  Depending  on  what it receives, it sends something. The
+     modem  would  provide his cts line to this processor, and through
+     the  eight  ports,  the processor would receive 11011001 from the
+     devices.  Because  of  that,  it could send a 1 to port 1, a 0 to
+     port  2,  etc  depending  on  what  it  is  instructed to do with
+     this information. When, because of a disconnect of the modem, the
+     cts  line  is  'low',  it  would receive 11010001, and could send
+     other  bits  out,  because of the status change. This again would
+     result in other processors or devices to receive other codes, and
+     so  on.  This  method  is  quite  similar  to what happens in the
+     brains;  A  braincell  gets  several  input  voltages  from other
+     neural  cells,  and  the  result  of  both  positive and negative
+     voltages  decide what the cell itself does; it will always try to
+     make  the voltage over a nerve zero volts (by a current), so when
+     one of the inputs of the cell gets a lower voltage, the cell will
+     also  get  a  lower voltage, and a current from one or more other
+     cells  will  run  to  equal  the voltage, also resulting in lower
+     voltages on those other cells, and so on.
+     
+     Intelligent  networks,  with  our  brains  as  the prime and most
+     efficient  example,  do  not  work  without  software,  just like
+     computers  don't  run  by their own initiative. And the software?
+     Well, that is to be "discussed" in my next and final article.
+     
+     Any  comments  on or additions to this third or any previous part
+     will be greatly appreciated.
+
+     -----------------------------------------------------------------
+     EMBBS 1-12                   Page 7                   25 Sep 1989
+
+
+     =================================================================
+                               WEEKLY PUZZLE
+     =================================================================
+
+
+     This week's puzzle. Serialnr. 8912.
+     
+     
+     Submitted by Filip Rekoms
+     
+     Names on a motorcycle
+     ---------------------
+     
+     Kees Ponto, Jan Jansen, Henk Halewein and Willem Bordglans parked
+     their  identical  motorcycles  next  to  each other by the disco.
+     There  is  something  special about the insurance-plates on their
+     cycles. The first three letters seem to have something to do with
+     their first names. Only, in that case, everybody will ride on the
+     wrong  cycle.  Kees  Ponto  suggests  that they just switch their
+     motorcycles.  After  all,  they  all  look  the  same. That isn't
+     necessary,  says  Henk Halewein, because the insurance-plates say
+     which  cycle  is whose. The others are a bit astonished and stare
+     at him. What code has Henk seen ?
+     
+         J A N           W I L
+         2 1 4           0 2 3
+     
+         H E N           K E E
+         6 1 2           1 4 1
+     
+     It's a difficult one to find, but once you see it, it simple..
+     
+     Happy puzzling,
+     Gerhard.
+     
+     You may send your answer to :
+     
+     From : <Your name>
+     To   : EMBBS-PUZZLE
+     Subj : 8912 <-- and nothing else !
+     Addr : 2:286/201
+     
+     If you have a puzzle you would like to see here, send it together
+     with  the answer to the address above, but put the word PUZZLE on
+     the subject line.
+     
+     ----------
+     
+     This  week  the  answers  to  the  8907  and  8908 puzzles like I
+     promised you last week.  First the answer to 8907.
+     
+     
+     Peter Duffield (253/168) --> Embbs-Puzzle (286/201)
+     27 Aug 89 12:52:45 old [private local]
+     8907
+     --------------------------------------------------------Solutions
+     EMBBS 1-12                   Page 8                   25 Sep 1989
+
+
+     Hi Gerhard
+     
+     Here's my solution to puzzle 8907....
+     
+         This  is  the  new  embbs puzzle. This time hopefully without
+         syntax errors in the answer.
+     
+     I have also sent you a puzzle, hope you like it.
+     
+     Regards,  Peter Duffield,  Sysop,  The Desert.  (+44 244 550332)
+     
+     
+     It's a pity I didn't get the correct solution of puzzle 8908. You
+     had  to  find out who drank water and who kept a zebra as pet. So
+     here's the answer I was hoping for :
+     
+     House
+     1              2          3          4          5
+     Yellow         blue       red        green      white
+     norwegian      russian    english    japanese   spanish
+     WATER          tea        milk       coffee     whiskey
+     cat            horse      bees       ZEBRA      dog
+     chesterfields  players    pall mall  camel      cigars
+     
+     So  the norwegian people drink water and the japanese people keep
+     a zebra.
+     
+     A  last  word, I haven't received any answers to the puzzles 8909
+     to  8911 up to now.. Too difficult? I don't think so, but if they
+     are,  please  let me know. In that case I can adjust the level of
+     my riddles..
+
+     -----------------------------------------------------------------
+     EMBBS 1-12                   Page 9                   25 Sep 1989
+
+
+     =================================================================
+                                  COLUMNS
+     =================================================================
+
+
+     Happy Hacker's view on computers.
+     
+     The famous last words..
+     
+     As  the  title  already  indicates,  this is a final Happy Hacker
+     column.  Although that's not 100% true, the column is finished as
+     a regular week to week column... But don't be afraid, final isn't
+     as  final  as  it could be. When ever I find a subject that suits
+     the idea of this column I'll be back..
+     
+     So,  you may ask (please do, I'm gonna explain anyhow..), why are
+     you  stopping? A good sub-title for this week's edition would be:
+     The rise and fall of a column writer.. New ideas become harder to
+     find,  as a result the contents of this column get worse and as I
+     don't  like to continue until people start writing nasty letters,
+     I'll stop now. (point)
+     
+     What  I'm  going  to  do  now?  Write  for  EMBBS of course.. Who
+     wouldn't...  The idea is good, the initiative is there and I like
+     writing.  Somehow  I also have the idea that I improve my english
+     this  way..  And  anyhow,  It gives me a tremendous kick, knowing
+     that  my stuff is read by a lot of people.. I'm not pretty enough
+     to  get  on t.v and my voice isn't fit for radio either. The only
+     opportunity  left  is  writing.  And  who  doesn't want to become
+     famous? Not the fame of a moviestar, or as a winner of a big show
+     or something like that, but just a little fame as someone who did
+     something  other people liked.. The ultimate goal of every hacker
+     is to become famous. So I keep on hoping, that someday, somewhere
+     while sitting in a bar, I'll meet someone who also uses computers
+     and  visits  bulletin  boards.  And  then,  while  talking  about
+     computers  I'll  mention EMBBS and the guy says something like "O
+     yeah,  that  magazine  with  those nice Happy Hacker pieces".  No
+     big  chance,  but  dreaming  is  free... And as I didn't hear you
+     ask me to stop.. No news is good news! (Usually ;-)
+     
+     Another  reason  for  me  writing stuff is the "If I don't do it,
+     noone will" idea.. Unfortunately this has been all too true until
+     now..  The  amount  of  articles written by other people than the
+     folks  of  the  editorial team is limited.. There are exceptions,
+     but  response  is almost non existing. Naturally there are people
+     who  criticize  this magazine, but they do it somewhere else.. In
+     echomail for example.  While  everybody  could  criticize through
+     this  medium,  they  keep it to themselves. My answer? If you can
+     do it better, come  and  help..  The  EMBBS guys would like every
+     help they can get!
+     
+     Ok, enough for this week.. See ya again, sometime.. Watch out for
+     the return of the Happy Hacker..
+
+     -----------------------------------------------------------------
+     EMBBS 1-12                   Page 10                  25 Sep 1989
+
+
+                    No point in talking, let's write....
+     
+                                             by Dr. Falken (2:286/202)
+     
+     Some  weeks ago we've had an election in our country. Some of the
+     candidates were on television the last day before we had to vote.
+     I  didn't  watch it myself, but some of the people I met the next
+     day  told  me  those  politicians had been talking for quite some
+     time. They had been talking, but nothing had been said.
+     
+     Communication.  Talking,  writing  or  typing, whatever means you
+     use,  you  want to get your message through to someone else. Have
+     the  other person not only receive the message, but understand it
+     as  well.  This seems to be the contrary in politics. They talk a
+     lot, but nothing is said. Or... Yes, may-be something is said. If
+     you listen well, you can hear a message.
+     
+     The best way to make sure the receiver understands the message is
+     too call him/her and tell it yourself. This way you can interact,
+     explain  in  case  something  is  not  clear and answer questions
+     instantly.  But this way your audience can't be too large. If you
+     have  to reach many people you will have to use paper, television
+     or  radio.  But  these  means have a problem. The message must be
+     understood  because  there is no interaction. This means you have
+     to adapt your language to the audience. You have to make sure the
+     message can only be interpreted in one way.
+     
+     And now back to our politicians. Is their language adapted to the
+     audience?  I don't know. I really don't, because I'm still trying
+     to  figure out who they think their audience is. Most of the time
+     I  feeling  like  I'm  not  part  of it. And is the message clear
+     enough  to  be heard? That's a second problem. If I'm not part of
+     the  audience,  is  there  any  chance  I can/will understand the
+     message after all?
+     
+     The  way I figure it, I'm part of the audience. I want to be part
+     of  it!  I  want  to know what's going on! And I got the message.
+     They  talk  a  LOT, they use many, many words to make sure no one
+     will  hear  it,  but  I got it! It is: nothing. They simply don't
+     have  anything to tell us. The endless stream of nonsense they're
+     spreading  around  is  their  way  of  telling us they don't have
+     anything to say.
+     
+     But  be  aware  of  the  fact that not only politicians have this
+     habit. I have it too...........   (47 lines, nothing to tell!)
+
+     -----------------------------------------------------------------
+     EMBBS 1-12                   Page 11                  25 Sep 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+      1 Dec 1989
+        All telephone numbers in The Hague (Holland), get an extra
+        (7th) digit, the prefix 3. (ie. 123456 becomes 3123456.)
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in <WhoKnows>, annual European FidoNet Conference.
+        Not only for sysops, mind you! Also for points, users and
+        everyone else interested in FidoNet communications....
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-12                   Page 12                  25 Sep 1989
+
+
+                         EMBBS Distribution Sites
+     
+     
+     You can always find the EMBBS files at the following places:
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200 and 2400
+           Fidonet Node 2:513/50 (Continuous mail)
+     
+     * Please  do  not  request  any  files  during the FidoNet Zone 2
+       Mailhour: 02:30 - 03:30 GMT.
+       Note: Z2MH does not observe daylight saving time.
+     * Most  systems also keep some or all of the older EMBBS editions
+       available.
+     * If you live in one of the above countries and want to submit an
+       article  to  EMBBS,  but  can't call directly to the HQ system:
+       many  distribution  sites are willing to forward the submission
+       for you; please check with your local site for information.
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

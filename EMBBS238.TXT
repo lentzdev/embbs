@@ -1,0 +1,352 @@
+     Volume 2, Number 38                             17 September 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................. 1
+     2. COLUMNS  ................................................... 2
+        Tradewars Advice  .......................................... 2
+     3. NOTICES  ................................................... 4
+        Calendar of Events  ........................................ 4
+        EMBBS Distribution & Support Sites  ........................ 5
+        EMBBS Article Submission Guidelines  ....................... 7
+
+                                 - - - - -
+     EMBBS 2-38                   Page 1                   17 Sep 1990
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     A Tradewars player, a certain King Neptune VI, reveales us the
+     magic he uses in the online game called 'tradewars'.
+     
+     Tradewars; there's still no war, but the trade is oil. Historians
+     have said that this period is to mark a change which will affect
+     the current distribution of wealth and the contrast between north
+     and south, a game in which Saddam Hussein is but a mere pawn. I
+     myself don't know all too much about these matters, but I'd like
+     to invite anyone to send in their prognoses.
+     
+     Jeroen van Drie
+
+     -----------------------------------------------------------------
+     EMBBS 2-38                   Page 2                   17 Sep 1990
+
+
+     =================================================================
+                                  COLUMNS
+     =================================================================
+
+
+     Tradewars Advice
+     By King Neptune VI
+     
+     
+     Tradewars.
+     
+     Tradewars undoubtedly is one of the most popular online games in
+     existance; it already exists or over three years, is easy to
+     play, and is quite realistic. The big fun of online games is that
+     there are multiple users participating in the game, so that you
+     compete with others instead of with the computer. At least *some*
+     intelligence :-)
+     
+     Beginners.
+     
+     Beginners should read the Tradewars documents to know what's
+     going on. Each new player starts in sector one, the sector where
+     'essential merchandise' can be bought; cargo holds, sector mines,
+     cloaking devices and turns. The objective of the beginner will be
+     to get as many cargo holds as possible by trading commodities
+     from port to port; the highest profits can be obtained outside of
+     the circle of sectors surrounding sector 1. If a player reaches
+     the maximum amount of cargo holds (usually 50), the objective
+     becomes either fighters or planets. Planets produce the three
+     mayor commodities, fighters, and have a bank for credits.
+     Fighters are equivalent to power. Fighters can defend sectors and
+     planets and can attack other figters or other ships. Fighters can
+     scout throughout the universe, traversing sectors with mines
+     without damage, and locating ports, planets and alien fighter
+     forces. Tradewars is a game of power; your power.
+     
+     King Neptune's trick no.1: terrorism on silly teams.
+     
+     Neptune's tricks are known, but not to everyone. Some players
+     create and join teams; a team is a collective of players who can
+     use the other's planets and can traverse the other's fighter
+     forces. A team has a name and a password, a password of four
+     digits. If you know the password to a team, you know anything
+     about the team. Now a lot of Tradewars players make up a team
+     name but use this team name to create a password, so the access
+     to a team can be found in the team name itself. You can enter the
+     team menu, press '3', and see what you can do. If you succeed,
+     you can enter the team's sectors, empty their planets, and drag
+     as much profit from that team as possible. Most profit can be
+     obtained by brutal action: occupy all empty sectors surrounding
+     the team's defended sectors, and drop a few sector mines in the
+     sector where a team member 'is asleep'. Once that team member
+     starts to play, his ship will probably be totally blown to bits
+     and his fighter forces will become 'mercenaries', fighters which
+     can be bought. Once such a group of mercenaries enteres a sector
+     with fighters (for example your fighters) those mercenaries will
+     EMBBS 2-38                   Page 3                   17 Sep 1990
+
+
+     join that fighter group. Mercenaries occupying a sector with a
+     planet will stay in that sector and will consume the planet's
+     fighter production, but they will leave that planet once. A group
+     of mercenaries occupying an empty sector can be bought (bribed),
+     usually at the price of three credits a fighter. This 'team
+     penetrating' activities are dangerous if you fail, but *very*
+     profitable if you succeed. If you performed this terrorism and
+     await it's results, don't forget to exit that team; they might
+     trace you and blow you 'over 1000'. Such terrorist activities
+     take time, a team area of about eight planets and twelve sectors
+     can take more than half an hour to cover and needs to be financed
+     because you'll need sector mines, turns and fighters to do it.
+     
+     A good team won't let this happen; a good team will make up a
+     good team password, a good security system and an intelligence
+     network. A good team may control parts of the galay and deny
+     access to or through certain sectors. A good team does not fight
+     the cabal, but will rather invest it's credits in expansion and
+     colonisation.
+     
+     Good luck in the universe!
+
+     -----------------------------------------------------------------
+     EMBBS 2-38                   Page 4                   17 Sep 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-38                   Page 5                   17 Sep 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200, 2400 and V.32, with MNP5 and V.42
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The Independent Mail System, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:25/100 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/255 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+     EMBBS 2-38                   Page 6                   17 Sep 1990
+
+
+           ++47-71-34304 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-38                   Page 7                   17 Sep 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/255.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-38                   Page 8                   17 Sep 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/255.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

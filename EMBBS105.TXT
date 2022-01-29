@@ -1,0 +1,783 @@
+     Volume 1, Number 5                                  7 August 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief            Art v1.02 (a nice automatic fellow ;-)
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May be distributed  and/or duplicated  freely for  non-commercial
+     use and via Bulletin Board Systems only.
+     For other uses, please contact:   Arjen G. Lentz, Langegracht 7B,
+     3811 BT  Amersfoort, The Netherlands (also see BBS address below)
+     
+     Article  submissions will be  greatly appreciated,  and should be
+     mailed or uploaded to  AINEX-RBBS Holland, FidoNet Node 2:286/201
+     Telephone ++31-33-633916 (open 24 hrs/day 1200/2400/HST9600/MNP5)
+     
+     The   contents  of  the  articles  contained  here  are  not  our
+     responsibility,  nor do we necessarily  agree with them.  We will
+     publish  ANYTHING  which  is  properly  attributed,  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        MNP Error Correcting Modems  ..............................  2
+        'Risky Business' initiative - virus info  .................  8
+        Something about formal logic and puzzles  .................  9
+        LHarc 1.14 (ICE) The real thing or just a hack?  .......... 12
+     3. WEEKLY PUZZLE  ............................................ 13
+        Puzzle 8905 (connecting numbers) & solution of 8901  ...... 13
+     4. COLUMNS  .................................................. 15
+        Happy Hacker's view on computers: Writers and magazines  .. 15
+
+                                 - - - - -
+     EMBBS 1-05                   Page 1                    7 Aug 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     Things  go  better with every issue we publish: Last week we only
+     received  submissions  from  within  Holland, this week they come
+     from  as far as England! Now let's get going people from Germany,
+     Belgium, Denmark or whereever else in Europe, next week it's YOUR
+     turn.....  You'd better believe it, because:
+     EMBBS - We have ways to make you talk!
+     (ehem,  write.  It  is  just that we don't seem to have found the
+     most effective method yet ;-)
+
+     -----------------------------------------------------------------
+     EMBBS 1-05                   Page 2                    7 Aug 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     MNP Error Correcting Modems
+     By John S. Bone (2:256/17)
+     Sysop LOG-on-the-TYNE
+     
+     I  re-edited  the  following  text  file, as I felt that many BBS
+     users  and  sysops  were being less than truthful, if when asked,
+     "whats  MNP  ?"  they  said  that they really understood oft used
+     terms  of  MNP  and  ARQ and SPAR, and error correction via modem
+     ciruits.  I know that I had to look around hard to find clear and
+     simple  guidence. I have had the major part of this file uploaded
+     onto my own system.
+     
+     
+     OVERVIEW
+     
+     The  Microcom  Networking  Protocol,  MNP,  is  a  communications
+     protocol    that    supports    interactive   and   file-transfer
+     applications.
+     
+     MNP  is designed to conform to the International Organization for
+     Standardization  (ISO)  Open System Interconnection (OSI) Network
+     Reference Model, or simply the OSI model.
+     
+     The  OSI  model  is  a network protocol divided into standardized
+     layers (or modules).
+     
+     The use of standardized layers assists in the inter-connection of
+     different vendors equipment.
+     
+     These seven Layers of the OSI model are:-
+     
+                              +---------------+
+                              | Application   |
+                              +---------------+
+                              | Presentation  |
+                              +---------------+
+                              | Session       |
+                              +---------------+
+                              | Transport     |
+                              +---------------+
+                              | Network       |
+                              +---------------+
+     Modem plus file      +-  | Data Link     |   -+   MNP Modem
+     transfer protocol    |   +---------------+    |   Connection
+     i.e. Xmodem/Zmodem   +-  | Physical      |   -+
+                              +---------------+
+     
+     The OSI model allows users to choose how their networking systems
+     are partitioned and implemented.
+     
+     The  Link  Layer  of  the  OSI  Network  Model is responsible for
+     EMBBS 1-05                   Page 3                    7 Aug 1989
+
+
+     provide  reliable  date  transfer.  It uses the Physical Layer to
+     transmit information through the data path.
+     
+     In  dial-up  data  communications,  the  data transmission of the
+     Physical   Layer  is  performed  by  "traditional"  modems  using
+     standards such as Bell 103, Bell 212A and V.22 bis.
+     
+     Traditional  modems  cannot  provide  guaranteed  error-free data
+     communications.
+     
+     The noise and distortion characteristics of voice-grade telephone
+     circuits  are beyond the capabilities of any signal processing to
+     deliver  error-free  data.  It  is  the task of the Link Layer to
+     provide a means of error detection and error control.
+     
+     Error  detection  when  accessing Bulletin Boards is provided for
+     file  transfers  by  an  error-correcting  protocol  (Xmodem  for
+     example)  but  there  is  no error detection present when reading
+     ASCII  text.  That's why garbled character can sneak thru but you
+     can transfer a file successfully.
+     
+     Microcom's  MNP  error-correcting modems provide the integrity of
+     data  transmission  over  voice-grade  circuits for both file and
+     text transmission when connected to another MNP equipment modem.
+     
+     When  connected  to a "standard" modem there is no hardware error
+     checking.  The user demand for error-free data communications has
+     made  Microcom  MNP  error-correcting  modems a "standard" in the
+     modem industry implemented by many modem manufactures.
+     
+     However,  There  is  still a possibility of errors occurring in a
+     MNP-to-MNP  connection  if  they  occur at either end between the
+     serial  port  and the modem (in the cable) or within the computer
+     itself.
+     
+     The  probability  for  error  is much, much less here than exists
+     while  the  data is being transferred between modems. And, if you
+     are  transfering  ARCed  files, the CRC checking that occurs when
+     the  file is deARCed is enough to show you that the file transfer
+     was successful.
+     
+     While  some  people  run  an  MNP-to-MNP  file  transfer  with no
+     additional   error  checking  protocol,  there  are  low-overhead
+     protocols   which   transfer   large   blocks   of  data  between
+     acknowledgments  of successful receipt and these are particularly
+     well suited to use with the MNP-to-MNP connections.
+     
+     
+     PERFORMANCE COMPARISONS OF MNP CLASSES
+     
+     MNP   is  designed  for  easy  implementation  on  many  hardware
+     configurations.  Different  applications  require  different cost
+     and  performance mixes. MNP is deliberately structured to provide
+     different    levels    of    performance    without   sacrificing
+     compatibility.
+     
+     EMBBS 1-05                   Page 4                    7 Aug 1989
+
+
+     Unlike   other  protocols,  applications  that  require  low-cost
+     solutions  can use simpler, less demanding implementations of MNP
+     and  MNP implementations at all performance levels are compatible
+     with each other.
+     
+     A  small  application  with  a  simple  implementation of MNP can
+     communicate  with a more powerful system using a high performance
+     implementation of MNP.
+     
+     The  primary principle of MNP is each implementation communicates
+     with  all  other implementations. When an MNP communications link
+     is  being  established, the MNP implementations will negotiate to
+     operate at the highest mutually supported class of MNP service.
+     
+     MNP assembles the user data into packets before retransmission.
+     
+     The  use  of data protocols by the overhead a protocol introduces
+     to  the  communication channel. The protocol overhead reduces the
+     effective data throughout of the communications channel.
+     
+     A description of each MNP performance level follows.
+     
+     The  description shows how MNP offers the user greater throughput
+     than the basic error-prone communication channel.
+     
+     
+     MNP CLASS 1
+     
+     This  is  the first level of MNP performance. MNP Class 1 uses an
+     asynchronous   byte-oriented  half-duplex  method  of  exchanging
+     data.  MNP  Class  1  implementations  make  minimum  demands  on
+     processor speeds and memory storage MNP Class 1 makes it possible
+     for  devices  with  small  hardware configurations to communicate
+     error-free.
+     
+     The protocol efficiency of a Class 1 implementation is about 70%.
+     A  device  using  MNP  Class 1 with a 2400 bps modem will realize
+     1690  bps  throughput.  Modern  microprocessors  have  become  so
+     powerful  that implementations of MNP Class 1 are uncommon in the
+     U.S.
+     
+     
+     MNP CLASS 2
+     
+     MNP  Class  2  uses  asynchronous  byte-oriented full-duplex data
+     exchange.  Almost all microprocessor-based hardware is capable of
+     supporting   MNP   Class  2  performance.  Common  microprocessor
+     selected for MNP Class 2 implementations are Z80's and 6800's.
+     
+     The protocol efficiency of a Class 2 implementation is about 84%.
+     A  device  using  MNP  Class 2 with a 2400 bps modem will realize
+     2000  bps  throughput.  Most  microprocessor-based  hardware  can
+     easily implement MNP Class 2.
+     
+     
+     MNP CLASS 3
+     EMBBS 1-05                   Page 5                    7 Aug 1989
+
+
+     MNP  Class  3 uses synchronous bit-oriented full-duplex exchange.
+     The  synchronous  bit-oriented  data  format  is  inherently more
+     efficient  than  the  asynchronous  byte-oriented data format. It
+     takes  10  bits to represent 8 data bits in the asynchronous data
+     format  because  of  the  "start"  and  "stop"  framing bits. The
+     synchronous  data  format  eliminates the need for start and stop
+     bits.  The  user  still  sends data asynchronously to the Class 3
+     modem;   meanwhile,   the  modems  communicate  with  each  other
+     synchronously.
+     
+     The  protocol  efficiency  of  a  Class 3 implementation is about
+     108%.  A  device using Class 3 with a 2400 bps modem will realize
+     2600  bps  throughput.  At  Class 3 performance, the MNP protocol
+     "rewards"  the  user  for  using  an  error-correcting  modem  by
+     producing 8% extra throughput over an ordinary modem without MNP.
+     
+     The MultiTech 224E modem implements MNP Class 3.
+     
+     
+     MNP CLASS 4
+     
+     MNP   Class  4  introduces  two  new  concepts,  Adaptive  Packet
+     Assembly(tm)  and Data Phase Optimization(tm), to further improve
+     the performance of an MNP modem.
+     
+     During   data   transfer,   MNP  4  using  APA(tm)  monitors  the
+     reliability  of  the  transmission medium. If the data channel is
+     relatively  error-free,  MNP  assembles  larger  data  packets to
+     increase throughput. If the data is introducing many errors, then
+     NP assembles smaller data packets to transmit. while smaller data
+     packets  increase  protocol  overhead, they concurrently decrease
+     the  throughput  penalty  of  data retransmissions. The result of
+     smaller  data packets is more data is successfully transmitted on
+     the first try.
+     
+     MNP  4 protocol recognizes that during the data transfer phase of
+     a  connection, most of the administrative information in the data
+     packet  never  changes. Data Phase Optimization provides a method
+     for  eliminating  some  of  the  administrative information. This
+     procedure further reduces protocol overhead.
+     
+     The  protocol  efficiency  of  a  Class 4 implementation is about
+     120%.  A  device  using  MNP  Class  4 with a 2400 bps modem will
+     realize   approximately   2900   bps  throughput.  With  class  4
+     performance,  the  MNP protocol produces 20% more throughput than
+     an ordinary modem without MNP.
+     
+     Microcom's AX/1200, AX/2400 and PC/2400 support class 4.
+     
+     
+     MNP CLASS 5
+     
+     MNP  Class  5 introduces Data Compression as a new feature to MNP
+     Class  4  service. MNP Data Compression uses a real-time adaptive
+     algorithm   to  compress  data.  The  real-time  aspects  of  the
+     algorithm  allow  the  data compression to operate on interactive
+     EMBBS 1-05                   Page 6                    7 Aug 1989
+
+
+     terminal data as well as file-transfer data.
+     
+     Data compression delivers faster screen updates to the user.
+     
+     The  adaptive  nature  of the algorithm means data compression is
+     always  optimized  for the user's data. The compression algorithm
+     continuously  analyzes  the user data and adjusts the compression
+     parameters  to  maximize  data  throughput.  Adaptive compression
+     means  users  of  file-transfers receive maximum data compression
+     and data transfer.
+     
+     Data  compression algorithms, like sort algorithms, are sensitive
+     to  the data pattern being processed. Most data being transmitted
+     will benefit from data compression. The user will see compression
+     performance  vary  between 1.3 to 1 and 2 to 1 (some files may be
+     compressed at even higher ratios).
+     
+     The  following  types of common user files are listed in order of
+     increasing compressibility:
+     
+            1) COM or EXE files (ARCed files too)
+            2) Spreadsheet files
+            3) Word Processing files
+            4) Print Files
+     
+     A  realistic  estimate  of  the overall compression factor a user
+     will  experience is 1.6 to 1 or 63%. This is equivalent to having
+     a   net   protocol   efficiency  of  200%  for  an  MNP  Class  5
+     implementation.
+     
+     A  device  using  MNP  Class 5 with a 2400 bps modem will realize
+     4800 bps throughput. At MNP Class 5 performance, the MNP protocol
+     produces over 100% more throughput than an ordinary modem without
+     MNP.
+     
+     Microcom's  AX/1200c,  AX/2400c  and  PC/2400c  support  class 5.
+     CASE's 4696/VS supports Class 5.
+     
+     
+     MNP CLASS 6
+     
+     MNP   Class   6   introduces  the  new  features  Universal  Link
+     Negotiation(tm)  and  Statistical  Duplexing(tm)  to  MNP Class 5
+     service.
+     
+     Universal  Link  Negotiation  allows  MNP to unify non-compatible
+     modem  modulation  technology  into the same MNP Error-Correcting
+     Modem.
+     
+     Prior  to  Class  6,  MNP  was  used  to  enhance  current  modem
+     technology.  MNP  Class 6 allows Microcom to create new universal
+     modems.
+     
+     Most  1200  bps and 2400 bps modems are designed to be compatible
+     with  lower  speed  modems. Bell 212A type modems operate at 1200
+     bps   and  incorporate  the  Bell  103  standard  for  0-300  bps
+     EMBBS 1-05                   Page 7                    7 Aug 1989
+
+
+     communications.  Likewise, there are V.22 bis modems that operate
+     as 300 bps 103 modems, 1200 bps 212A modems and 2400 bps modems.
+     
+     However,   high  speed  V.29  and  V.32  modems  do  not  provide
+     compatibility  with each other or with the lower speed modulation
+     techniques found in 212A and V.22 bis modems.
+     
+     Before  the advent of MNP Class 6, it was impossible for a single
+     modem  to  operate at a full range of speeds between 300 and 9600
+     bps.
+     
+     Microcom's AX/9612c, AX/9624c and PC/9624c support Class 6.
+     
+     
+     GENERAL COMMENTS
+     
+     I hope that you will be more able to advise on the  selection  of
+     modems   with  and  without  MNP,   and  the  all  important  MNP
+     CLASSification,  which is vital to the ease of  inter  connection
+     between different modems and On-Line systems.
+     
+     My own system as yet only has MNP class 4 facilities, but already
+     my users are much happier with my Phone lines, and of course they
+     have not altered one byte!!
+     
+     MNP is also termed ARQ and SPAR, by several manufacturers.
+     
+     I  also  know  that  several  software  add-on  packages  are now
+     available  to give some of the higher MNP Classes to any suitible
+     micro  and  modem.  It's  these that have greatly helped my users
+     when calling into LOG-on-the-TYNE OPUS-CBCS.
+     
+     Your comments and experiences welcomed.
+     
+     JOHN S. BONE
+     
+     LOTT + 44 91 477 33 39  24hrs     FidoNet Email  2:256/17
+
+     -----------------------------------------------------------------
+     EMBBS 1-05                   Page 8                    7 Aug 1989
+
+
+     Warning-system for virusses and other risky things
+     By Marcel Zwakenberg
+     Chip's BBS (2:283/2)
+     Phone: ++31-5291-3976
+     
+     With  the  initiative  of EMBBS, all BBS-users, points and sysops
+     were  given  a perfect medium to warn one another for programs or
+     files  containing  virusses  or  other  dirty  things which don't
+     belong there...
+     
+     So  I  think it is time to set up such a warning-system, and I am
+     willing  to  coordinate  a 'RISKY BUSINESS' warning-system. But I
+     will need the help of EVERYONE to make it really effective !!!
+     
+       ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+       +++                                                      +++
+       +++   If you have information for me about programs or   +++
+       +++   files  which  MAY contain something which should   +++
+       +++   NOT be there, please send this information to me   +++
+       +++   along with the program(s) or file(s).              +++
+       +++                                                      +++
+       ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+     
+     I  am  aware, that messages about destructive virusses can easily
+     create  a  'mass  hysteria'.  This is NOT my intention, so I will
+     thoroughly  check  all  information  I  will receive. Only, and I
+     really  mean  ONLY, when I'm absolutely sure the file you send me
+     contains  something which shouldn't be there, I will publish this
+     information in EMBBS in an article called 'RISKY BUSINESS'.
+     
+     If I am not really sure, I will send a private message to you.
+     
+     Send your information by FidoNet NetMail as follows:
+     
+             To   : Chip's BBS
+             From : <your name>
+             Subj : RISKY BUSINESS      <- Nothing else !!!
+             Addr : 2:283/2
+     
+     I  really hope you will appreciate the initiative RISKY BUSINESS,
+     and that you will provide me with the requested information.
+
+     -----------------------------------------------------------------
+     EMBBS 1-05                   Page 9                    7 Aug 1989
+
+
+     Something about formal logic and puzzles
+     By Amos Wittenberg (2:253/198)
+     
+     Most  of  us  have  tried  our hand at puzzles similar to the one
+     which  was  featured  in EMBBS (Who Gets The Price? no. 8902) and
+     used one form or the other of logical reasoning. Haven't you ever
+     had the feeling, when doing such a puzzle, that there ought to be
+     an  easier  way to tackle the problem than the tortured reasoning
+     in  the  style:  Oh, let me see: if Johnnie drives the blue Ford,
+     then  he  cannot  smoke  the cigars. Therefore, wait a moment! He
+     COULD smoke cigars if Simon wouldn't live in the apartment on the
+     second  floor!  Etc etc, until you have lost track altogether and
+     have   to  start  all  over  again.  Making  notes  or  extensive
+     tabulations  of  all possible combinations does help but it still
+     does not provide a method to go right to the core of the problem.
+     
+     Well,  formal  logic  (for  the  connoisseurs,  predicate  logic)
+     provides  just  such  a  method. In formal logic the "atoms", the
+     smallest  units of information are given symbolic letters. In the
+     case of puzzle 8902 we can assign those letters as follows:
+     
+     O = K.N. Owsall gets a price
+     B = B.I.T. Brain gets a price
+     C = N. Cruncher gets a price
+     T = T. Tank gets a price
+     N = C.C. Nuts gets a price
+     
+     The  opposite  is simple to write: ~O will mean "K.N. Owsall DOES
+     NOT  get  a  price."  In  general, ~X will mean that X is NOT the
+     case,  whatever  X  may  mean.  With  this  little  trick we have
+     introduced  our  first  logical  OPERATION, namely ~, the logical
+     "not".
+     
+     There  are  other  logical  operations.  They  make  a connection
+     between TWO different "atoms" or elementary possibilities.
+     The  most  used  of  these  operations  are the logical "AND" and
+     the  logical  "OR".  AND is written & while OR is written v. They
+     work like this:
+     
+     X & Y (X AND Y) is only true if both X and Y are true.
+     X  v  Y (X OR Y) is only FALSE if both X and Y are false, that is
+     to say, the OR needs only ONE of the atoms to be true in order to
+     be  true  itself. Mind you, both CAN be true, but they don't HAVE
+     to be true.
+     
+     It  would  lead  too  far  to  give a full account of how to draw
+     conclusions  in  a  formal way from given facts expressed in this
+     notation  (I  hope  to do that in next week's EMBBS) but you will
+     see  that  the  mere  fact  that we have a shorthand notation for
+     logical puzzles already simplifies the work tremendously.
+     Watch this:
+     
+     >The two contestants K.N. Owsall and B.I.T. Brain were nephews of
+     >the  magazine's  owner,  and  as  the jury liked their well paid
+     >jobs, they felt at least one of these two had to get a prize.
+     
+     EMBBS 1-05                   Page 10                   7 Aug 1989
+
+
+     In symbolic notation:
+     (1) O v B   : Owsall OR Brain must get a price. They both COULD
+                   get a price but not NECESSARILY.
+     
+     >they could not award prizes to both B.I.T. Brain and N. Cruncher
+     becomes:
+     (2) ~(B & C)
+     
+     >T. Tank or C.C. Nuts or even both should have a prize.
+     becomes:
+     (3) T v N
+     
+     >if T. Tank would get a prize, C.C. Nuts must have a prize also.
+     becomes:
+     (4) ~(T & ~N)  Think about this one for a moment and you'll see
+     that it is a correct translation of the statement in the puzzle.
+     
+     >N. Cruncher had copied T. Tank's article so they should have
+     >both a prize or neither should get one.
+     is equivalent to:
+     (5) (C & T) v (~C & ~T)
+     
+     >K.N. Owsall refuses a prize if C.C. Nuts gets one.
+     is simply:
+     (6) ~O v ~N
+     
+     This  last  bit could actually also be written as ~(O & N). After
+     all,  Owsall  will not tolerate to be a prizewinner together with
+     Nuts,  but  will  not  object  if  either Nuts gets a price or he
+     himself  gets one. He does not demand that either actually gets a
+     prize so the ONLY restriction he imposes with his foolish display
+     of  smallmindedness  is  that it should not be the case that BOTH
+     have  a  prize.  This  logically  is equivalent to saying that at
+     least ONE of them should NOT have a prize.
+     
+     We  now  proceed  by  picking  one atom and see whether it can be
+     true. Say, we postulate that Owsall gets a price. From now on, we
+     forget about contests and prizes and envy and smallmindedness and
+     simply concentrate on manipulating the letters.
+     
+     So,  let  us  say  that O has the value "true." We have satisfied
+     condition  (1).  Besides  in  (1),  O  only appears in (6) and we
+     conclude ~N, in order to satisfy that condition. This must mean T
+     in  view of condition (3) which says that of T and N at least one
+     must be true. However, we see from (4) that it CANNOT be that T &
+     ~N.  Well, we just concluded exactly that, namely that T & ~N! So
+     we  were  wrong!  And  our  mistake MUST come from reasoning from
+     false  assumptions.  We  made however only ONE SINGLE assumption,
+     namely that O has the value "true". Therefore, O CANNOT BE TRUE!!
+     
+     From  now  on,  it  really  is child's play. I give the shorthand
+     reasoning,  mentioning  the  justifying  given condition from the
+     puzzle in parentheses at each step:
+     
+     ~O (as we saw!) -> B (1) -> ~C (2) -> ~T (5) -> N (3)
+     
+     EMBBS 1-05                   Page 11                   7 Aug 1989
+
+
+     This completes the solution.
+     Next week more about logic.
+
+     -----------------------------------------------------------------
+     EMBBS 1-05                   Page 12                   7 Aug 1989
+
+
+     LHarc 1.14 (ICE) The real thing or just a hack?
+     EMBBS Editorial Team @ FidoNet 2:286/201
+     
+     First,  let's  make  the  following  VERY  clear:  -  we  are NOT
+     absolutely  100%  sure  that  LHARC 1.14 is a hack, it is just an
+     educated guess.....
+     
+     Some  of  you  may  have  seen  a  version  1.14 of Yoshi's LHARC
+     program,  which  does no longer create archives with an extension
+     of  .LZH,  but with .ICE - Seems appropriate at the first glance,
+     because   while  packing,  previous  versions  stated  they  were
+     'Freezing'  the  file;  and  unpacking was called 'Melting'. This
+     is  also  the  explanation  for  the  change that is given in the
+     manual  of  1.14. But there are a number of curious matters which
+     we  will now put before you, and after that you can draw your own
+     conclusion.
+     
+     1 - The  extension  of  an archive is some sort of trade mark, in
+         the sense that you can recognize which archiver you will need
+         in  order  to  be  able to unpack it. Therefore it would very
+         foolish to change the extension only for such minor reason.
+     2 - The EXEfile is exactly the same size as 1.13c
+         If  you're  a  programmer  , you will agree that this is very
+         unlikely.  Mostly  because  you  always  make some very minor
+         adjustments, not even mentioned in the 'changes' doc.
+     3 - The documentation file seems to have been altered by a simple
+         text replacement utility. For example at the end of the file:
+         1.13c :  " b. Naming of LHarc"
+         1.14  :  " b. Naming of  ICE "
+         Please note the extra space at the end of the second line. As
+         far  as  we  can tell, every occurrance of the string "LHarc"
+         was replaced by " ICE ". Only that explains the extra space.
+     4 - At  the  end  of  help screen  in  1.13c, Yoshi's address was
+         printed,  as  well  as  the licensing terms. In 1.14 this was
+         REPLACED  with  the  info about ICE - why replaced instead of
+         just added to the end??
+     
+     Coming  back  to  my  point 2, the only changes between 1.13c and
+     1.14  are  from  LHarc  to  ICE,  the  characters used to signify
+     progress while packing/unpacking, the extension .LZH to .ICE, and
+     of  course that help screen. All those things can quite easily be
+     accomplished  with  just  about  any  hex-editor  like the Norton
+     Utilities or PC-Tools.
+     
+     Finally, a possible word of relief for those of you who have read
+     warning messages about 1.14 versions with a virus. As the file we
+     examined was exactly the same size as 1.13c, and the only changes
+     were  those  text thingies mentioned above, we have decleared our
+     own executable to be clean from any possible virus.
+     
+     Anyway.. WE believe that 1.14 is a hack of 1.13c - and we may add
+     a rather primitive hack at that, too! - which was not released by
+     Yoshi  himself. If we find out any more about this matter we will
+     most certainly let you know in a future edition of this magazine.
+
+     -----------------------------------------------------------------
+     EMBBS 1-05                   Page 13                   7 Aug 1989
+
+
+     =================================================================
+                               WEEKLY PUZZLE
+     =================================================================
+
+
+     This week's puzzle, Serialnr. 8905
+     
+     A number puzzle this week..
+     
+     On  this  page  you  will  find a drawing consisting of 8 squares
+     connected  by  lines. Your task is to put the numbers 1 to 8 into
+     the  squares,  but  in  such  a  way  that  numbers  that  have a
+     difference of only one are not in connected squares.
+     
+     For example :
+     When  you  put  2 in   square F,  3  nor  1 may appear in square
+     B,C,D,E,G,H
+     
+                 +---+    +---+               Square    Connected to
+                 |D  |____|G  |
+                 |   |    |   |                 A         B C D
+                 +-+-+    +-+-+                 B         A C E F
+                /  |  \  /  |  \                C         A B D E F G
+               /   |   \/   |   \               D         A C F G
+              /    |   /\   |    \              E         B C F H
+             /     |  /  \  |     \             F         B C D E G H
+        +---+    +-+-+    +-+-+    +---+        G         C D F H
+        |A  |____|C  |____|F  |____|H  |        H         E F G
+        |   |    |   |    |   |    |   |
+        +---+    +-+-+    +-+-+    +---+
+             \     |  \  /  |     /
+              \    |   \/   |    /
+               \   |   /\   |   /
+                \  |  /  \  |  /
+                 +-+-+    +-+-+
+                 |B  |____|E  |
+                 |   |    |   |
+                 +---+    +---+
+     
+     
+     You may send your answer to :
+     
+     From : <Your name>
+     To   : EMBBS-PUZZLE
+     Subj : 8905         <-- and nothing else !
+     Addr : 2:286/201
+     
+     If you have a puzzle you would like to see here, send it together
+     with  the  answer to the same address, but put the word PUZZLE on
+     the subject line.
+     
+     ----------
+     
+     And now the answer of the first puzzle, serialnr 8901. There were
+     two responses, who had almost the same answer and which were both
+     100% right.
+     EMBBS 1-05                   Page 14                   7 Aug 1989
+
+
+     The  Winner  is..... Hans Hofman (2:512/0.1021) who was the first
+     one to submit a correct answer!
+     
+     The most original answer was :
+     
+     Willy Van.Veen (2:500/24.1592) --> Embbs-puzzle
+     29 Jul 89  17:27:56 old [local]
+     8901
+     -------------------------------------------------Puzzle solutions
+     One  of  the  princes must hit the other prince. Then he ride the
+     other  horse  and  take  his own horse BEHIND him. So he will win
+     the contest and the princess's hand, because his horse arrives as
+     the second horse.
+     
+     ----------
+     
+     So  far  for  this week. You can still send in your solutions for
+     the  other  puzzles  to the address above, but be sure to use the
+     correct puzzle serial number.
+     
+     Greetings,
+      Gerhard.
+
+     -----------------------------------------------------------------
+     EMBBS 1-05                   Page 15                   7 Aug 1989
+
+
+     =================================================================
+                                  COLUMNS
+     =================================================================
+
+
+     Happy hackers view on computers.
+     
+     Writers and magazines....
+     
+     As  you  all know I write a weekly column in this little magazine
+     you're  reading  now.  And I suppose you also know that there are
+     more  of  those magazines out there. Fidonews, C-news, G-news and
+     maybe  one  or  two  I don't know of... But isn't it strange that
+     there aren't more of them?
+     Take  a  network like BitNet.. That net is overrun with magazines
+     on  every  possible  subject.. Not only serious talk for wizzkids
+     and   hackers,   but   also   on  subjects  like  astronomy,  AI,
+     Wordprocessing  and  so  on.  You  name it, they have it.. And as
+     fidonet has a lot of people who use these kind of networks it's a
+     little amazing that there aren't more magazines in fidoland.
+     Imagine  your fidonet compatible doggy... (when you're a point or
+     node) or imagine that you at least got trough to that one BBS you
+     wanted to reach. (so you could download the latest EMBBS...)
+     Every  week  lots  of fun and interesting articles, funny columns
+     and  even  amusing  AND  interesting  articles  in EMBBS (ahum, I
+     hope..)  No more misery out of your newspaper during breakfast or
+     a  bad  night of sleep due to nightmares about all this misery in
+     the world..
+     
+     But,  you  may  ask,  (Yep you may, really) who are the guys that
+     write  all this together, who make your day with some sunshine on
+     virgin  white  paper  ?  Yep...  You  are ! Yeah, all of you.. At
+     least,  thats  the  idea.. But now for the cruel reallity, to get
+     the  people to write there are a few things you can do.. Irritate
+     them  so  the  write  reactions..  But  that  way the sun is soon
+     covered  behind  loads  of  paper  filled with sharp articles and
+     columns  on facts and fuss about the irritating subject. Not real
+     fun..  Nope  my  friends  thats not the way to go. Another way is
+     to  wait for people to write things and to send them to you.. But
+     this  option has also some disadvantages: as we would all like to
+     read  the  first  magazine before we're old and gray, this option
+     isn't ideal either..
+     So  for the last opportunity.. Ask some guy to write funny pieces
+     under a fake name and hope people start thinking : What a dumbo..
+     A  three  year,  emotionally frustrated penguin could do better..
+     And start to prove it.. SO ? Let us laugh and do it. I've written
+     lots of nonsense here myself, just to get you thinking so you can
+     do  that  also  !  (And you may also use a fake, as long it's not
+     mine  !)  I  should  say,  Make my day and write a piece, make me
+     laugh..  because to be true, there isn't much fun in reading your
+     own funny (naja) pieces...
+     
+     Greetings, Happy Hacker.  And may the laugh be with you!
+     
+     PS.  When  you  think this is a commercial you're right.. Tune in
+     next week for another word from the PR-department..
+
+     -----------------------------------------------------------------
+

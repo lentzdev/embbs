@@ -1,0 +1,536 @@
+     Volume 2, Number 14                                  2 April 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        International Networks  ...................................  1
+     2. NOTICES  ..................................................  6
+        Calendar of Events  .......................................  6
+        EMBBS Distribution & Support Sites  .......................  7
+        EMBBS Article Submission Guidelines  ......................  9
+
+                                 - - - - -
+     EMBBS 2-14                   Page 1                    2 Apr 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     International Networks
+     By Sander Davidson
+     FidoNet 2:281/603.2
+     BITNET radmail@sara.nl
+     
+     Since  the  computer  was  invented  it  went  through  a  steady
+     development.  Nowadays its presence in every day life is commonly
+     accepted    and   in   most   cases   indispensable.    Regarding
+     communication,  though,  the  computer  doesn't play a major role
+     yet.  Generally  spoken  most  of  the telecommunication computer
+     networks  are  for business, scientific or governmental purposes.
+     As  always  there  are  exceptions  to the rule. In this case the
+     exception  is  represented by "our own" network, FidoNet, through
+     which you probably got hold of this magazine!
+     
+     Examples of (international) computer networks are:
+     
+     ARPA Internet  Advanced Research Projects Agency Network 1969
+     BITNET         Because It's Time NETwork                 1982
+     EARN           European Academic and Research Network    1984
+     EUNET          European Unix NETwork                     1982
+     UUCP           Unix to Unix CoPy                         1978
+     
+     This article will tell you more about two of these networks, EARN
+     and  BITNET, about some differences and similarities between them
+     and  FidoNet  and  what  links  exist  between  EARN,  BITNET and
+     FidoNet.
+     
+     Strictly  spoken  EARN  and  BITNET aren't two separate networks.
+     They  both  form  part  of  one  and the same global network (the
+     Internet)  of  which the American part is known as BITNET and the
+     European part as EARN. So when I talk about BITNET in the rest of
+     this  article  I'm also referring to EARN. Several countries have
+     their  own  name for their particular part of BITNET. Canada, for
+     example, has NetNorth, Japan has AsiaNET.
+     
+     BITNET  was  established  in  1982 when users of IBM computers at
+     Yale   University  were  given  the  opportunity  to  communicate
+     directly  with computer users at the City University of New York.
+     This  was  established  by  connecting  their  computers  using a
+     permanent telephone line. This direct link proved to be so useful
+     that  it  didn't  take  long  before other Universities joined as
+     well: 'Because It's Time NET' was born.
+     
+     Two  years  later  a  similar experiment between New York and the
+     scientific  center  of  IBM  in  Rome led to the establishment of
+     EARN. At this moment more than 2100 computers, called nodes, from
+     all  over  the  world take part in BITNET. These computers aren't
+     personal  computers, they are mainframe computers. Mainframes are
+     mostly   *big*   computers   with  multi-tasking  and  multi-user
+     facilities.  A  well-known  mainframe  computer  is  the  VAX,  a
+     EMBBS 2-14                   Page 2                    2 Apr 1990
+
+
+     sophisticated   piece  of  hardware  by  DEC  (Digital  Equipment
+     Corporation)   which   is   often   found  in  BITNET.  DEC  also
+     manufactures  the  MicroVAX. In spite of the fact that it has the
+     same multiuser/multi-tasking capabilities as big brother VAX, its
+     size  doesn't  exceed the size of a crate of beer (its price is a
+     different matter, though :-))!
+     
+     Probably  not to your surprise IBM has had a big influence on the
+     further  development  and  expansion of BITNET. After all, it was
+     IBM   that   made  BITNET  possible.  That's  why  we  also  find
+     considerable  amounts  of  IBM  hard- and software present within
+     BITNET.  Now,  what  are  the  possibilities of (net)working with
+     BITNET?
+     
+     First of all you can send email (electronic mail). This is rather
+     similar  to  FidoNet's  mail  facilities.  On top of private mail
+     (FidoNet's  netmail) and forums (FidoNet's echomail), BITNET also
+     has digests and electronic magazines.
+     
+     Worth  observing  is that unlike FidoNet BITNET connections exist
+     permanently.  However,  messages  to  remote destinations are not
+     delivered  within  a  few  seconds.  I'll  explain more on BITNET
+     addressing and mail routing later on.
+     
+     A   second   possibility  BITNET  offers  is  a  property  called
+     electronic  messages.  This  means that the network allows you to
+     have  a  'live' conversation with someone who's also logged on to
+     the  network.  This can be compared to chatting with a SysOp on a
+     bulletin  board,  though  chatting on BITNET is not restricted to
+     the  mainframe  through  which  you  have access. You can type to
+     anyone  anywhere  on the network! That's why this feature also is
+     called electronic telephone.
+     
+     A  third possibility is file transfer. This enables you to copy a
+     file  from  a  remote machine to your local mainframe. Since most
+     users use a PC to connect to a mainframe they have to copy it one
+     more time from the mainframe to their PC. This process of copying
+     is called downloading. File transfer is also something we find in
+     FidoNet.  An  important  difference,  again, is that BITNET works
+     with  so-called  file  servers.  More on file servers later on as
+     well.
+     
+     Remote  commands  is  the last facility I'd like to mention here.
+     Remote  commands are commands you can send to another computer in
+     the  network.  In  most  cases this is limited to simple commands
+     like "tell the time", "show a list of users currently on-line" or
+     "show a list of available services".
+     
+     File and list servers
+     ~~~~~~~~~~~~~~~~~~~~~
+     Servers  play  an  important  role  inside  BITNET. A server is a
+     mainframe  with  a special function provided by special software.
+     This software is capable of accepting and executing commands sent
+     by  network users. Depending on the server commands can either be
+     sent as email or as electronic messages.
+     
+     EMBBS 2-14                   Page 3                    2 Apr 1990
+
+
+     File  servers: Since the network structure doesn't allow users to
+     search  for  and  collect files themselves this has to be carried
+     out  by  "someone".  This  someone is called a file server. If it
+     wasn't for file servers certain users would be doing nothing else
+     than sending requested files. A well-known file server is KERMSRV
+     which  is  located  at  CUVMA  (CUVMA  is the name of the node at
+     Columbia  University).  KERMSRV  is  a  server from which you can
+     obtain  the  popular  KERMIT  micro/mainframe  software  package.
+     Versions  of  the  software  for  a variety of hardware types are
+     available.
+     
+     A  nice  feature  of  file servers is that if they don't have the
+     requested file(s) available in their own collection they pass the
+     request  on to another server. This procedure is repeated as many
+     times  as  is necessary to locate the file that was asked for. If
+     only  we  had  this  service  on  FidoNet... Never again messages
+     asking "Who knows where I can find file xxxxxxxx.yyy??" :-)
+     
+     List  servers:  List  servers  are  servers  which manage mailing
+     lists.  A mailing list consists of names and network addresses of
+     people  who share the same interests. The above-mentioned forums,
+     digests   and  electronic  magazines  work  with  mailing  lists.
+     Generally this means that when you participate in a forum you get
+     information  and  reactions  from other users on the forum topic.
+     Participating  in  a  forum is easy: send mail to the list server
+     where  the  mailing  list  is  kept.  As soon as it receives your
+     contribution it automatically distributes the mail to everyone in
+     the  forum.  This fully automatized method has a drawback in that
+     forums can get very bulky.  This is why digests were created.
+     
+     A  digest is a forum, but before mail is sent out it is edited by
+     a  so-called  moderator.  This  human  intervention  isn't  ideal
+     either:  absence  of  the  moderator  can  lead  to  a sudden and
+     complete  standstill  of  the  digest!  An example of a digest on
+     BITNET is the IBM PC digest, of which you can find issues on some
+     bulletin board systems as well.
+     
+     Electronic   magazines  are  rather  similar  to  ordinary  paper
+     magazines.  They  contain articles and columns but you don't find
+     advertisements.  There's  a  selection  of  magazines  available.
+     You're  interested  in  environmental  issues?  Subscribe  to the
+     BioSphere  Newsletter.  You want to be up to date on medical news
+     items? Subscribe to MEDNEWS. And there are many more!
+     
+     Apart  from mailing lists list servers also handle file requests.
+     (That's to keep things simple :-))
+     
+     This,  in  a  nutshell,  is what BITNET is all about. But what if
+     you're  on  BITNET and you want to send mail to someone on one of
+     the other networks? In order to do that you need a gateway.
+     
+     Gateways
+     ~~~~~~~~
+     A  gateway  is  a  computer which is incorporated in at least two
+     networks. It is equipped with special software that is capable of
+     translating  the  protocol  of one network to the protocol of the
+     EMBBS 2-14                   Page 4                    2 Apr 1990
+
+
+     other  network  (the protocol is the network language). Just as a
+     Russian  speaks  another language as an American, each network is
+     based  on  another  protocol.  The  gateway  is in fact a network
+     interpreter.  Gateways  exist  between all major networks and the
+     interesting  thing  is  that FidoNet is one of these networks! So
+     what  does  it take to send mail from FidoNet to BITNET? First of
+     all,  you need to have the address of the person you want to send
+     mail  to. My BITNET address, for example, is RADMAIL@SARA.NL. The
+     general format for an address is: Userid@Node.Domain. You have to
+     read  this  address from right to left. Because the networks have
+     grown  so  tremendously  it  was  necessary  to  divide them into
+     smaller  parts,  domains. My domain is called NL which stands for
+     Netherlands Internet domain. SARA is the name of the node where I
+     have  my  account  and  my  username  is RADMAIL. The "@" sign is
+     pronounced  as  "at".  Now, you got my address so now you need to
+     know how to reach me from FidoNet. What you have to do is to send
+     netmail to an imaginary user UUCP at one of the gateways in which
+     you  tell  where  your  message  has  to  be delivered. There are
+     several  gateways  available.  For  example, 1:105/6, 1:105/42 or
+     1:114/15.  These gateways are located in North America. There are
+     gateways in Europe too, but my experience is that they don't work
+     faster than the American ones! If you like, though, you might try
+     2:331/6.
+     
+     The  subject  line can be anything you like. On the first line of
+     the  message,  though, you *have* to put "To: Userid@Node.Domain"
+     and  the next line *must* be empty so you press [return] twice. A
+     message  composed  according  to  these  instructions  (using the
+     editor  of  my  favourite point software package FrontDoor) looks
+     like this:
+     
+     (38)    Sat 24 Mar 90  0:09     Sent: Sat 24 Mar  0:18
+     By: Sander Davidson
+     To: Uucp (1:105/6) via 2/1, Zonegate EU NA
+     Re: hi!!
+     St: Pvt  Crash  Sent
+     -----------------------------------------------------------------
+     To: shawn@tabbs.uucp
+     
+     Hi Shawn!!
+     
+     **** text of my message ****
+     
+     As  you can see I don't have to call the American FidoNet gateway
+     directly,  but  I  use  the so-called "Zonegate EU NA", a FidoNet
+     node which takes care of mail sent from zone 2 (Europe) to zone 1
+     (North  America)  and  vice  versa. Usually it takes several days
+     before mail arrives at its destination.
+     
+     When  you  have  a  BITNET  account  and you want to send mail to
+     someone  at  FidoNet  you  work like this. Once again you have to
+     know  the  address and the name of the person you're mailing. The
+     general format of a FidoNet address from BITNET looks like this:
+     
+     Firstname.Lastname@fFF.nNN.zZZ.fidonet.org
+     
+     EMBBS 2-14                   Page 5                    2 Apr 1990
+
+
+     FF = FidoNet node number,
+     NN = FidoNet network or region number,
+     ZZ = FidoNet zone number.
+     
+     If you want to mail a point you extend the address as follows:
+     
+     Firstname.Lastname@pPP.fFF.nNN.zZZ.fidonet.org
+                        ^^^^
+     where  PP  is  the  point  number.  Example:  my point address is
+     2:281/603.2 so I would have to be addressed as:
+     
+     Sander.Davidson@p2.f603.n281.z2.fidonet.org
+     
+     ORG  is  the Internet domain (just like NL). This is all you have
+     to know! The path which your message travels before it arrives is
+     not  your  concern.  The  system determines it for you. That it's
+     rather complicated is a fact! Take a look at this:
+     
+     Via 1:105/6,  4:09:45 UTC, March 18, 1990 - Rts v1.51a
+     Via 1:105/42,  3:41:35 UTC, March 18, 1990 - Rts v1.51a
+     Via Node 1:105/42, Sun Mar 18 19:41:59 (QM v1.02a)
+     Via 2:512/99, Wed Mar 21 1990 10:11:00 UTC - MsgTrack v3.00
+     Via FrontDoor 2:512/99, Mar 21 1990 at 18:03
+     Via FrontDoor 2:512/0, Mar 21 1990 at 18:25
+     Via D'Bridge 2:280/0  03/21 19:17
+     Redirected Via Node 2:281/603  5:31pm, 22 Mar 1990
+     Via TosScan 2:281/603.0, Mar 22 1990 at 17:31
+     
+     And  this is just the route this message to me took after it left
+     the  gateway  (1:105/6).  It makes you wonder how it did get here
+     at all! :-)
+     
+     Anyway,  before I go I'd like to say that I decided to write this
+     article   since  more  and  more  people  show  interest  in  the
+     possibility  of  exchanging  mail between Internet and FidoNet. I
+     hope  the  information contained in this article will help you to
+     "reach  out" even further than you probably already did! :-)
+     
+     If  you  have  any  questions or would want additional info, feel
+     free to send email.
+
+     -----------------------------------------------------------------
+     EMBBS 2-14                   Page 6                    2 Apr 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     12 Jun 1990
+        On  this  date it will be five years ago that FidoNet switched
+        to  multiple  nets, ie. numbers in the form 'net/node' instead
+        of just 'node'.  Things would just grow out of hand otherwise.
+     
+     12 Jul 1990 - 15 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        Thursday 12th: Evening, registration.
+        Friday   13th: 1st day of real conference.
+        Saturday 14th: 2nd day of real conference.
+        Sunday   15th: Morning, going home.
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1992
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 2-14                   Page 7                    2 Apr 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+     EMBBS 2-14                   Page 8                    2 Apr 1990
+
+
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-14                   Page 9                    2 Apr 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/201.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/201)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-14                   Page 10                   2 Apr 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/201.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

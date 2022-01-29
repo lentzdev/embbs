@@ -1,0 +1,436 @@
+     Volume 2, Number 52                              24 December 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                    Daniel Docekal
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Editor Emeritus                                   Jeroen van Drie
+     Regular Contributor                                 Roberto Piola
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to one of the distribution & support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do we necessarily agree with them.  We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             MERRY CHRISTMAS!
+
+
+                             Table of Contents
+
+     1. COLUMNS  ..................................................  1
+        European Meditations (2)  .................................  1
+     2. SOFTWARE REVIEW  ..........................................  2
+        FEBBS - wonderful FILE support for BBS  ...................  2
+     3. NOTICES  ..................................................  4
+        Tokyo Phonenumbers to Change!  ............................  4
+        Calendar of Events  .......................................  5
+        EMBBS Distribution & Support Sites  .......................  6
+        EMBBS Article Submission Guidelines  ......................  8
+
+                                 - - - - -
+     EMBBS 2-52                   Page 1                   24 Dec 1990
+
+
+     =================================================================
+                                  COLUMNS
+     =================================================================
+
+
+     European meditations (2)
+     By Roberto Piola
+     FidoNet 2:334/15.1
+     
+     In  last  week's  issue  I  wrote  about  the  point of view of a
+     minority of Italians, but what about what the majority thinks?
+     
+     A  minority  fears  the  unity  as  a  loss of cultural identity.
+     They're  not  too  justified:  I  think that new perspectives are
+     important,  and  that  the  European unity cannot destroy a lot a
+     culture.  We  aren't  in  the  XIX century, when piedmuntish army
+     "freed" the south of Italy imposing Italian language and schools,
+     and  also  so, I believe that the most of the southern culture is
+     survived.
+     
+     Entrepreneurs enjoy the unity: a new market is open for them, and
+     they  don't  fear  the competition with other european industries
+     (except, maybe, new Great-German ones). At the opposite, they can
+     find  in  Europe  a  big resource against the common competition:
+     Japan.
+     
+     Only  some sectors can be afraid of the unity for facilities they
+     actually  have  from  the government and for the antiquate system
+     they're  based  on.  It's the case of the chemical sector and, in
+     some cases, banks and insurances.
+     
+     Politicians  do their work: they speak and speak, and speak......
+     but  nobody  can  understand what they say (and, I add, nobody is
+     interested  in  what  they say, except when they're talking about
+     taxes).
+     
+     And  the  "men of the street" (the common man, small businessman,
+     or  employee,  as  he's  called here: I'm not sure it's a correct
+     English)?  He  doesn't take care of the unity: "It will arrive...
+     It will be the same".
+     
+     Maybe the most interested people are students: project Erasmus is
+     a  great  success,  and  unity  is  a  great opportunity to study
+     better, and to find a job.
+     
+     @   @
+     
+     \___/
+
+     -----------------------------------------------------------------
+     EMBBS 2-52                   Page 2                   24 Dec 1990
+
+
+     =================================================================
+                              SOFTWARE REVIEW
+     =================================================================
+
+
+     Daniel Docekal
+     2:286/618@fidonet
+     
+                                  FEBBS
+                           FILE support for BBS
+     
+     A  new  version  of  FEBBS is here after few week of beta testing
+     with  a lot of new features. If you don't know what is a 'FEBBS',
+     you  can  read  a next article. If you know about FEBBS, then you
+     can found here a information about new version.
+     
+     FEBBS  is  software  (shareware)  done by Patrik Sjoberg. Idea of
+     this  software is filled in much of kinds of this software, but I
+     think, FEBBS is one from the BEST.
+     
+     Idea  is  simply.  Every  BBS sysop needs a lot of time to manage
+     file  areas  clean,  simply,  descriptive.  Moving  files between
+     areas,   new   uploads,  new  files,  file  description.  Lot  of
+     directories, mostly on different disks (my first BBS system had a
+     disks C: D: E: and F: and I: and J: from Novell system). This all
+     takes  a  lot  of time from Sysop time. Sysop is then copying and
+     editing files and running programs for viewing ....
+     
+     Implementation  is more simply. To create a program that can help
+     to sysop with manage a File Area Cleaning, Descripting, Moving ..
+     
+     FEBBS is this kind of program. What can FEBBS do?
+     A lot of things:
+     
+     FEBBS is for working together with:
+               REMOTE ACCESS 0.04
+               MAXIMUS 1.02
+               TubFile 0.92
+               OPUS 1.1x
+               QuickBBS 2.64
+               SuperBBS 1.03
+     
+               Definition  of  file  areas,  directories and all other
+               information  can  FEBBS  get  directly  from  definiton
+               inside  those  BBS  programs. Then, dear sysop, you can
+               forget all directories :-)
+     
+     FILES.BBS  file,  where  are sitting information about your files
+     are  edited  in  good  and  compact  editor  with  lot of special
+     commands  for  editing  this  special file and with standard text
+     editor command for editing text.
+          Sysop  can  implement Avatar or ANSI codes in FILES.BBS file
+          Sysop  can  by pressing a one key adopt all missing (or new)
+          files to FILES.BBS
+          Sysop which likes a GIF files can use automate describing of
+          GIF files
+     EMBBS 2-52                   Page 3                   24 Dec 1990
+
+
+          Tag  missing,  duplicate,  new,  files or tag which file you
+          need in editor.
+          Deleting,  moving  (inside  area,  from area to area) tagged
+          files.
+          Alphabetically sort
+          Archive  looking  via SHEZ (or other external looker) or via
+          built in facility for this.
+          Looking  to  textfiles,  binary files and pictures with user
+          definable viewers.
+          File  renaming,  moving  to different position in FILES.BBS,
+          copying to different position in FILES.BBS
+     
+     Creating  a  filelist  of  your  BBS, new files list, overview of
+     all  areas,  list  of  all  frequestable  directories for mailer,
+     list  of  top  downloaded  files. This all in one program. Can be
+     run  by  hand from MENU or as batch processing without sysops eye
+     and hands.  Support for Mouse.
+     
+     Search for file names in one area or in all areas in BBS.
+     
+     Support  for  passworded  areas and protected areas when FEBBS is
+     creating a filelists.
+     
+     Support  for  more setup files, then Sysop can create a different
+     filelist for different kind of use.
+     
+     Swapping  to  EMS  or  to DISK during running a external programs
+     or during DosShell.
+     
+     Inside  implemented  checker  for viruses in FEBBS program before
+     starting.
+     
+     DesqView  Aware  and  SHARE  aware.  All files are opened in Deny
+     Write  for  deny  write  from  other  applications that can write
+     together with FEBBS.
+     
+     
+     And some more next small things.
+     
+     FEBBS is frequestable on home system: 2:205/208@fidonet
+          and too on 2:286/618@fidonet of course
+                                                                  .DD.
+
+     -----------------------------------------------------------------
+     EMBBS 2-52                   Page 4                   24 Dec 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+     Tokyo Phonenumbers to Change!
+     By EMBBS Editorial Team
+     (Via Ward Dossche 2:295/49)
+     
+     On December 31st 1990 at 17:00 hrs local time certain telephone-
+     numbers in Tokyo are changing.
+     
+     All seven-digit Tokyo-codes become eight-digit then, with "3"
+     being added as prefix.
+     
+     So, if after that date you wish to reach a certain number, say
+     +81-3-235-6789, you must dial +81-3-3235-6789.
+     
+     Previously existing eight-digit numbers, mobile phones and
+     telexes don't change.
+     
+     Check your mailers, y'all!
+
+     -----------------------------------------------------------------
+     EMBBS 2-52                   Page 5                   24 Dec 1990
+
+
+                            Calendar of Events
+     
+     
+     31 Dec 1990
+        At  17:00 hrs local time certain telephonenumbers in Tokyo are
+        changing. All seven-digit Tokyo-codes become eight-digit then,
+        with  "3"  being  added  as prefix. So, if after that date you
+        wish  to reach a certain number, say ++81-3-235-6789, you must
+        dial   ++81-3-3235-6789.   Previously   existing   eight-digit
+        numbers, mobile phones and telexes don't change.
+        Check your mailers, y'all!
+     
+     31 Dec 1990 -  1 Jan 1991
+        Net 2:242 is planning to throw a big New-Years-Party in Aachen
+        Count on not hearing from us for about a week. =8-)
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-52                   Page 6                   24 Dec 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200,2400,HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300,1200,2400,V32, with MNP5,V42
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200,2400,V32,HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200,2400,V32,HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200,2400,HST 14k4, with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+        -  The Medical BBS, Kologne; sysop Christian Hick
+           ++49-2234-49479 at 1200,2400,HST 14k4, with MNP5,V42BIS
+           FidoNet Node: 2:244/16 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  The Independent Mail System, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200,2400,HST, with MNP5
+           FidoNet Node 2:25/100 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 300,1200,2400,V32,HST 14k4, & MNP5,V42BIS
+           FidoNet Node 2:286/255 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200,2400,V32,HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset B.B.S., Aalesund; sysop Bjorn Nornes
+     EMBBS 2-52                   Page 7                   24 Dec 1990
+
+
+           ++47-71-34304 at 1200,2400,V32,HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200,2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200,2400,V32,HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-52                   Page 8                   24 Dec 1990
+
+
+     EMBBS Article Submission Guidelines
+     Version 2, December 16th 1990
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     EMBBS 2-52                   Page 9                   24 Dec 1990
+
+
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and  even  further  away!) these days, and the sysops of
+     those  Distribution  and  Support  sites  have  kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want/can.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+
+     -----------------------------------------------------------------
+

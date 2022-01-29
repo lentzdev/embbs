@@ -1,0 +1,341 @@
+     Volume 1, Number 16                               23 October 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................. 1
+     2. ARTICLES  .................................................. 2
+        Transputers: Buildingstones of the Future - Part I  ........ 2
+     3. WEEKLY PUZZLE  ............................................. 5
+        Puzzle 8916 (fill in the numbers) & Solution 8912  ......... 5
+     4. NOTICES  ................................................... 6
+        Calendar of Events  ........................................ 6
+        EMBBS Distribution & Support Sites  ........................ 7
+
+                                 - - - - -
+     EMBBS 1-16                   Page 1                   23 Oct 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     Again  a  number of BBS became EMBBS Distribution & Support Site,
+     now  we  only  need  D&S  volunteers from a few more countries in
+     order  to  give  everybody  the  opportunity  to submit things to
+     EMBBS without great expense....
+     
+     But we're still eagerly waiting for your submissions, we can't do
+     it all on our own!   Go on, write something for us!
+     
+     As for this edition, we present to you the first part of a series
+     of  articles about transputers, by Joost Voorhaar. Perhaps that's
+     just  about  where  Jeroen  van Drie's series about processing of
+     data ended? Anyway, it should make some very interesting reading.
+
+     -----------------------------------------------------------------
+     EMBBS 1-16                   Page 2                   23 Oct 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     The ins and outs of the Transputer
+     By Joost Voorhaar
+     
+     The  computerworld is in a ferment. Experts expect the end of the
+     absolute hegemony of the worlds largest microprocessor companies,
+     Motorola and Intel. "RISC" is here the new magical word.
+     
+     RISC  is  an  acronym  which stands for "Reduced Instruction  Set
+     Computer". A RISC-processor  has not  many instructions, but  the
+     instructions  it  supplies  are  powerful.  One of the best-known
+     RISC-based  computers nowadays is the Archimedes computer. In the
+     Archimedes  a customized Acorn RISC-processor is on duty. And the
+     results...  Write,  just  for  fun,  a  simple,  yet rather heavy
+     program  in  BASIC  for  the Archimedes. Rewrite it in one of the
+     fastest  languages  for the PC: the C-language. And let's compare
+     the  results...  Amazingly  enough,  the  Acorn  interprets  it's
+     BASIC-written program faster than the compiled C-program, running
+     on the PC.
+     
+     A little history
+     
+     Another  concern,  scoring  in  the RISC-technology, is the INMOS
+     corporation. This firm was founded in 1978, with a view to making
+     VLSI   circuits.   However,   Iann   Barron,  nowadays  corporate
+     development  director  of  INMOS,  had  been  making  plans for a
+     totally  new  concept in parallel processing since 1975. It would
+     not  be  until 1984, 9 years later, that the first INMOS-internal
+     version for testing the CPU-part of his creation, the transputer,
+     could  be tested. A lot of problems had to be faced before a year
+     later,  in september 1985, the transputer became available on the
+     market. Nowadays, the transputer is used in several applications.
+     One  of  the  best known projects build around the transputer, is
+     the rather new Atari Transputer workstation.
+     
+     The  transputer  consists  basically  of  a micro-processor, some
+     static  RAM,  four customized I/O channels, an event handler and,
+     in  some  versions, a numeric co-processor, all integrated on one
+     single  chip. The I/O channels make the transputer different from
+     a  normal  (RISC-)  processor.  They are fast serial links, which
+     enable the transputer to communicate with other transputers. This
+     makes  the  transputer  an  excellent building-stone for parallel
+     processing  systems. Imagine for example a flightsimulator, based
+     on transputers. There could be one transputer, especially for the
+     visual  effects.  It would get the exact coordinates and position
+     of  the  plain from a root-transputer. This root-transputer could
+     compute  the  right  position  of  the  plain  from  information,
+     gathered  by  the  other  transputers.  A  third transputer would
+     interpret  the  movements  of  the  stick and the pedals, and the
+     fourth could control the instruments in the cockpit. Don't forget
+     that this is of course a rather simplified presentation of a real
+     flightsimulator.   In   reality  it  would  take  more  than  one
+     EMBBS 1-16                   Page 3                   23 Oct 1989
+
+
+     transputer  to  compute  the  visuals,  but  the  transputer that
+     interprets  the  movements of stick and pedals could also be used
+     for  controlling the instruments... But now, the time has come to
+     have a closer look at the transputer itself...
+     
+             +----------+     +-+     +----------+
+             |  System  |     | |     |  32-bit  |
+        <===>| services |     | |<===>|   RISC   |
+             |          |     | |     | processor|
+             +----------+     | |     +----------+
+                              | |
+             +----------+     | |     +----------+
+             |          |     | |<===>| Link #1  |<--->
+             | 2 kByte  |     | |     +----------+
+             | 50 nsec  |     | |     +----------+
+             |  Static  |<===>| |<===>| Link #2  |<--->
+             |   RAM    |     | |     +----------+
+             |          |     | |     +----------+
+             |          |     | |<===>| Link #3  |<--->
+             +----------+     | |     +----------+
+                              | |     +----------+
+             +----------+     | |<===>| Link #4  |<--->
+             |  Memory  |     | |     +----------+
+        <===>| interface|<===>| |
+             |          |     | |     +----------+
+             +----------+     +-+     |  Event   |<===>
+                                      +----------+
+     
+         Figure 1: schematic view of the T414 transputer
+     
+     A  simple  schematic  view  would  look  like the illustration in
+     figure  1.  The  heart  of the transputer is of course the 32-bit
+     processor.  Furthermore there is 2 KByte fast static RAM on chip.
+     This  RAM  is  used as a kind of external registerset. Apart from
+     this  memory,  real  extern  memory can be connected to the chip,
+     using the memory interface. Then there are the four bidirectional
+     serial  (max. 20 Mbit/sec) channels, called "links". And last but
+     not  least  there  is  the block, marked with "event". This is an
+     integrated  hardware  process-scheduler, which makes a transputer
+     switch between processes in no-time.
+     
+     The  processor  itself  is  simple.  Basically,  it  contains six
+     registers:   three   stack-oriented   calculation  registers,  an
+     instruction pointer, a workspace pointer and an operand register.
+     The  workspace  register points to the top of the memory, used as
+     external  register  set  for the current process. The instruction
+     pointer   points   to   the  current  instruction  (what  else?).
+     Basically,  the  transputer  only uses 16 different instructions.
+     Some  of them however, are used to expand the instruction set. As
+     long  as  there  are  only  16  instructions  in a processor, the
+     instructions  would  fit  in  a nibble. To be able to use more or
+     expanded  instructions, the transputer uses the operand register.
+     This register is used to store nibbles and add more nibbles to an
+     instruction if necessary.
+     
+     Enough  for today about transputers, I think, next week the story
+     EMBBS 1-16                   Page 4                   23 Oct 1989
+
+
+     continues.  We'll  take  a closer look to the links and their use
+     then.  In following issues we'll also have a look at the process-
+     scheduler,  the instruction set and some other interesting topics
+     that have something to do with this subject.
+
+     -----------------------------------------------------------------
+     EMBBS 1-16                   Page 5                   23 Oct 1989
+
+
+     =================================================================
+                               WEEKLY PUZZLE
+     =================================================================
+
+
+     This weeks puzzle. Serialnr. 8916.
+     
+     Fill in the numbers.
+     
+     This time I've  got a puzzle where  you have to find  the missing
+     numbers...
+     
+           6 . .
+         x . . .
+         -------
+           . . .
+       . . . .
+     . 5 . 5
+     -----------
+     . . 5 . 4 .
+     
+     Good luck....
+      Gerhard.
+     
+     --------->8---------
+     
+     So, and here's the solution of puzzle no. 12 from the contributor
+     himself..
+     
+     Filip Rekoms --> Embbs-puzzle
+     24 Aug 89 14:54:41 old [local]
+     Puzzle
+     --------------------------------------------------------Solutions
+     
+         The  code  is  hidden in the three numbers of the plates. Add
+     the  3  numbers  of a plate. The sum equals the number of letters
+     behind the first name of the rider.
+     
+         J A N = 0+2+3 = 5 (Ponto)
+         K E E = 1+4+1 = 6 (Jansen)
+         W I L = 2+1+4 = 7 (Halewijn)
+         H E N = 6+1+2 = 9 (Bordglans)
+
+     -----------------------------------------------------------------
+     EMBBS 1-16                   Page 6                   23 Oct 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+      1 Dec 1989
+        All telephone numbers in The Hague (Holland), get an extra
+        (7th) digit, the prefix 3. (ie. 123456 becomes 3123456.)
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in <WhoKnows>, annual European FidoNet Conference.
+        Not only for sysops, mind you! Also for points, users and
+        everyone else interested in FidoNet communications....
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-16                   Page 7                   23 Oct 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:513/50 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Spain:    (FidoNet Region 2:34)
+        -  Rocky, Barcelona; sysop Jaime Roca
+           ++34-3-8746155 at 300 and 1200
+           FidoNet Node 2:343/0 aka 2:343/5 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continous mail)
+     EMBBS 1-16                   Page 8                   23 Oct 1989
+
+
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

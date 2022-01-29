@@ -1,0 +1,703 @@
+     Volume 2, Number 51                              17 December 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                    Daniel Docekal
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Editor Emeritus                                   Jeroen van Drie
+     Regular Contributor                                 Roberto Piola
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to one of the distribution & support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do we necessarily agree with them.  We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        Britain, Gulf Crisis, Europe Community  ...................  2
+        BBS (and FIDONET) history in Czechoslovakia  ..............  3
+     3. COLUMNS  ..................................................  5
+        To be or not to be (editor in chief)?  ....................  5
+        European Meditations (1)  .................................  7
+     4. SOFTWARE REVIEW  ..........................................  8
+        STENTOR modem - Holland's step to high speed world  .......  8
+     5. NOTICES  .................................................. 11
+        Calendar of Events  ....................................... 11
+        EMBBS Distribution & Support Sites  ....................... 12
+        EMBBS Article Submission Guidelines  ...................... 14
+
+                                 - - - - -
+     EMBBS 2-51                   Page 1                   17 Dec 1990
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     Big change this week....
+     Because  to  his  studies  and other activities, Jeroen could not
+     longer  donate his time to EMBBS' Editor in Chief. He did a great
+     job in difficult times!
+     
+     We  have found Daniel Docekal, the former (first!) FidoNet Region
+     2:24  Coordinator,  Czechoslowakia, willing to take over the job,
+     starting this week.  Please give him all the support you can, for
+     instance by sending in some nice submissions!
+
+     -----------------------------------------------------------------
+     EMBBS 2-51                   Page 2                   17 Dec 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Britain, Gulf Crisis, Europe Community
+     By Jeroen van Drie
+     FidoNet 2:280/204.3
+     
+     As the Brits used to say: "The sun never goes down in the British
+     Empire",  the fidonet nodelist currently also is privilleged with
+     that virtue or whatever it may be. It started in zone 1, spreaded
+     to  us  and to Asia, and currently Region 50, Siberia, is part of
+     the  nodelist now for weeks. Also more and more nodes are showing
+     up in Africa and South America.
+     
+     The  'guests'  of  Iraq  may  return  home.  The  reply of the US
+     government  was not exactly diplomatic in the European sense, but
+     then,  European  diplomacy  talks  even  to people who bomb their
+     planes. Americans still look at Europe as a big thing cautiousely
+     moved  by  twelve  nations,  both strong and weak ones. Sometimes
+     they get angry over the slow mechanisms and hideous accelerations
+     it  may  display.  The demand of a 70% decrease in farm subsidies
+     couldn't work in today's Europe; farming would practically become
+     impossible  and then Europe would depend entirely on foreign food
+     supplies.  The  30%  decrease  suggested  first  met  with strong
+     opposition  from farmers, and they will not tolerate 50%; or will
+     they?
+     
+     Anyway,  the  British  under  John  Mayor  may be more willing to
+     intergrate  as  that  may  also  decrease  the  'fear' of the big
+     Germany in our midst, but I'm not here to discuss that..
+
+     -----------------------------------------------------------------
+     EMBBS 2-51                   Page 3                   17 Dec 1990
+
+
+     BBS (and FIDONET) history in Czechoslovakia
+     By Daniel Docekal
+     FidoNet 2:286/618
+     
+     Let  me  introduce  to  world little bit a history of born BBS in
+     Czechoslovakia  (country  in  centre  of Europe). This history is
+     small window to east EUR BBS world too.
+     
+     Everything  is  starting  at time of revolution in November 1989.
+     During  revolution  is  starting  a  modem connection between big
+     cities  in  country  -  connection between faculties of Czech and
+     Slovak universities.
+     
+     At  this  time was born a FIRST Czechoslovakian BBS - *ARIEL* BBS
+     in Prague on technical high school. Simply installation - PC AT -
+     Wildcat  demo  version - modem 1200, later 2400bps. Working daily
+     and  24hours  per  day.  Revolution  in  modem  communication  in
+     Czechoslovakia. To this moment it was very simply. PTT regulation
+     here  is  saying "telephone lines  are only  for transmitting  of
+     voice  calls".  Government (communist) doesn't like non checkable
+     use  of  telephone, then modem isn't welcome. Then same situation
+     as  in  other  "socialist-communist"  countries.  Every modem use
+     before  November  1989  was dangerous but it was exist of course.
+     Few  people  was using people and calling to BBS in other EUR and
+     non-EUR countries. From this way is here a first BBS - Wildcat -
+     getted  on  1200  bps  connection  from some BBS here in EUR and
+     runned  in  few days. Used very often with lot of people with lot
+     of ephori.
+     
+     Starting  some  other  BBS,  based  on WildCat! Telephone bill is
+     mostly  payed  by organisations that are quite supported this and
+     aren't  able  to  say Yes or Not in question how much or not this
+     can cost.
+     
+     After three months exist few BBSs in whole country and is started
+     first  mailer.  This  is  a  start  of  connection of BBS systems
+     together  -  still  needed  as  connection for lot of information
+     needed to transfer from one end of country to another. This first
+     mailer  -  D'Bridge  -  is  still  mostly  used in BBS systems in
+     Czechoslovakia  till  to  this moment. Thanks to understanding of
+     D'bridge  support nodes is a lot of nodes working a lot of months
+     on  demo keys and not paying. Paying wasn't easy and in case when
+     $100 per one mailer is more than month salary isn't so easy.
+     
+     In  march  1990 was born czechoslovakia region in FIDONET (number
+     2:42)  and  three  czechoslovakian  NETs, strictly geographically
+     based.  Everything  is still working on maximally 2400bps, mostly
+     on  1200bps.  Users  with  300bps  aren't  very often, 1200bps is
+     normal,  2400bps  isn't  often. Number of people using modems and
+     number  of  BBS  is going up. Is requested a OPUS CBCS BBS system
+     and  installed  in  few  BBSs for put out Wildcat! not supporting
+     Echomail  and Netmail. Starting a echomail conferences, small but
+     filled  with  enthusiasm.  Created good connections to other nets
+     and regions.
+     
+     PTT  regulations  says still the same, nobody is for changing it.
+     EMBBS 2-51                   Page 4                   17 Dec 1990
+
+
+     Country  is  going  from left to right and isn't time for looking
+     for  modems.
+     
+     That was the past. What's present?
+     
+     Present  looks  stable.  Numbers  of BBS systems is about 30, the
+     same is number of FIDONET stations, because is more easy to be in
+     some  public  NET,  than to work with alone BBS system. Number of
+     users is going up very slowly, because modem isn't cheap thing in
+     czechoslovakia  (3 monthly salaries for 2400bps) and there aren't
+     still  exist good knowledges about modems and modem works between
+     people  nor  in  schools.  Then approximately judgement number of
+     users in Czechoslovakia can be in hundredths for full country. As
+     BBS  is  used  mostly MAXIMUS and OPUS, few installation of RA or
+     QBBS and still in few stations Wildcat!. Mailers mostly D'Bridge,
+     then FrontDoor and at last The-Box.
+     
+     One  BBS  is  run  on  ATARI  ST,  all  other  are  run on IBM-PC
+     compatible  machines.  Modem  speed  mostly  used  2400bps,  some
+     1200bps.  Only one station with HST modem (really expensive thing
+     for  Czechoslovakia)  is  used  without  BBS  because is making a
+     echomail and netmail gate.
+     
+     Lot  of BBS hasn't long time of continue - reason is mostly a lot
+     of  money  on  telephone  bill.  Czechoslovakia  is coming to big
+     economical problem and there is normal that every firm don't want
+     make  sponsorship  for  something  that is immediately not making
+     back  money. And when cost of telephone call to different country
+     is 10 times higher than in normal industrial 'west' country, then
+     have a calls outside....
+     
+     And future?
+     
+     Future  is future and i cannot say pretty information about this.
+     But way of going is the same as on beginning of modem working and
+     BBS in all world industrial prospered countries. Only one problem
+     is  here, everything is strange expensive in comparatione to real
+     living  prices in prospering countries. There is possible to look
+     for  comparatione  to  Poland,  because poland was starting a BBS
+     live  and  FIDONET live a year sun that Czechoslovakia and way of
+     economical  and  politic  problems  is  similar. And i hope, that
+     somewho  from  Poland  (better  Jan  Stozek) will write something
+     about Poland BBS history for EMBBS too.
+     
+                                                                  .DD.
+
+     -----------------------------------------------------------------
+     EMBBS 2-51                   Page 5                   17 Dec 1990
+
+
+     =================================================================
+                                  COLUMNS
+     =================================================================
+
+
+     To be or not to be (editor in chief)?
+     By Daniel Docekal
+     FidoNet 2:286/618
+     
+     Yes,  this  simple  question  is making me now a lot of thinking.
+     Sitting  on  my  bed  and  writing  this to WordPerfect in Laptop
+     Tandon  as  preparation  for  tomorrow  transfer  to  Arjen's ART
+     program.
+     
+     EMBBS  needs  a  editor  in  chief...  EMBBS  needs  a editors...
+     EMBBS needs a authors... EMBBS needs a good articles....
+     
+     Those  sentences  are  very  simple  and very easy to detect from
+     EMBBS  contents  -  is  little  bit going down and is shorter and
+     shorter.  This  one  can  see  every  who  is  reading  EMBBS (if
+     this magazine has still readers).
+     
+     OK,  result  of  my  thinking  is - TO BE (editor in chief). It's
+     a   funny   situation.   You  can  understand  to  this  in  next
+     explanation.
+     
+     Few  words  about  myself  - few words about new editor in chief.
+     My  name  is  Daniel  Docekal (on second name is missing one sing
+     above 'c' character - sign is called hachek and looks as ^ turned
+     in  180 degrees. EMBBS format isn't allowing a good character for
+     my  name,  never  mind  -  for  pronunciation  problem i can make
+     transcription  Daniel  Doczekal) and i'm from Czechoslovakia. Yes
+     this  country  does exist and has own its FIDONET region. But I'm
+     living  at  this  moment  in  Holland and then i can be editor in
+     chief.  I'm  23  year  old, 2m high. I'm editor in chief, editor,
+     author,  writer and publisher of Czechoslovakian FIDO NEWS - nice
+     newsletter  in czech and slovak language (yes, my country has two
+     languages).  I  can  speak  (read  and  write)  in Czech, Slovak,
+     English and Russian language, i can understand Polish, Bulgarian.
+     But i cannot understand Dutch yet - this funny language is for me
+     the same problem as is for you a czech language - neni liz pravda
+     (czech).  I'm  in half of me programmer (and technician of course
+     too)  and  in second half journalist there is a big problems. I'm
+     lucky  married  and  my  wife (Marketa called) will  help me with
+     editors  in chief (i hope). Our dog cannot help us with this (i'm
+     afraid).
+     
+     My  own  BBS  system  is  located  in  Rotterdam (Holland) and is
+     working  24hours/7days in week. I'm interested mostly in CLIPPER,
+     TURBO  C, WORDPERFECT, NOVELL, LANTASTIC, and in next lot and lot
+     of  things  from computer - call to 2:286/618@fidonet and you can
+     see....
+     
+     Before  hour  i  was reading two volumes of EMBBS and looking for
+     the  past  and  for  presence.  And then of course thinking about
+     future. This is a line of the life. Past>presence->future. I have
+     EMBBS 2-51                   Page 6                   17 Dec 1990
+
+
+     some  new  idea,  but for this is time. I must first get a closer
+     look  to ART program and to other possibilities of EMBBS creating
+     and  write few articles for beginning (some you can found in this
+     issue).
+     
+     OK,  OK, i'm so much talkable. Sorry for this. This is column and
+     this  is  window  to  me.  Thanks  for  reading.  Thanks for your
+     interest. My abbreviation is and will be:                    .DD.
+
+     -----------------------------------------------------------------
+     EMBBS 2-51                   Page 7                   17 Dec 1990
+
+
+     European meditations (1)
+     By Roberto Piola
+     FidoNet 2:334/15.1
+     
+     Your  Italian  correspondent  is answering only now to a Jeroen's
+     message asking for italian point of view on United Europe.
+     
+     In North Italy there are some movements, developed in last years,
+     the  regional  "Leagues". They are proposing a strong separatism:
+     they  say  that  there  isn't an unique Italy; yes, there are big
+     differences  between the three Italies (north, center and south),
+     but they're saying that the only solution is to become the United
+     States of Italy, as first step, and then?
+     
+     This isn't a good step towards the European Unity, is it? How can
+     a broken country be part of an integrated, more vaste, structure?
+     
+     And  the  problem is that the leaguists are extremely racist: now
+     they say that Northern Italian are better than Southern ones, and
+     that southern immigrates and extra-communitary peoples have to go
+     home.  When they will be in the Community, what will they adfirm?
+     That Greeks and Spanish will be inferior and that they'll have to
+     leave the community?
+     
+     Note  well:  they're  not  unfavourable  to the position of NORTH
+     Italy into the European Community.
+     
+     In  the past they weren't a big problem, because they were only a
+     scattered  minority,  but  now  they're  united  into  the "North
+     League",  and  they're  having  a  modest  success  (up to 10% at
+     local elections in certain cities).
+     
+     I  wrote  something  about  the big differences between north and
+     south  Italy:  there  are, on a little geographic scale, the same
+     differences  that  can  be  preoccupant on an European scale: the
+     north  is more rich, with lots of industries; the south, instead,
+     inherited centuries of bad management, still not corrected by our
+     efficient  (;-D  it's  not  true!)  governement.   Some  northern
+     managers  aren't very keen on "wasting" (they say so) their money
+     for  the  development  of  the South, but the governement of Rome
+     continues  in  his aid. On the opposite side, the biggest porblem
+     of  the  south,  the  "Mafia" is developing also in some northern
+     large cities, like Milan and Turin.
+     Well, I've more to say on the Italian point of view, but I've not
+     the time to tell you it, for now: see you in next issue.
+     
+     @   @
+     
+     \___/
+
+     -----------------------------------------------------------------
+     EMBBS 2-51                   Page 8                   17 Dec 1990
+
+
+     =================================================================
+                              SOFTWARE REVIEW
+     =================================================================
+
+
+     STENTOR modem - Holland's step to high speed world
+     By Daniel Docekal
+     FidoNet 2:286/618
+     
+     VIDICODE  Datacommunicatie  BV (Holland firm) is now offering for
+     sysops  a  V.32BIS  modem  in  sympathy price with published good
+     quality in preview putted together with sysops offer. The STENTOR
+     modem is a step to world of high speed modem from other that U.S.
+     Courier production :-)
+     
+     A  few  words  to beginning - mostly have source in documentation
+     provided with this modem.
+     
+     "A   timely   word   of  advice  however.  Some  of  the  special
+     features  in  this  modem are very special indeed, and are not be
+     found easily in many other modems."
+     
+     I  must only agree with this, because knowledges that i have with
+     U.S.R.  HST or DS modems are really not so much useable at moment
+     of  looking to this modem. And this is because that STENTOR modem
+     looks little bit complicated.
+     
+     Next  table  is  a  list  of  all supported speeds and connection
+     standards. Comments will coming soon.
+     
+             75/1200   V23ori
+             300       V21, Bell 103
+             600       V22
+             1200      V22, Bell 212A
+             1200/75   V23ans
+             2400      V22bis, V26bis, Bell 201, V27ter
+             4800      V29, V32, Bell 208, V27ter
+             7200      V29
+             9600      V29, V32
+             12000     V32bis, V33
+             14400     V32bis, V33
+     
+     Fascinating  number of connection standards is giving fascinating
+     way  of  controlling  a  modem  via  Hayes command set and lot of
+     values in special registers.
+     
+     A word about implemented Hayes command set:
+     
+     First  way  to  know  how  is  your modem working and how you can
+     control  it  is - type command AT ?. This nice feature working as
+     extension with EVERY command for mode (eg AT A?) will explain you
+     everything  about  every  command  or register inside your modem.
+     Nice and useful.
+     
+     Back  to the real working. I have this modem now about a week and
+     can  (i  hope)  give some experiences to next users of this modem
+     EMBBS 2-51                   Page 9                   17 Dec 1990
+
+
+     and to modems that will want to connect with this modem :-)
+     
+     Good and nice features of this modem:
+     
+     - mentioned internal help system for every command and register.
+     - direct  controlling of requested connect speed. You can tell to
+       this  modem, that you need connect on (e.g.) V32 and if is this
+       isn't  possible,  then  modem will immediately disconnect call.
+       This  one  can save a lot of money - you can fix your modem for
+       calling to some station on good speeds and not good connections
+       are immediately terminated. All this via normal AT command.
+     - MNP implemented from level 1 to level 4 is switchable ON/OFF.
+     - messages about type of MNP connection are switchable ON/OFF.
+     - modem  can  detect  in  dialling  presence  of  DIAL,  BUSY and
+       OFF-HOOK on your telephone - two savable user profile protected
+       with battery inside modem.
+     - look to actual and/or stored profile.
+     - possibility  to  working  together  in  one  line  with  fax or
+       answering  machine.  Modem  can  be set to mode when is waiting
+       specified  time  for  first  device that is getting line and if
+       this  first  device  isn't  successful, then modem can get line
+       after this
+     - sharing telephone line and modem for two different user via two
+       communication ports on modem
+     - transparent using of second port for 'echoing' characters going
+       through  main modem communication interface - this allow you to
+       look independent to modems going through modem.
+     - switching  off escape character sequence (known as '+++' string
+       and making a lot of problems for beginner in BBS work).
+     - LF  translation  between  only LF and between combination CR+LF
+       inside modem.
+     - locking  a  communication  speed  between modem and computer at
+       19200  bps  for  allowing use MNP with 9600 (and more) transfer
+       modem-modem speed.
+     - configurable  answering  sequence of offered modem speeds allow
+       you make your modem more useable for other modems.
+     - automatic  detection of modem on second side of line when modem
+       is calling to some next system.
+     - implementation  of  1200/75 and 75/1200 transfer method is very
+       useful,  because  lot  of old banking or informatics systems is
+       still  using  this strange combination therefore in modem world
+       exist a lot of users  with modem 300+1200/75bps only.
+     
+     This  is a big list of pluses of this modem, but not exist things
+     on  the world that has only pluses. There must be too minuses and
+     some problems or non-standard things. There are they:
+     
+     - implementing  of  hyphenation character "-" in dialling command
+       ATD is according to PTT regulation in Holland and make a LOT of
+       problems  for  calling  to countries that are using "-" sign in
+       tel. number in crazy positions. For non-holland citizens little
+       explanation.  Hyphenation  sign in dialling string has function
+       "Wait To Dial Tone and Then Dial Next Numbers". When there is a
+       number  31-104768923 is everything in perfect condition. But if
+       there  is number 1-818-242-5678, then waiting after 818 and 242
+       isn't  possible, because PTT company on USA side isn't offering
+     EMBBS 2-51                   Page 10                  17 Dec 1990
+
+
+       at this moment dial tone. Nice feature according to PTT Holland
+       regulation  then making a problem that at EVERY time calling to
+       outer  world (with getting a number e.g. from FIDONET nodelist)
+       is  making  a  problem with reporting "BUSY" - after few second
+       waiting  without  dialling is telephone central going to "BUSY"
+       state. When is BUSY signal detection disabled, then is only one
+       problem - long time of dialling.
+     - automatic  detection  of second side modem isn't fully reliable
+       and  in  some  cases  modem  getted  "CONNECT  2400" instead of
+       "CONNECT  9600". But there is of course problem that every high
+       speed  modem  is  offering  different  sequence  of speeds when
+       answering.
+     - MNP  isn't  working reliably either in some cases it's breaking
+       connection  and  in  case  of successful connection is breaking
+       down  speed two time that without MNP. It looks as not finished
+       feature  in modem, because MNP is implemented inside a few days
+       and can make problems with some other modems
+     - for  users that had a U.S.Courier modem is a way to controlling
+       this  modem  very unusual and can make problems. For absolutely
+       non-experienced  users is this modem more complicated for setup
+       that standard U.S.Courier modem.
+     - V32bis  implemented  inside isn't yet available widely in modem
+       world,  because  lot of modem firm is still working on it. Then
+       you can mostly use only V.32 connection (pure 9600 bps).
+     
+     Endless  is this modem still really good and if is founded a good
+     way  to control it, can this modem be very helpful. Connecting at
+     V32 is very often possible in BBS world and 9600bps transfer mean
+     about   50KB   per  minute  and  this  is  very  nice  speed  for
+     transferring files or getting big volumes of echomail.
+     
+     Really  very  good  is possibility of locking a modem to one from
+     used  transferring  speeds  can be much helpful for lot of sysops
+     that  are making a connections to far distances and have problems
+     with  telephone bill due to non-fullspeed connections possible on
+     line.
+     
+     When world will go to use more V32bis modems, then this modem can
+     be on the same quality as is HST and can have transfer rate about
+     95 KB per seconds (HST connection with normal telephone line).
+     
+                                                                  .DD.
+
+     -----------------------------------------------------------------
+     EMBBS 2-51                   Page 11                  17 Dec 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     31 Dec 1990 -  1 Jan 1991
+        Net 2:242 is planning to throw a big New-Years-Party in Aachen
+        Count on not hearing from us for about a week. =8-)
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-51                   Page 12                  17 Dec 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200,2400,HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300,1200,2400,V32, with MNP5,V42
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200,2400,V32,HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200,2400,V32,HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200,2400,HST 14k4, with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+        -  The Medical BBS, Kologne; sysop Christian Hick
+           ++49-2234-49479 at 1200,2400,HST 14k4, with MNP5,V42BIS
+           FidoNet Node: 2:244/16 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  The Independent Mail System, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200,2400,HST, with MNP5
+           FidoNet Node 2:25/100 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 300,1200,2400,V32,HST 14k4, & MNP5,V42BIS
+           FidoNet Node 2:286/255 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200,2400,V32,HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset B.B.S., Aalesund; sysop Bjorn Nornes
+     EMBBS 2-51                   Page 13                  17 Dec 1990
+
+
+           ++47-71-34304 at 1200,2400,V32,HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200,2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200,2400,V32,HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-51                   Page 14                  17 Dec 1990
+
+
+     EMBBS Article Submission Guidelines
+     Version 2, December 16th 1990
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     EMBBS 2-51                   Page 15                  17 Dec 1990
+
+
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and  even  further  away!) these days, and the sysops of
+     those  Distribution  and  Support  sites  have  kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want/can.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+
+     -----------------------------------------------------------------
+

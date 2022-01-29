@@ -1,0 +1,531 @@
+     Volume 1, Number 21                              27 November 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        The Forth Programming Language - Part V  ..................  2
+        Advanced TurboPascal - Part II (Ansi Sequences)  ..........  4
+     3. NOTICES  ..................................................  9
+        Calendar of Events  .......................................  9
+        EMBBS Distribution & Support Sites  ....................... 10
+
+                                 - - - - -
+     EMBBS 1-21                   Page 1                   27 Nov 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     Perhaps  EMBBS' situation (lack of copy) is not all that special,
+     could  it  be  that it just reflects the state of BBS and FidoNet
+     communications  in  general?  Reading the various local, national
+     and  international  message  areas - seeing  how  the features of
+     especially  echomail  are  continually misused - one could easily
+     believe the above statement. It possibly is true, I don't know...
+     But  for  the  time being, I still believe this project can work,
+     WITH  some  cooperation.  There  must  be  something  going on in
+     BBS'ing  Europe,  new  freeware/shareware  software  which can be
+     presented  and/or  reviewed...  if  you've  written  a  nice  new
+     software  package,  send  it  to  us,  and  we  will find someone
+     suitable to review it!
+     WE try to do our best, please help us?
+
+     -----------------------------------------------------------------
+     EMBBS 1-21                   Page 2                   27 Nov 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     The Forth Programming Language - Part V
+     By Johan Siegers
+     Fideonet 2:286/201.16
+     
+     Until  now  we have mostly made straight programmes. This time we
+     will do some looping.
+     
+     Forth has a  DO .... LOOP command for looping
+     An example:
+     
+                      : stars  16 0 do ." * " loop ;
+     
+     will print 16 stars (asterix)
+     The structure is, as you can see:
+     
+                    limit  index   DO  .... commands .... LOOP
+     
+     We have two commands we can use in loops:  I  and J
+     I  is  the  counter  for the inner loop, J is the counter for the
+     outer loop.
+     
+                         : countup 0 DO I . LOOP ;
+     
+     When we enter 7 countup
+     We will get:  0 1 2 3 4 5 6 ok
+     
+     For larger steps in looping we use the +LOOP command.
+     3 +LOOP takes steps of 3  (equal to `STEP 3' in basic).
+     
+                     : countdown 3 17 DO I . -2 +loop;
+     
+     This will create an output of:  17 15 13 11 9 7 5 3
+     
+     or in basic, this would be: FOR I=17 TO 3 STEP -2: PRINT I;: NEXT
+     
+     
+     Forth  has  an  UNTIL loop for commands which has till last until
+     something happens:
+     
+                       : wait BEGIN KEY 32 = UNTIL ;
+     
+     KEY  is a command which reads the keyboard, and places the key on
+     the stack.
+     The routine above waits untill the spacebar is pressed.
+     The syntax of the UNTIL command is:
+     
+                BEGIN  .... commands ....  condition  UNTIL
+     
+     
+     There  is  a  command WHILE, which is actually the opposit of the
+     UNTIL  command.  The  WHILE  loop lasts as long as a condition is
+     EMBBS 1-21                   Page 3                   27 Nov 1989
+
+
+     true.
+     The syntax is:
+     
+               BEGIN condition WHILE ... commands ... REPEAT
+     
+     
+     The following example will illustrate it:
+     When we enter   12 countdown: it should count down until 1
+     
+     : countdown                        ; name of the command
+         BEGIN                          ; start op loop
+           DUP 1 >                      ; Make a copy for the test.
+                                          Loop as long as larger as 1
+           WHILE
+              DUP .                     ; Print copy
+              1 -                       ; minus 1
+         REPEAT                         ; end of loop
+     ;                                  ; end of command
+     
+     
+     There  is  a  lot  more to tell about forth. Things linke arrays,
+     text  input,  working with more than one library (a forth command
+     can have different meanings by switching librarys).
+     However  I have the feeling that the forth story is becomming too
+     complex.  Anyone who is interested in forth can download a public
+     domain version (see part 2). There are good and cheap books about
+     forth  and there is a forth area in the dutch fidonet. So I think
+     this is a good point to stop.
+     
+     With this article I wanted to show you that there are programming
+     languages  which  are  quite  different  than basic, pascal or C.
+     Forth is programming from a different viewpoint.
+     
+     Johan Siegers.
+
+     -----------------------------------------------------------------
+     EMBBS 1-21                   Page 4                   27 Nov 1989
+
+
+     Advanced TurboPascal - Part II (Ansi Sequences)
+     By Gerhard Hoogterp
+     FidoNet 2:286/201.6
+     
+     The  question  how  to  use ansi codes from within a turbo pascal
+     program  is  one  of  those  matters  which appear regular in the
+     international  pascal  echomail  area.  Reason enough to dedicate
+     this week's article to this subject.
+     
+     There  are  two  ways to use ansi from within turbo pascal. It is
+     possible  to  redirect  a  textfile to the standard output so the
+     ansi.sys driver can be used if it is installed. The second way is
+     to let the program interpreted the ansicodes.
+     
+     Using the ansi.sys driver.
+     
+     To  use  the  ansi.sys  driver  all  one  has  to do is to make a
+     textfile which is redirected to the standard output.
+     
+     
+       Program AnsiDemo;
+       Var Ansi : Text;
+     
+       Begin
+       Assign(Ansi,'');
+       Rewrite(Ansi);
+       .
+       .
+       Write(#27'[2J'); {Clear the screen}
+       .
+       .
+       end.
+     
+     I  have used a normal TEXT-file for ansi here to preserve all the
+     window features of TP's CRT unit. Of course it's also possible to
+     use  the default OUTPUT file. This is a predefined textfile which
+     is  used  by  the  CRT unit to send its output to. So to send all
+     output trough the ansi.sys driver you can use :
+     
+       Assign(Output,'');
+       Rewrite(Output);
+     
+     
+     Interpreteding the ansi codes.
+     
+     The big advantages of interpreteding the ansicodes by the program
+     itself  is  that  all  the  window options can be used. It's even
+     possible  to use ansi in a window. Something which isn't possible
+     when using the ansi.sys driver.
+     
+     My  way  of  interpreteding works as follows. Every ansi sequence
+     starts with an ESC character and ends with a delimiter. F.e.
+     
+       ^[    [ 10;5 f
+       --    - ---- +
+       Esc   |      delimiter
+     EMBBS 1-21                   Page 5                   27 Nov 1989
+
+
+             +- Start of ansi sequence
+     
+     What  I  do  is  read  the  incoming  stream until there is a esc
+     character.  From  there  everything  is put into a buffer until a
+     known  delimiter  is  passing  by or the buffer overflows. As the
+     sequences are short and the buffer is big an overflow only occurs
+     with  an  unknown  sequence or when a wild esc passes by. When an
+     overflows occurs the buffer is send to the screen.
+     
+     When  a  known  delimiter is found the part of the buffer between
+     the  '['  (start of esc-sequence) until the last character before
+     the  delimiter  are  copied  to  a string (in the above example :
+     '10;5')   and   the   string   and  delimiter  are  send  to  the
+     interpretation  part  of  the  program. This is just one big CASE
+     statement with the delimiter as key.
+     
+     So, and here's the code itself.
+     
+     -------->8--------
+     
+     {************************************************************}
+     {*              <<< LiveSystems AnsiDriver >>>              *}
+     {*                                                          *}
+     {* Release date 19-3-89                                     *}
+     {* Written by   G.Hoogterp  (Fidonet  2:2/102.6)            *}
+     {*                          (BitNet   HoogterpG@Hentht51)   *}
+     {*                                                          *}
+     {* (c) CopyRight LiveSystems LiveSystems 1989,1990          *}
+     {*                                                          *}
+     {* ALL RIGHTS RESERVED, NO GUARANTHEES                      *}
+     {* USE IT AT YOURE ONE RISK !                               *}
+     {************************************************************}
+     
+     {************************************************************}
+     {* this ansi drive supports the following codes :           *}
+     {*                                                          *}
+     {*  Esc[nA   : Cursor up                                    *}
+     {*  Esc[nB   : Cursor Down                                  *}
+     {*  Esc[nC   : Cursor right                                 *}
+     {*  Esc[nD   : Cursor Left                                  *}
+     {*                                                          *}
+     {*  Esc[y;xf                                                *}
+     {*  Esc[y;xH  Cursor at Y,X                                 *}
+     {*                                                          *}
+     {*  Esc[2J    Clear Screen                                  *}
+     {*  Esc[K     Clear to end of line                          *}
+     {*                                                          *}
+     {*  Esc[p1;..;pnm  Set graphics parameters                  *}
+     {*                      (partly)                            *}
+     {*                                                          *}
+     {* It also knows the codes :                                *}
+     {*                                                          *}
+     {*  Esc[=nh    Set Screen type                              *}
+     {*  Esc[=nl    Reset Screen type                            *}
+     {*  Esc[6n     Report current cursor position               *}
+     {*  Esc[y;xR   Report current cursor as y,x                 *}
+     EMBBS 1-21                   Page 6                   27 Nov 1989
+
+
+     {*  Esc[s      Save cursor position                         *}
+     {*  Esc[u      Restore cursor position                      *}
+     {*                                                          *}
+     {* But these codes are not used and not displayed...        *}
+     {*                                                          *}
+     {************************************************************}
+     
+     Unit AnsiDrv;
+     Interface
+     Uses dos,
+          Crt;
+     
+     Procedure AnsiDriver(Key : Char);
+     
+     Implementation
+     
+     Const AnsiEndChars = 'ABCDfHhJKlmnpRsu';
+     
+     Type Str10 = String[10];
+     
+     Var AnsiBuffer  : Array[0..255] Of Char;
+         AnsiPtr     : Byte;
+         RecAnsi     : Boolean;
+         MemAttr     : Byte;
+     
+     
+     { The master procedure }
+     
+     Procedure AnsiDriver(Key : Char);
+     Var Tel      : Byte;
+         AnsiBeg  : Byte;
+         AnsiStr  : Str10;
+     
+     { The ansisequence interpreteder }
+     
+     Procedure DoAnsiControle(AnsiNr : Byte;AnsiStr : Str10);
+     Var Value : Byte;
+         XVal,
+         YVal  : Byte;
+         Err   : Word;
+     
+     Const ForColors  : Array[0..7] Of Byte = (0,4,2,14,1,5,3,15);
+           BackColors : Array[0..7] Of Byte = (0,4,2,6,1,5,3,7);
+     
+     Begin
+     Case AnsiNr Of
+      1,
+      2,
+      3,
+      4   : Begin
+            If AnsiStr<>''
+               Then Val(AnsiStr,Value,Err)
+               Else Value:=1;
+            Case AnsiNr Of
+             1 : GotoXy(WhereX,WhereY-Value);
+             2 : GotoXy(WhereX,WhereY+Value);
+     EMBBS 1-21                   Page 7                   27 Nov 1989
+
+
+             3 : GotoXy(WhereX+Value,WhereY);
+             4 : GotoXy(WhereX-Value,WhereY);
+            End;
+            End;
+      5,
+      6   : Begin
+            Val(Copy(AnsiStr,1,Pos(';',AnsiStr)-1),YVal,Err);
+            Delete(AnsiStr,1,Pos(';',AnsiStr));
+            Val(AnsiStr,XVal,Err);
+            GotoXy(XVal,YVal);
+            End;
+      8   : ClrScr;
+      9   : ClrEol;
+     11   : Begin
+            Repeat
+             If Pos(';',AnsiStr)>0
+                Then Begin
+                     Val( Copy(AnsiStr,1,Pos(';',AnsiStr)-1),
+                          Value,
+                          Err);
+                     Delete(AnsiStr,1,Pos(';',AnsiStr));
+                     End
+                Else Begin
+                     Val(AnsiStr,Value,Err);
+                     AnsiStr:='';
+                     End;
+             Case Value Of
+              0       : TextAttr:=MemAttr;
+              1..3    :;
+              5,6     : TextAttr:=TextAttr Or $80;
+              7       : TextAttr:=TextAttr Xor $7F;
+              8       :;
+              30..37  : TextColor(ForColors[Value-30]);
+              40..47  : TextBackGround(Backcolors[Value-40]);
+              48,49   :;
+             End; {Case}
+            Until AnsiStr='';
+            End;
+     End; {Case}
+     
+     End;
+     
+     Begin
+     If Key=#27
+        Then Begin
+             AnsiPtr:=0;
+             RecAnsi:=True;
+             End;
+     If Not RecAnsi
+        Then Write(Key);
+     Ansibuffer[AnsiPtr]:=Key;
+     If Boolean(Pos(Key,AnsiEndChars)) And (AnsiBuffer[0]=#27)
+        Then Begin
+             Move(AnsiBuffer[1],AnsiStr,AnsiPtr-1);
+             AnsiStr[0]:=Chr(AnsiPtr-2);
+             If Pos(Key,'lpnRsu')=0
+     EMBBS 1-21                   Page 8                   27 Nov 1989
+
+
+                Then DoAnsiControle(Pos(Key,AnsiEndChars),AnsiStr);
+             AnsiPtr:=0;
+             RecAnsi:=False;
+             End
+        Else Inc(AnsiPtr);
+     End;
+     
+     Var Inp : File Of Char;
+         Key : Char;
+     
+     Begin
+     MemAttr:=TextAttr; { Remember the origional value }
+     AnsiPtr:=0;        { clear the buffer pointer }
+     RecAnsi:=False;    { no recording yet }
+     Fillchar(AnsiBuffer,255,0); {Clear the buffer itself..}
+     End.
+     
+     ------------>8-----------
+     Happy computing,
+      Gerhard Hoogterp
+
+     -----------------------------------------------------------------
+     EMBBS 1-21                   Page 9                   27 Nov 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+      1 Dec 1989
+        All telephone numbers in The Hague (Holland), get an extra
+        (7th) digit, the prefix 3. (ie. 123456 becomes 3123456.)
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in Antwerp, Belgium: annual European FidoNet
+        Conference. Not only for sysops, mind you!  Also for points,
+        users and everyone else interested in FidoNet communications..
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-21                   Page 10                  27 Nov 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:    (FidoNet Region 2:34)
+        -  Rocky, Barcelona; sysop Jaime Roca
+           ++34-3-8746155 at 300 and 1200
+           FidoNet Node 2:343/0 aka 2:343/5 (Continuous mail)
+     EMBBS 1-21                   Page 11                  27 Nov 1989
+
+
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

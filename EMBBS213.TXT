@@ -1,0 +1,349 @@
+     Volume 2, Number 13                                 26 March 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................. 1
+        Just a message  ............................................ 1
+        Heaven or Hell  ............................................ 2
+     2. NOTICES  ................................................... 3
+        Calendar of Events  ........................................ 3
+        EMBBS Distribution & Support Sites  ........................ 4
+        EMBBS Article Submission Guidelines  ....................... 6
+
+                                 - - - - -
+     EMBBS 2-13                   Page 1                   26 Mar 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Just a message...
+     
+     like dudez! this is the ****IRON EMU**** leving you  this mesg to
+     let you know that the BIRD TRIUMVERATE wich is ME (the  *****IRON
+     EMU******, the  DEATH SQUID  and SINTAX  ERROR are  still up  and
+     writng code which is in our new demoprogramme!   so all you VIC20
+     computer users be sure to check out our new demo called ASTERISKS
+     AND  SPACES! if you  send computer  mail for  it i  probably wont
+     reply becuase i  don't know how  just yet (but  my older  borther
+     will help out ...
+     
+     are you  like SICK of being  turned down acess to  buletin boreds
+     like the BIRD TRIUMVERATE  is?  then  call the new  bbs i set  up
+     last night becuase  it is so RAD!   it is the  EMU CONNECTION and
+     the  primary password is PHLEGM.   the secondary password is also
+     PHLEGM.  the teritary password  is STERNUTATION.  the quaternarty
+     password is ANTIDISESTABLISHMENTARIANISM. after that there are no
+     more passwords (but alot of asterisks and spaces for awhile.
+     
+     me and the DEATH SQUID wrote the buletin board last night in LESS
+     THAN AN  OUR! lets  see some  other  hack group  like the  SILVER
+     SLOTHS OF 606  try to rite  such a RAD buletin  board on a  vic20
+     computer!!!!!!!!!!!!! all  you have to  do to  get a password  is
+     write to us  and tell wich buletin  boreds you have been  refused
+     acess  to.   ALSO NO  MEMBERS OF  THE NASTY  NEWTS OF  909 ALOWED
+     becuase  you  dudez  SUCK!!!!!!!!!!!    if  you  write  to us  at
+     byrd@husc2.harvard.edu  (it  migt  be  better  to  use  real mail
+     instead  of the computer mail sistem becuase  we might not get it
+     becuase im still not exactly sure how to read it ...
+     
+     soon there will be an opton on the bbs to dwonload vic20 software
+     automaticly  but right now if you  select the dwonload opton from
+     the main meu i will pick up the phone and read  the right program
+     to you and you can copy it down. for this reson you should have a
+     pensil ready  when you select  the dwonload opton.  right now the
+     onley dwonloadable  program is ASTERISKS  AND SPACES  but we  are
+     working on our new demoprogramme called AMPERSANDS AND SPACES.
+     
+     so dudez! we got a place  now where all the RADEST DUDEZ  excange
+     the hotest vic20 warez and that is THE  EMU CONNECTION!!!!!!!! so
+     call between 4pm-10pm becuase i don't get home  from school until
+     4 (my dad says if we get  any calls after 10pm he l'l rip out  my
+     modem and feed it to the cat.  TERIBLE  TYPISTS OF 202 NOT ALOWED
+     becuase you  dudez SUCK!!!!!!!! so  call our  rad bbs, where  the
+     dwonload is  free, paretheses  dont match,  redundent excalmation
+     marks are HOT and SPELING DOESNT COUNT!!!!!!!!!!!!!!
+     
+     well  my  dads  yelling  at  me  to  get  off the dam fone so L8R
+     dudez....
+
+     -----------------------------------------------------------------
+     EMBBS 2-13                   Page 2                   26 Mar 1990
+
+
+     Heaven or Hell....
+     
+     Two  guys  recently  dead  was given the option to stay either in
+     heaven  or  hell for the rest of their eternity. They asked if it
+     was ok to look around first and to their surprise it was.
+     
+     First, they went to Heaven. All nice-guys where there, dressed in
+     white  they  sat  on  clouds  playing harp. Quite a boring place,
+     thought our heroes.
+     
+     - Let's go to Hell, they said to each other.
+     
+     Hell  turned  out  to be a completely different scene. It was all
+     bars,  casino and amusement parks. Free drinks for everyone and a
+     lot of people having a real good time.
+     
+     Back  from hell, the guys where asked to chose between Heaven and
+     Hell.
+     
+     They both chose Hell.
+     
+     Back  in  Hell,  they  were immediately scuffled in the back of a
+     sub-surface  car  and  driven  to  coal-mine. Someone gave them a
+     shovel each and told to start working.
+     
+     - What's  this?  The  last  time  we  where  here  they place was
+       entirely different.
+     
+     - Yes, but then you were tourists, now you are immigrants.
+
+     -----------------------------------------------------------------
+     EMBBS 2-13                   Page 3                   26 Mar 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     12 Jun 1990
+        On  this  date it will be five years ago that FidoNet switched
+        to  multiple  nets, ie. numbers in the form 'net/node' instead
+        of just 'node'.  Things would just grow out of hand otherwise.
+     
+     12 Jul 1990 - 15 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        Thursday 12th: Evening, registration.
+        Friday   13th: 1st day of real conference.
+        Saturday 14th: 2nd day of real conference.
+        Sunday   15th: Morning, going home.
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 2-13                   Page 4                   26 Mar 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+     EMBBS 2-13                   Page 5                   26 Mar 1990
+
+
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-13                   Page 6                   26 Mar 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/201.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/201)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-13                   Page 7                   26 Mar 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/201.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

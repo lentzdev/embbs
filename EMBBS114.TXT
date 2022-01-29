@@ -1,0 +1,529 @@
+     Volume 1, Number 14                                9 October 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+        EMBBS D&S Sites - Background Information  .................  1
+     2. ARTICLES  .................................................  2
+        Virus Infections  .........................................  2
+        New Virus Discovered  .....................................  4
+        WP 5.0 Macros - Part IV  ..................................  5
+     3. WEEKLY PUZZLE  ............................................  9
+        No puzzle (but a question) & Solution 8910  ...............  9
+     4. NOTICES  .................................................. 11
+        Calendar of Events  ....................................... 11
+        EMBBS Distribution & Support Sites  ....................... 12
+
+                                 - - - - -
+     EMBBS 1-14                   Page 1                    9 Oct 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     In  order to work more efficient, we continue to (re)organize our
+     method  of  operation.  We're  still  looking  for Distribution &
+     Support  sites  in  Sweden,  Norway, Germany, Switzerland, Italy,
+     France (hope I haven't forgotten anyone?)
+     
+     The  tasks  of  such a system?  Well, he/she should call EMBBS HQ
+     once  a  week  to pick up the latest issue only a few hours after
+     it's  created,  and make it available for the sysops and users in
+     their  own country. The SYSOP should also forward any messages or
+     files  with comments, criticism or submissions, and possibly even
+     puzzle solutions - to EMBBS HQ. If/when something is received, it
+     doesn't  HAVE  to  be sent right away, just in plenty of time for
+     the next issue.
+     
+     These  services  work to the advantage of readers, which are then
+     able  to  actively  participate  without great expense (telephone
+     costs), or particular knowledge of FidoNet NetMail.
+     
+     The  SYSOP  of  the  D&S system can also act as an ambassador for
+     EMBBS  -  knowing  the users/sysops in his/her country, he/she is
+     more  able  to  promote EMBBS and ask people for submissions in a
+     more personal way.
+     
+     If  you  are interested in becoming a D&S site, please contact us
+     at one of the adresses mentioned in the header of EMBBS.
+
+     -----------------------------------------------------------------
+     EMBBS 1-14                   Page 2                    9 Oct 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Virus Infections
+     By Martin Cleaver
+     FidoNet 2:286/201.14
+     
+     "Martin,  do you know anything about a virus which is supposed to
+     become active next Friday?"
+     These  words  have  become  a  welcome or unwelcome but certainly
+     familiar  greeting  for many computer buffs in the last few days.
+     Yet another victim of the age-old superstition.
+     
+     "Goodness, I hadn't heard from you for years, Janice, how nice of
+     you to call. A virus, how awful...!"
+     The  whole  DataCrime  affair  is  turning into a farce... but at
+     least  we computer buffs are beginning to feel wanted... Why, you
+     may think, one of us could have started the whole epidemic in the
+     first place, just to attract attention!
+     
+     I  have  yet  to find someone actually infected with the wretched
+     "DataCrime II" virus, but in the meantime the scare has taught us
+     a  lot  about  human nature. I mean... we can spend YEARS telling
+     the  world around us to MAKE REGULAR BACKUPS... but its only when
+     some  creep  manages to make the front pages with a virus scandal
+     bearing  a  striking  resemblance  to  the  great A**S scare that
+     people  start  taking  notice.  I'd (almost) be willing to bet my
+     annual  salary  (if  I  earned a salary) that more people will be
+     religiously  making back-ups this week than at any other time for
+     years past!
+     
+     As far as I can gather, the Dutch seem to be blamed for DataCrime
+     II,  but  there  are  no signs it is widespread, even in Holland,
+     apart  from the number of scaremongers leaping onto the bandwagon
+     and  splashing  the  story  all over the front pages of our daily
+     newspapers.  One  major  computer  magazine  here  in Holland has
+     decided  it  is  a perfect opportunity for a recruitment drive...
+     and it is offering a virus-killer disk for $3.50...
+     
+     Even  the  Dutch  POLICE  has brought out a virus killer for just
+     $2.50.  And in the meantime, the author of the virus killer being
+     given  away  free  by the local police in The Hague has taken the
+     fuzz  to  court for infringement of his copyright. Having donated
+     his  first  virus killer to the public domain, he then discovered
+     (together  with  the  local  university)  that he was onto a good
+     thing  and re-released it for $15 in the local bookshops, only to
+     find out that the local bobbies had meanwhile taken him literally
+     when he had generously stated that "you may release or distribute
+     this program freely". Now he wants his money. Ha bloody ha!!
+     
+     Of  course  if  I was bent enough to be a virus maker, I would be
+     the  first  to take advantage of the unlimited access people have
+     been  offering  vaccines  to their machines! I reckon more people
+     will  acquire  a  viral  infection  through the vaccine than ever
+     EMBBS 1-14                   Page 3                    9 Oct 1989
+
+
+     before... talk about the remedy being worse than the sickness!
+     
+     Whenever  a  computer  virus hits town, the vaccine makers are of
+     course the prime suspects. Those who stant to make the most money
+     are always top of Columbo's list! Funniest part is of course that
+     the  vaccines  all detect each other, because none of them bother
+     to  ENCODE  the  virus  signature  they include for checking! The
+     panic  is  now  total  and computer buffs are wasting hours a day
+     explaining  to the uninitiated what "boot sectors", "hexadecimal"
+     and "formatting" are. In this case I hope at least that the scare
+     stories will persuade the lazy to start making back-ups!
+     
+     And  suddenly it has become hip to be superstitious... I mean, we
+     always  used  to  scorn  those  who  were  afraid  of  Friday the
+     Thirteenth!
+     
+     Martin Cleaver
+     
+     PS:  There  are several computer virus-detectors available in the
+     public  domain  and  some  commercially, although these are by no
+     means  better. Just make sure virus killer has a reliable SOURCE.
+     But  the only really reliable (and constant) advice remains: MAKE
+     REGULAR BACKUPS!!
+
+     -----------------------------------------------------------------
+     EMBBS 1-14                   Page 4                    9 Oct 1989
+
+
+     New virus discovered
+     By EMBBS Editorial Team @ FidoNet 2:286/201
+     
+     It  was  reported  to us that Memorex development centre in Tulsa
+     USA has been infected with a new format virus.
+     
+     The following info is available at this time:
+             - Infects EXE and COM files
+             - Signature 2EC7068F0000002E89168000
+             - Probable attack date friday 13th
+     
+     If  you  use  VIRSCAN,  you  can  easily append this data to your
+     VIRSCAN.DAT file.
+
+     -----------------------------------------------------------------
+     EMBBS 1-14                   Page 5                    9 Oct 1989
+
+
+     WP50 macros - Part IV.
+     By Gerhard Hoogterp
+     Fidonet 2:286/201.6
+     
+     Haidy  out  there, this week we're going to make a simple menu in
+     the  wp50  macro  language. But first of all I want to ask you to
+     rename  the  memo  macro which we made last week from ALTM.WPM to
+     MEMO.WPM.  Thus from a one key macro to a named macro. The reason
+     will become clear later on.
+     
+     Let's  start  with  the macro itself. I'd like to explain the way
+     the  macro  language  uses variables. You have 10 variables which
+     you  can use as you like. In the macro editor they look like {VAR
+     1}.  The may contain text or numeric information. To insert a VAR
+     in  the  macro  text  you  have  to  use the Control-V Alt-[0..9]
+     keystroke. The numeric keypad may NOT be used to make a variable,
+     only  the  numbers  in the top row on the normal keyboard. So, to
+     insert {VAR 1} you press Control-v ALT-1.
+     
+     To  assign  a  value to a variable there is the {ASSIGN} command.
+     It's syntax is :
+     
+         {ASSIGN}<var>~<value>~
+     
+     The  <var>  is  just  the number of the variable, not the {VAR 1}
+     code  itself.  The  assignment of a text to variable 1 would look
+     like :
+     
+         {ASSIGN}1~This is a text~
+     
+     Note the tildes..
+     
+     Ok, we want to make a menu. Something like :
+     
+         -=< WP50 Menu >=-
+     
+         1 - Memo
+         2 - Embbs outline
+     
+         0 - Quit
+     
+     The  capital  letters  of  each  choice  may  be used to make the
+     choice,  so  use  the '1' 'm' and 'M' to choose memo for example.
+     The same way WP presents it's menus..
+     
+     Now  we  go  on  to  record a little part of the menu as a normal
+     recorded  macro. Press Control-F10 and call the macro ALT-M. Here
+     you  see  why  you had to rename the memo macro. Not only because
+     ALT-M  is  a logical key for a menu, but as the memo-form will be
+     reachable  through  the  menu,  why  should  we  spoil one of our
+     twenty-six ALT-<key> combinations..
+     
+     Give  the  macro  a  description  and  press Control-F10 again to
+     finish  the  recording.  That's enough to start with. Fire up the
+     macro  editor to edit the new Alt-M macro. At this moment it will
+     only contain the code
+     EMBBS 1-14                   Page 6                    9 Oct 1989
+
+
+      {DISPLAY OFF}
+     
+     This code means that WP doesn't show its menus while playing back
+     the macro.
+     
+     The  menu  has  to  start  with  emptying the buffer. So first we
+     append  the  {EXIT}  key  code.  You  have  to  do  this with the
+     Control-V,F7  keystroke  as  the exit key normaly means "exit the
+     macro  editor"  The  {EXIT}  code  is followed by "NN" to 'No,Not
+     save,  No,not  leave  WP'. The screen is clean now and your macro
+     looks like :
+     
+       {DISPLAY OFF}
+       {EXIT}NN
+     
+     The  next  step  is  to show the menu text and ask for a key . WP
+     features the {CHAR} command for this line of work. Its syntax is:
+     
+       {CHAR}<var>~<prompt>~
+     
+     The  <prompt> is the text which is shown on the screen, the <var>
+     is the variable in which the pressed key is stored.
+     
+     Type this command like :
+     
+       {CHAR}1~
+            -=< WP50 menu >=-{Return}
+       {Return}
+           1 - Memo{Return}
+           2 - EMBBS outline{Return}
+       {Return}
+       {Return}
+           0 - Quit{Return}
+       {Return}
+       {Return}
+           Choice :
+       ~
+     
+     It  will  show  the  menu  on the screen and wait for the user to
+     press  a  key.  To  handle the actions which are connected to the
+     different  keys  we  use the {CASE} statement. Familiar to PASCAL
+     and C users. The syntax of the {CASE} statement is :
+     
+       {CASE}<var>~<constant>~<label>~[<constant>~<label>~]~
+     
+     The part between the [] may be repeated as often as necessary. So
+     to handle the above menu, the {CASE} statement looks like :
+     
+       {CASE}1~
+       ~1~MEMO~M~MEMO~m~Memo
+       ~2~EMBBS~E~EMBBS~e~EMBBS
+       ~0~QUIT~Q~QUIT~q~QUIT
+       ~~
+     The  {CASE}  statement checks all the constants to see if the are
+     equal  to  the typed character. If the character and the constant
+     match, it jumps to the connected label. If not it checks the next
+     EMBBS 1-14                   Page 7                    9 Oct 1989
+
+
+     constant.  If  none of the constants match it continues after the
+     {CASE} command.
+     
+     Before  finishing  this edition with the complete macro text I'll
+     describe the last simple commands that are used in this macro :
+     
+       {LABEL}<label>~     Defines  a label here  the macro  can  jump
+                           to,
+     
+       {GO}<label>~        Jumps to a label,
+     
+       {NEST}<macroname>~  Calls an other  macro  continue with  (like
+                           the BASIC chain command) and
+     
+       {Quit}              Quits the execution of the macro.
+     
+       {;}<comment>~       puts comment in the macro.
+     
+     And here is the complete macro text..
+     
+     
+       {;}Turn display of and empty the buffer~
+       {DISPLAY OFF}
+       {EXIT}NN
+     
+       {;}label to jmp to if a unknown key is pressed~
+       {LABEL}restart~
+     
+       {;}Display the menu~
+       {CHAR}1~
+            -=< WP50 menu >=-{Return}
+       {Return}
+           1 - Memo{Return}
+           2 - EMBBS outline{Return}
+       {Return}
+       {Return}
+           0 - Quit{Return}
+       {Return}
+       {Return}
+           Choice :
+       ~
+     
+       {;}Process the key~
+       {CASE}1~
+       ~1~MEMO~M~MEMO~m~Memo
+       ~2~EMBBS~E~EMBBS~e~EMBBS
+       ~0~QUIT~Q~QUIT~q~QUIT
+       ~~
+       {GO}restart~
+     
+       {;}Use memo macro~
+       {DISPLAY ON}
+       {LABEL}Memo~
+       {NEST}Memo~
+       {QUIT}
+     
+     EMBBS 1-14                   Page 8                    9 Oct 1989
+
+
+       {;}Use EMBBS macro~
+       {LABEL}Embbs~
+       {DISPLAY ON}
+       {NEST}Embbs~
+       {QUIT}
+     
+       {;}Quit the menu~
+       {DISPLAY ON}
+       {LABEL}Quit~
+       {QUIT}
+
+     -----------------------------------------------------------------
+     EMBBS 1-14                   Page 9                    9 Oct 1989
+
+
+     =================================================================
+                               WEEKLY PUZZLE
+     =================================================================
+
+
+     Haidy everybody out there,
+     
+     As  you  can  see, this week's edition doesn't contain a puzzle..
+     Or maybe it DOES, as there is something which puzzles me...
+     
+     As  I didn't get any response anymore for the last 4 or 5 puzzles
+     I  suppose you don't like the way things are going at the moment.
+     So  the  big  question  is, do you like puzzles, and what kind of
+     puzzles  would  you like to see.. If not, tell me anyhow.. 'cause
+     we  make  this  magazine for YOU, (and because we like writing of
+     course...)
+     
+     Any  ideas about the puzzle department can be send to me directly
+     via  email,  but  I also read areas such as PenPal which could be
+     used..  Our  distribution  sites  have agreed to forward mail and
+     files  to  the  EMBBS  headquarters  so even more people have the
+     opportunity to answer this weeks puzzle without expensive calls..
+     
+     Really hoping to hear from you,
+     
+     Gerhard Hoogterp (2:286/201.6)
+     
+     --------->8---------
+     
+     Ok,  back  to  the normal routine. The answer of the 8910 puzzle.
+     It  was  a  magic  square  with  even  sides. As I didn't get any
+     answers  here  is  the solution of Peter Duffield who sent in the
+     puzzle in the first place..
+     
+     Peter Duffield --> Embbs-puzzle
+     27 Aug 89 12:57:54  old [local]
+     PUZZLE
+     --------------------------------------------------------Solutions
+     
+                    SOLUTION TO 4x4 GRID PUZZLE
+                    ===========================
+     
+         +--+--+--+--+
+         | 1|15|14| 4|
+         +--+--+--+--+
+         |12| 6| 7| 9|    The 'magic'  figure that you are looking for
+         +--+--+--+--+    is 34. This is the total of each of the rows
+         | 8|10|11| 5|    the four corners etc.
+         +--+--+--+--+
+         |13| 3| 2|16|
+         +--+--+--+--+
+     
+     I  hope  this  is  not a puzzle you have used already, but I have
+     only  just  managed to get hold of EMBBS this week (Vol 1, Number
+     7). Keep up the good work.
+     
+     EMBBS 1-14                   Page 10                   9 Oct 1989
+
+
+     Peter  Duffield - Sysop - The Desert - 2:253/168 - +44 244 550332
+
+     -----------------------------------------------------------------
+     EMBBS 1-14                   Page 11                   9 Oct 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+      1 Dec 1989
+        All telephone numbers in The Hague (Holland), get an extra
+        (7th) digit, the prefix 3. (ie. 123456 becomes 3123456.)
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in <WhoKnows>, annual European FidoNet Conference.
+        Not only for sysops, mind you! Also for points, users and
+        everyone else interested in FidoNet communications....
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-14                   Page 12                   9 Oct 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200 and 2400
+           Fidonet Node 2:513/50 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Spain:    (FidoNet Region 2:34)
+        -  Rocky, Barcelona; sysop Jaime Roca
+           ++34-3-8746155 at 300 and 1200
+           FidoNet Node 2:343/0 aka 2:343/5 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

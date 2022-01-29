@@ -1,0 +1,403 @@
+     Volume 1, Number 18                               6 November 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................. 1
+        Transputers, Buildingstone of the Future - Part III  ....... 1
+        The Forth Programming Language - Part II  .................. 3
+     2. NOTICES  ................................................... 6
+        Calendar of Events  ........................................ 6
+        EMBBS Distribution & Support Sites  ........................ 7
+
+                                 - - - - -
+     EMBBS 1-18                   Page 1                    6 Nov 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Transputers Part III - The puzzle with the operands.
+     By Joost Voorhaar
+     
+     During  a  scientific  inquiry  it  was found  that  the  average
+     computer only uses a  limited number of instructions most  of the
+     time.  There  are   several  instructions   that  are  not   used
+     frequently. The transputers  designers must have had this in mind
+     when they designed  the instructionset  of the transputer,  since
+     there are  thirteen "base instructions". These  base instructions
+     include  instructions  to load  and  store constant  values, some
+     conditional and unconditional jumps  and... an instruction called
+     "Operate".  This  last   instruction  is   used  to  expand   the
+     instructionset to the 103 instructions the transputer can handle.
+     How this works? Well... that's a long story...
+     
+     To  begin with,  all instructions  have the  size of a  byte. The
+     highest nibble contains the instructioncode  itself and the lower
+     nibble  contains the  additional data.  The baseinstructions  are
+     simple  and  easy  to  understand.  There  is,  for  example,  an
+     instruction called "Load  Constant" (LDC). This instruction  puts
+     its data field in a 32-bit memory cell, allowing the user to load
+     a 32-bit register  with a 4-bit  value in a  very fast (LDC  uses
+     only 1 processor cycle) way.
+     
+     There  are  2  special  instructions   that  deserve  some  extra
+     attention.   These  are  the  instructions  "Prefix"  (pfix)  and
+     "Negative   Prefix"  (nfix).   These  instructions   are  treated
+     different from  all other  instructions  in the  sense that  they
+     don't clear the  Operant Register (In  the rest of this  article,
+     I'll replace  "Operant Register"  by "O-reg").  This register  is
+     used in the Von-Neumann fetch-cycle to fetch the additional data.
+     In short, the instruction is fetched in some internal register in
+     the transputer.  In  the second  step,  the instruction  will  be
+     decoded and the additional data will  be stored in the O-reg. The
+     third  step  is  to  interpret  the  instruction  and,  when  the
+     execution is finished, to clear the O-reg. The instructions  pfix
+     and nfix don't clear the O-reg, but shift its contents 4  bits to
+     the  left,  thus  allowing  to  use  longer  operands.  The  nfix
+     instruction inverts the  operant previously to storing  it in the
+     O-reg.
+     
+     To  load one of  the not-base instructions,  the pfix instruction
+     comes in useful.  For example,  to add two  32-bit integers,  the
+     instruction "Long Add" (LAdd) exists.  This instruction is one of
+     the extended  instructionset instructions. It's  opcode is  0x16.
+     The code sequence to  use this instruction is 0x21F6.  First, the
+     instruction 0x21 will be decoded. This is the opcode for pfix #1.
+     This loads the value "1" in the O-reg and shift the  contents one
+     nibble to the left. Then, the second byte (0xF6) is fetched. 0xF6
+     is the opcode for  "Operate #6". This instruction puts  the value
+     "6" in  the  O-reg  (then  containing  0x16!)  and  executes  the
+     EMBBS 1-18                   Page 2                    6 Nov 1989
+
+
+     instruction, specified in the O-reg.
+     
+     The  instruction  "z  :=  0x123  +   0x456  looks  like  this  in
+     transputer-assembly:
+     
+       Pfix,1
+       Pfix,2
+       Ldc,3        ; Load constant 3 -> 123 in stack-reg A.
+       Pfix,4
+       Pfix 5
+       Ldc,6        ; Load constant 6 -> 456 in stack reg A, the value
+                    ;   "1" will be shifted down to stack-reg B.
+     
+       Ladd         ; This instruction will be  coded "Pfix 1, Opr 6".
+                    ;   It adds  the contents of register B to
+                    ;   register A. The result is stored in A.
+       Stl,z        ; Puts the result in Z...
+     
+     This program should make it clear that the transputer is not very
+     easy to  program for humans.  For a  compiler however, it  is not
+     such a difficult task. Normally, a  crosscompiler will be written
+     for the host-computer. The  resulting program can then be  run by
+     the  transputer. There are  already several programming languages
+     available  for transputer  systems. If  you'd want  to  program a
+     transputersystem, you can  use Pascal, Modula, Fortran  and a lot
+     of other popular  languages. There  is, however, one  programming
+     language,  especially  written  for multiprocessor  environments.
+     This  programming  language  is called  "Occam",  and  suites the
+     transputer very well.
+     
+     Next week we'll  have a  look at the  hardware process  scheduler
+     and, last but not  least, we'll show some amazing  stats, showing
+     what the transputer concept brings in practice.
+
+     -----------------------------------------------------------------
+     EMBBS 1-18                   Page 3                    6 Nov 1989
+
+
+     The Forth Programming Language - Part II
+     By Johan Siegers
+     FidoNet 2:286/201.16
+     
+     Did you understand the first part of this Forth series ?
+     If  yes:  Good ! , No ? ... That's why AINEX has an EMBBS message
+     area.
+     
+     In  this episode I will tell you some more about numbers in forth
+     and the way you can manipulate them on the stack.
+     
+     In  case  you  might  want  to try something in forth, for MS-DOS
+     there  is  an excellent PD forth of Perry & laxen called FORTH83.
+     I know at least two dutch BBS who has the requestable.
+     
+     1) HCC node of the NOS (2:500/202) +31 35 45395
+        Minimum required: FORTH.ARC, FORTH.TXT
+        Extended version Also: FORTH1.ARC, FORTH2.ARC, FORTHBLK.ARC
+     
+     2) AINEX (2:286/201) +31 33 633916
+        Minimum required: FORTH83.ARC
+        Extended version: only: F83EXT.ARC
+     
+     The  extended version is only needed for advanced forth users. It
+     contains files for de-compilation of forth routines.
+     
+                               -----------
+     
+     
+     The  fact  that  values  on top of the stack disappear during the
+     execution  of  a statement makes it necessary to duplicate values
+     on  the  stack, Also you may not allways have the right values on
+     top. They may be further down the stack. For these purposes forth
+     has several commands. For example:
+     
+     DUP   : Duplicates the number on top of the stack
+     
+     SWAP  : Swaps (interchanges) the two top numbers of the stack
+     
+     n PICK: Duplicates number n of the stack to the top
+     
+     DROP  : Drops the top number of the stack
+     
+     Some examples:
+     
+     
+     Input:        DUP        5        SWAP      DROP
+     
+             ____       ____      ____      ____      ____
+            |  7 |     |  7 |    |  5 |    |  7 |    |  5 |
+     Stack  |  3 |     |  7 |    |  7 |    |  5 |    |  7 |
+            |----|     |  3 |    |  7 |    |  7 |    |  3 |
+            |    |     |----|    |  3 |    |  3 |    |----|
+     
+     
+     About numbers
+     EMBBS 1-18                   Page 4                    6 Nov 1989
+
+
+     -------------
+     
+     A  standard  forth  number  contains two bytes. This means that a
+     number  can  have  any value between -32768 and 32767. Forth only
+     uses  integers. This hardly is a problem. Almost all problems can
+     be  solved  using  integers. Using these integers, there are some
+     other type of numbers.
+     
+     * Unsigned Integers
+       They  use  2 bytes and may have a value between 0 and 65535. We
+       can print a number as an unsigned integers by using the command
+       U. instead of .
+     
+     * Double integers
+       They  use 4 bytes. Forth has a set of commands for dealing with
+       these double accuracy values.
+     
+     What  if  you need even more accuracy ? No problem ! Forth allows
+     you  to  make  all  the routines you want for as may bytes as you
+     like. This however goes beyond the purpose of this article.
+     
+     
+     Variables
+     ---------
+     
+     Forth also allows you to use variables.
+     In basic we can say:  LET TEST=100
+     
+     In forth we say:  100 TEST !
+     
+     First however we have to declare the variable TEST:
+     
+     simply:  VARIABLE TEST
+     
+     I  already  explained that all the calculations has to be done on
+     the  stack.  So first we have to put the value of the variable on
+     the stack.
+     
+     in forth:   TEST @
+     
+     An  example:  Everything  has  to  be  done  via  the stack. Even
+     printing  of  a variable. So if we want to kwow the value of TEST
+     we say:
+     
+                                TEST @ .
+     
+     TEST is the name of the variable
+     @    is the command to put TEST on top of the stack
+     .    is the command to print the top stack value as a decimal
+     
+     The  combination  @  .  is used that often, that forth even has a
+     special command for if. We could also say:
+     
+                                 TEST ?
+     
+     in both cases forth will answer:   100 ok
+     EMBBS 1-18                   Page 5                    6 Nov 1989
+
+
+     ok   is   allways   produced   by  forth  to  indicate  that  the
+     interpretation of the line is completed.
+     
+     System variables
+     ----------------
+     
+     Each language has some system variables. Most Basic versions have
+     variables called FREE or TIME which contain information about the
+     system. Forth has a very special system variable.
+     
+     Normally forth works in de decimal system. Forth however can work
+     in almost any system you want. Two systems are predefined.
+     
+     After HEX forth will work in the hexadecimal system.
+     After DECIMAL forth will work in the decimal system again.
+     
+     These commands use the system variable BASE
+     
+     hex could be defined as:  16 BASE !
+     
+     But what if you want to work in another system ?
+     Simply set the system variable BASE to the radix you want:
+     
+                               DECIMAL
+                               8 BASE !
+     
+     
+     and you are working in the octal system.
+     
+     Ever tried to make calculations in a system with a radix of 50 ?
+     
+     In the next episode I will show you how forth lets you create new
+     forth commands.
+     
+     To be continued ...                                     Johan.
+
+     -----------------------------------------------------------------
+     EMBBS 1-18                   Page 6                    6 Nov 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+      1 Dec 1989
+        All telephone numbers in The Hague (Holland), get an extra
+        (7th) digit, the prefix 3. (ie. 123456 becomes 3123456.)
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in Antwerp, Belgium: annual European FidoNet
+        Conference. Not only for sysops, mind you!  Also for points,
+        users and everyone else interested in FidoNet communications..
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-18                   Page 7                    6 Nov 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:513/50 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:    (FidoNet Region 2:34)
+        -  Rocky, Barcelona; sysop Jaime Roca
+           ++34-3-8746155 at 300 and 1200
+           FidoNet Node 2:343/0 aka 2:343/5 (Continuous mail)
+     EMBBS 1-18                   Page 8                    6 Nov 1989
+
+
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

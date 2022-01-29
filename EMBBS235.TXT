@@ -1,0 +1,669 @@
+     Volume 2, Number 35                                27 August 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        TechCon-I, the Report (part 2)  ...........................  1
+     2. COLUMNS  ..................................................  6
+        Informative Column?  ......................................  6
+     3. NEW SOFTWARE ANNOUNCEMENTS  ...............................  8
+        MSGCOPY, an OPUS/*.MSG tool  ..............................  8
+     4. NOTICES  ..................................................  9
+        Calendar of Events  .......................................  9
+        EMBBS Distribution & Support Sites  ....................... 10
+        EMBBS Article Submission Guidelines  ...................... 12
+
+                                 - - - - -
+     EMBBS 2-35                   Page 1                   27 Aug 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Jan Ceuleers
+     2:295/53@fidonet
+     27:1332/853@signet
+     
+     
+                    TechCon-I, The Report (part 2)
+     
+     
+     This is the second and last part of the TechCon-I report. The
+     first part appeared in EMBBS 234.
+     
+     First, an apology. I noticed in the logfile of 2:295/27 that
+     someone had tried to request some of the technical documents
+     that were distributed at TechCon. He only got one, because of a
+     ridiculously low MaxReq setting (the person in question was a
+     point). This limit has since been increased to 5, with a
+     maximum of 250Kbytes for unlisted nodes and 550Kbytes for
+     listed-ones. That should do it.
+     
+     
+     IFF (Interchange File Format) -- Maximilian Hantsch
+     ---------------------------------------------------
+     
+     Maximilian Hantsch (2:310/6) told us that Electronic Arts, a
+     US based software company, had come up with a file format
+     which was sufficiently general for it to be used to store
+     data of any kind. The initial purpose was to allow different
+     programs, running on the same platform (i.e. the Commodore
+     Amiga) to interchange data consistently. It could, however,
+     be used to interchange data between different platforms as
+     well, and that is one of the reasons IFF was on the agenda at
+     TechCon.
+     
+     Max briefly talked about the efforts in NET_DEV to come to a
+     "Type-III Packet". One of the possibilities is the RFC822
+     document, which actually looks a lot like the kludges we
+     currently use in FidoNet Type-II Packets, except that there's
+     no fixed binary header. RFC822 is being widely used in
+     professional, as well as in amateur networks.
+     
+     Another notable proposition for a future format is the
+     'binary chunks' proposal. Max likes this proposal a lot, and
+     this is no coincidence, because its structure is very similar
+     to IFF. Both structures consist of chunks, which have a 4-
+     byte ASCII identifier, a length field, and the specified
+     number of data bytes. The length field is only one byte in
+     length in the binary chunks proposal, while it is a 32-bit
+     unsigned integer in IFF.
+     
+     A second-level definition of IFF (the above structure
+     definition being the first level) would be that chunks can
+     EMBBS 2-35                   Page 2                   27 Aug 1990
+
+
+     contain 1 or more chunks themselves. Another step up the
+     hierarchical ladder, we find that a number of predefined
+     forms (specific configurations of nested chunks) can be used
+     as building blocks in IFF files as well.
+     
+     Since IFF was initially designed specifically to be used on
+     the Commodore Amiga, all 16- and 32-bit numbers need to be
+     stored in the Motorola-order. They need to be stored at word-
+     boundaries as well, which means that pad bytes need to be
+     inserted if a chunk has an odd length.
+     
+     We need to make sure that the chunk types (the 4-char
+     identifiers) are allocated centrally, so that no two
+     programmers use the same identifier for an entirely different
+     chunk type. Commodore-Amiga has set up an approval body,
+     which is part of CATS (Commodore-Amiga Technical Support),
+     with which chunk type identifiers can be registered. (Why not
+     use different smileys for identifiers in FidoNet?, JC).
+     
+     Max went on to discuss a number of IFF-standard chunk types
+     (FORM, LIST, CAT and PROP) which provide for the orderly
+     arrangement of data, as well as providing a means to define
+     the scope for common properties. He explained how to parse
+     these standard chunk types as well.
+     
+     A remark was made that it might be better to stop talking
+     about a type-III PACKET, and instead call it a new type of
+     BUNDLE. Otherwise, people might think that we're trying to
+     change the basic FidoNet protocol. This is entirely
+     unnecessary, since we would still transmit a type-II packet
+     during FTS-0001 sessions, which can be followed by any kind
+     of file. Actually, this is the way in which echomail is
+     currently being moved, albeit that the archives contain type-
+     II packets...
+     
+     Finally, this standard uses other standards. The FTXT FORM
+     type makes use of the same ISO character set as does
+     Microsoft Windows, for example. The standard was placed in
+     the public domain, and example code has been placed in the
+     public domain as well. It is available from 2:295/27 as
+     IFF_88.ZOO (515K). Max may have it up for file request as
+     well, but I'm not sure. Many attendants took this file home
+     with them as well, so you may find it near you.
+     
+     
+     Message FOSSILs - Panel discussion with Henk, Bob, Vince,
+     Alexander and Max
+     ---------------------------------------------------------
+     
+     What this is really all about is a database interface layer.
+     We want to define a high-level interface, while the
+     implementation is platform dependent.
+     
+     Vince remarks that Wynn Wagner has been studying a way of
+     handling messages that was similar to IFF (a binary-style
+     message structure); Alexander feels that IFF would not be a
+     EMBBS 2-35                   Page 3                   27 Aug 1990
+
+
+     proper way of storing messages on disk.
+     
+     Another issue is platform independence. Henk mentions the
+     fact that Novell's B-Trieve is available on lots of
+     platforms, but this doesn't allow for compatibility with
+     existing message base formats. Existing programs that make
+     use of specific message base formats, without accessing the
+     message base through the message FOSSIL, are a problem:
+     integrity cannot be maintained in a multitasking situation
+     where one of the tasks accesses the message base without
+     making use of the message FOSSIL.
+     
+     Bob feels that whatever we do, we mustn't slow things down,
+     however nice the features we add may be.
+     
+     One part of the panel feels that too many people have been
+     involved in the NET_DEV-version of this discussion for
+     anything to really happen, while the others think that this
+     is too big a project for a single person. A limited number of
+     developers should sit together and "just do it". The key
+     people would probably be the major BBS authors, as they could
+     lead the way in this. Lots of utility developers would soon
+     follow.
+     
+     Maximilian Hantsch (2:310/6) has volunteered to coordinate
+     the efforts. If anyone has already written message FOSSIL
+     specs, or is even busy writing code that uses a message
+     FOSSIL, you are requested to contact Max and to share ideas
+     with him. Please take into account that Max's system is not CM.
+     
+     A brain storming on what the actual interface should look
+     like yields the following: perhaps we should use a SQL
+     subset, in order to support multi tasking, programs should be
+     written to take error messages into account (cannot perform
+     this or that function because this or that resource is
+     locked,...). Henk briefly sums up what type of functions a
+     message FOSSIL should incorporate: initialize message base,
+     initialize area, open+close area, open+close message,
+     read+write message, (we'd probably need to be able to access
+     the header and the body separately).
+     
+     
+     The-Box -- Arjen Lentz
+     ----------------------
+     
+     Arjen talked about his mailer, which is available both for
+     the PC and for the Atari ST. Sadly, Arjen's talk was not
+     recorded on tape and I wouldn't dare publish something on it
+     from memory. I have informed him of the problem, and he will no
+     doubt publish an article when his mailer's documentation
+     becomes available.
+     
+     
+     Global Configuration File -- Maximilian Hantsch
+     -----------------------------------------------
+     
+     EMBBS 2-35                   Page 4                   27 Aug 1990
+
+
+     Programs requiring configuration can either extract this
+     information from other programs' configuration files, or have
+     the user construct configuration files of their own. In the
+     latter case, a lot of information is bound to be duplicated,
+     thereby increasing the chance of introducing inconsistencies
+     by forgetting to change all the occurrences of a particular
+     piece of information in all the configuration files.
+     
+     This could be solved by introducing a format for a global
+     configuration file, i.e. a configuration file which contains
+     configuration information for use by more than one program
+     (preferably all).
+     
+     Max based his talk on a document written by Martin Laubach,
+     who based the format he proposes on the Microsoft Windows
+     configuration file (WIN.INI), with the addition of a global
+     section.
+     
+     Here's the format:
+     
+         global_config_verb_1 options_1
+         global_config_verb_2 options_2
+         ...
+         [program_name_1]
+         config_verb_local_to_program_1 local_options_1
+         config_verb_local_to_program_2 local_options_2
+         ...
+         [program_name_2]
+         ...
+     
+     If a particular config verb is specified both in a local and
+     in the global section, the local options will take precedence
+     over the global options for the program the local config verb
+     is local to. In other words: global specifications are valid
+     for all programs, unless they are overridden in local
+     sections.
+     
+     A file containing Martin Laubach's document is available from
+     2:295/27 as NEWCFG.LZH (2860 bytes).
+     
+     
+     Character Sets -- Maximilian Hantsch
+     ------------------------------------
+     
+     Maximilian described a number of 8-bit character sets. A
+     kludge line specifying which character set a message was
+     written in does not solve the problem where people's names
+     (in the From and To fields of the header) contain non-ASCII
+     characters.
+     
+     Part of the audience (myself included, JC) feels that a
+     change of character sets requires sweeping enough changes to
+     software for the changes to be done thoroughly the first time
+     around. Why stick to 8 bits if people like the Chinese have
+     been asking us (in the Meadow conference for example) for a
+     way to support their multibyte characters.
+     EMBBS 2-35                   Page 5                   27 Aug 1990
+
+
+     An argument against this is the fact that many of the
+     languages requiring multibyte characters aren't written left-
+     to-right, and one line under the other. It would therefore be
+     difficult to write software that is sufficiently general to
+     handle all of this.
+     
+     
+     
+     That's about it. As you all can see, we've had fun. The
+     discussions were very informative (we've all learned a lot) and
+     were completely free of the kind of bitching that continuously
+     goes on in NET_DEV. BTW: I hope that's not one of the reasons
+     why the previous moderator of NET_DEV has become the *previous*
+     moderator of NET_DEV.
+     
+     Another point. What you've read in this report only reflects
+     (or tries to reflect) what happened at TechCon during the more
+     or less planned sessions. There have been 'fringe meetings' in
+     several of Antwerp's world famous "staminees" (from the French
+     word 'estaminet').
+     
+     As a matter of fact, Henk Wevers turned up a bottle of Bink
+     beer during one of those fringe meetings, which he presented
+     (empty, of course) to Bob and Vince the following morning. A
+     local sysop, Erik De Schrijver, found out about the brewery,
+     and arranged a guided tour for them. You should have seen their
+     proud faces when they came back home that evening, each
+     carrying 24 bottles of a beer named after their brain child.
+     Touching...
+     
+     
+     Jan Ceuleers
+     TechCon-I coordinator
+
+     -----------------------------------------------------------------
+     EMBBS 2-35                   Page 6                   27 Aug 1990
+
+
+     =================================================================
+                                  COLUMNS
+     =================================================================
+
+
+     Informative Column?
+     
+     Computers and strategy.
+     
+     The subject of strategy is a very broad one, strategy deter-
+     mines in a way our lives. With every decision we make there is
+     strategy involved, you may not think of that, at least cons-
+     ciously, but it is something we do every moment of our lives.
+     For the last thirty years we tried to build computers which could
+     take over the strategy thinking (there are people who believe
+     that computers can think, just think of that..). But let's
+     face it... strategy is a product of our human minds and for the
+     moment the human mind is much more capable of decision making
+     than any computer ever built. The problem, nevertheless, is that
+     our mind is influenced by many unimportant things. A computer,
+     whatsoever, can be cut of from those influences, it can make
+     decisions (provide a strategy) based on those facts that are
+     important. Those facts aren't determined by that computer but by
+     the man (or woman of course) that programmed the computer. So, as
+     a matter of fact (boy, a lot of facts! Aren't there?), you can
+     say it is not the computer that makes the actual decision but it
+     is the man who programmed the computer to make THAT decision
+     based on THOSE facts (getting a bit confused already?).
+     Then why do we use computers to make the decisions for us that
+     we've actually made already (it sounds a bit strange and in a way
+     it is)? Using the statements above, you might conclude that our
+     mind is just lazy. Why should we make the same decisions over
+     and over again? Why?... well, just because it are those facts
+     wich we thought where unimportant that just seems to be, uncons-
+     ciously, important enough to make the decision.
+     
+     I think I can make it a bit clear by taking the unavoidable
+     example! I've chosen the KRACH as an example. For, let's say,
+     five years ago the stock exchange was controlled by the big
+     corporations. In the last years more and more private persons
+     came, with a small budget, into the stocks. The total amount
+     of those private persons was enough to have some influence on the
+     stock exchanging market. With those persons also came the stock
+     control programs for the Personal computer. Those computers where
+     hooked up, by modem, to the computers from the stock brokers.
+     Those computers could determine a strategy for buying and selling
+     stocks based on the most straightforward facts that could control
+     the stock exchanging market. If the dollar dropped in value those
+     programs would give you an advise to buy American stocks (at
+     least for the non-Americans), if the weather improved by a good
+     temperature raise they could advise you to buy stocks from some
+     beer brewery, and so on.
+     The strategies made by those computers had always been fair ones,
+     so at a certain time those programs got the possibility to give
+     orders for buying or selling stocks without any intervenience
+     from the owner of those stocks (and thus the boss of that damn
+     EMBBS 2-35                   Page 7                   27 Aug 1990
+
+
+     computer). One night, to be exactly the night of Friday 7 October
+     1988, something happened that made a few (er.... well...few??)
+     programs decide to sell their stocks, and so this was done.
+     The same night the orders for selling stocks arrived at the
+     brokers computers. Under normal circumstances the reaction from
+     the programs, to sell the stocks, was a good one. But... those
+     computers didn't think of the fact that selling those stocks
+     would make their value drop down like hell. Of course a number
+     of those stocks were part of the Dow Jones package, and thus
+     making sure that the Dow Jones index would also drop.
+     On that particular night there where more selling orders than
+     usual because something nasty happened to a few of the stock
+     influences. Therefore the indexes and stock values dropped more
+     than usual. The owners didn't notice anything unusual until it
+     was too late. On Friday 7 October 1988 all computers were fed
+     with the new data and later that day, just before closing Wall
+     Street for the weekend those computers reacted on their own
+     previous actions from that day. Everybody started selling their
+     stocks, the brokers already felt it coming but didn't have any
+     clue that the computers had to be blaimed for it. A chain reac-
+     tion had started caused by themselves (the computers that is).
+     At four o'clock p.m. that day Wall Street closed, it was too late
+     to make up the balance. Not all orders had already been
+     processed.
+     Monday, 10 October 1988: Black Monday, the Krach was a fact.
+     
+     In the example above the computers didn't think of a very simple
+     rule: ACTION CAUSES REACTION. What I wanted to say with this was
+     that it couldn't possibly consider all the options that the human
+     mind can. The computer is very limited, in order to do the same
+     as a human brain you would need a computer with memory in the
+     amount of millions and millions of Gigabytes, CPU speeds of a
+     thousand times faster than the fastest computer available today.
+     At the moment this is something impossible to built, but who
+     knows what the future will bring us.
+     To conclude I just want to say this, just think of the famous
+     Star Wars Project (which will now propably never be realised due
+     to the Glasnost) and the role the computer plays in it.
+     
+     
+                                       Stephan Ververda,
+                                       CERBERUS BBS
+                                       17:778/2, 17:778/200
+                                       31-5700-41779 CM
+     
+     PS. If you still have a few days holiday, don't go
+         to the Middle-East, it's getting rough out there!!
+
+     -----------------------------------------------------------------
+     EMBBS 2-35                   Page 8                   27 Aug 1990
+
+
+     =================================================================
+                        NEW SOFTWARE ANNOUNCEMENTS
+     =================================================================
+
+
+     MSGCOPY, an OPUS/*.MSG tool
+     By Jeroen van Drie
+     
+     
+     MSGCOPY is a tool for people running a mail system based on the
+     OPUS .MSG base and echomail utilities. It will copy messages with
+     a certain 'to' field to a directory.
+     It's a holidays' utility. :^)
+     
+     MSGCOPY scans a specified *.MSG echomail area (MSGCOPY uses the
+     high water mark in 1.MSG) for the occurrance in the 'to' field
+     of a name of up to five parts. If MSGCOPY finds such a message,
+     it will copy that message to a directory. Everything MSGCOPY
+     needs to know is to be placed on the commandline; echomail area
+     path, path to copy the message to, and the name for which to
+     scan.
+     
+     MSGCOPY.LZH is available for file request from 2:286/255 and
+     2:512/30. MSGCOPY is written by Jeroen van Drie (yeah, me) and
+     anyone who wants to review or write a new software announcement
+     for his/her own software is encouraged to send their contribution
+     to EMBBS.
+     
+     The author can be reached at: 2:512/30.3@fidonet.org
+                                   2:286/255.15@fidonet.org
+
+     -----------------------------------------------------------------
+     EMBBS 2-35                   Page 9                   27 Aug 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-35                   Page 10                  27 Aug 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200, 2400 and V.32, with MNP5 and V.42
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The Independent Mail System, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:25/100 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/255 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+     EMBBS 2-35                   Page 11                  27 Aug 1990
+
+
+           ++47-71-34304 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-35                   Page 12                  27 Aug 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/255.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-35                   Page 13                  27 Aug 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/255.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

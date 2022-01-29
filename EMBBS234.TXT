@@ -1,0 +1,599 @@
+     Volume 2, Number 34                                20 August 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        TechCon-I, the Report (part 1)  ...........................  1
+     2. SOFTWARE REVIEW  ..........................................  6
+        QSCRTerm - the other PC-terminal  .........................  6
+     3. NOTICES  ..................................................  7
+        Calendar of Events  .......................................  7
+        EMBBS Distribution & Support Sites  .......................  8
+        EMBBS Article Submission Guidelines  ...................... 10
+
+                                 - - - - -
+     EMBBS 2-34                   Page 1                   20 Aug 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Jan Ceuleers
+     2:295/53
+     
+                    TechCon-I, the Report (part 1)
+     
+     
+     OK, so here it is folks: the first part of the TechCon-I
+     report. "What is a TechCon?", I hear you ask?
+     
+     TechCon-I was the first 2-day conference which was entirely
+     devoted to FidoNet Technology. It was held at the same time and
+     in the same hotel as EuroCon-IV: on July 14th and 15th in
+     Antwerp, Belgium.
+     
+     Anyway, if this is the first you hear of TechCon, you haven't
+     been reading EMBBS regularly, because it was announced well
+     in advance, and already commented upon by EMBBS' Editor,
+     Jeroen Van Drie, as well as by the Editor of FidoNews, Vince
+     Perriello.
+     
+     Jeroen and Vince weren't at TechCon simply in their capacities
+     of Editors. Vince had also brought Bob Hartman and the new
+     BinkleyTerm with him. Moreover, Rick Moore had appointed him as
+     the official FTSC representative at TechCon.
+     
+     Obviously, there were a lot of other interesting people among
+     the attendants (me, for one ;-). I'm not going to name any,
+     because I'd have to list all of the attendants in order not to
+     forget anyone interesting.
+     
+     Anyway, here we go...
+     
+     
+     BinkleyTerm 2.40 Release - Bob Hartman and Vince Perriello
+     ----------------------------------------------------------
+     
+     It had been quite a while since the Trio released BinkleyTerm
+     2.30 (September 5th, 1989), so something was to be expected.
+     We were nevertheless semi-surprised and delighted that Bob
+     and Vince came to Europe to give their first public
+     presentation on BinkleyTerm 2.40 at TechCon.
+     
+     The features:
+     - Most of the messages BinkleyTerm displays and puts in its
+     log are now configurable, in order to accomodate non-English-
+     speaking users. This will probably break every log analyser
+     in existence, but what the heck :-). The messages are
+     contained in a separate file (BINKLEY.LNG) which can be
+     generated by a language file compiler. The structure of this
+     file is published (by means of the Binkley source code), so
+     log file analysers should make use of this structure, and
+     EMBBS 2-34                   Page 2                   20 Aug 1990
+
+
+     compare the messages they find in the log to the ones they
+     find in the .LNG-file.
+     - Janus, the long-awaited full duplex file transfer protocol,
+     has finally been added on an experimental basis. It is
+     important for users to understand that it might break. (As it
+     happens: evidence that there was indeed a problem had been
+     popping up earlier that day. During the rest of their stay,
+     Bob and Vince worked with their local beta team to start
+     solving this and other problems, JC). Janus is rather
+     counterproductive on HST connections, because of the long
+     line turn-around times. It does work very well in V32
+     situations though.
+     - A state engine has been implemented, providing a relatively
+     simple way to implement new protocols should the need arise.
+     This has also helped in assuring compatibility with FTS-0007
+     and FTS-0008, much to the delight of SEAdog users.
+     - BinkleyTerm now supports 5D-addressing, that is: zone, net,
+     node, point and domain. This includes support of FSC-0045 and
+     FSC-0049. The nodelists for each of the domains are separate:
+     they no longer have to be compiled into a set of huge files.
+     A drawback is that no packer easily supports this new feature
+     as yet. It can be done with some intricate batch file
+     programming though.
+     - The first pop-up windows have been added to Bink: Alt-G
+     (interactively generates a file request), Alt-S (a file
+     attach) and Alt-K (removes all mail for the named node from
+     the outbound). This required another extension of the Colors-
+     statement in the config file.
+     - BinkleyTerm can now exit with a configurable exit code upon
+     receipt of one or more files with a certain extension (say,
+     .TIC). Comes in handy for SDS nodes.
+     - Support for yet another multitasker was added: PC-MOS.
+     Also, if no multitasker is detected nor declared, Binkley
+     will call the DOS idle interrupt (0x28) whenever it would
+     have called the multitasker's time slice release routine, had
+     a multitasker been installed. This tremendously speeds up
+     background tasks under DOS, such as the $25 Network.
+     - Another long-awaited feature is MaxBytes: a limitation of
+     the number of bytes a certain class of nodes is allowed to
+     request during one session. Insufficient time was left before
+     TechCon started for Vince to implement a limitation based on
+     time (or baud rate, if you like) as well. This will be
+     incorporated in a future release.
+     - In order to avoid the dead-time between the CONNECT message
+     from the modem and the start of the session, an MNP and V42
+     Modem Protocol Negotiation Filter has been implemented. The
+     3-second delay was required for the classic case where a non-
+     MNP modem was called by an MNP modem. The MNP handshake had
+     to be skipped, since it could contain an ESC, which would
+     obviously cause Binkley to drop to the BBS. It is now
+     filtered instead.
+     - A Terminal-mode initstring was added.
+     - Curmudgeon mode will no longer throw out new nodes who use
+     the net/-1 or net/9999 convention, so as to allow NCs who
+     like Curmudgeon mode to take calls from nodes in spe.
+     - In order to support multi tasking even better, semaphore
+     EMBBS 2-34                   Page 3                   20 Aug 1990
+
+
+     files are being placed in the outbound areas during sessions.
+     Other tasks can look for these files (.BSY extension) and not
+     do anything that might interfere with the ongoing session.
+     Binkley will refuse to send files to a node if it detects
+     that that same node is engaged in a session with a Binkley in
+     another task (or on another workstation of the LAN).
+     - The screen can now be unblanked during a session. The
+     unblanking functionality can now also be selected: should the
+     screen unblank when a key is pressed, or whenever something
+     happens?
+     - BinkleyTerm is definitely dolphin-safe. No Bink has ever
+     killed a dolphin. (This is an undocumented feature, JC).
+     
+     Question time.
+     
+     (The following questions and answers reflect my
+     interpretation of the discussion, JC).
+     
+     Q: Could you please implement a file request limit based on
+     time as well?
+     A: Yes, we're working on it. It could have been in this
+     release, but we ran out of time.
+     
+     Q: Why does an .RSP-file need to be a file. Couldn't you send
+     a packet like D'Bridge ?
+     A: You can't always send a packet and expect the other side
+     to know that you've sent mail. Not all protocols support
+     sending more than 1 packet per session in each direction.
+     
+     Q: Can a BinkleyTerm user put a file on hold for a point that
+     is not his own without knowing the point's private net?
+     A: No. The reason why BinkleyTerm isn't fully 4D is that this
+     poses a problem with Opus 1.03. Wynn defined a 4D structure
+     in the hello-packet, but subsequently didn't use it himself.
+     Therefore, if we were to implement this (Bink hasn't changed
+     in this respect since 2.00), a point using BinkleyTerm would
+     pick up the mail destined for his boss. This was not
+     acceptable, because of the large number of nodes (a few
+     thousand) that were using barefoot Opera, and the release of
+     Opus 1.10 was far from imminent. Now that this problem has
+     been addressed in Opus 1.10, the importance of this argument
+     has obviously diminished, but we still don't think that the
+     number of nodes that would have to change over overnight is
+     sufficiently small yet. But we will address this problem in
+     the near future ("It'll probably be in the next release").
+     
+     Q: What do you think about EMSI?
+     A: The way we see it, EMSI should address 3 problems: we'd
+     like to see a novel way to update the nodelist, it would be
+     nice if two nodes could exchange all the mail for their
+     respective AKAs during a single session, and we'd like to be
+     able to talk to mainframes, that have front-end processors
+     requiring CRs between input records, as well as 7-bit data.
+     The first two are indeed addressed by EMSI as of now, but we
+     feel that the third-one is much more important, in view of
+     the fact that large companies have offered us (FidoNet) their
+     EMBBS 2-34                   Page 4                   20 Aug 1990
+
+
+     excess capacity for free. We're sure Chris and JoHo will work
+     with us towards a solution to this problem.
+     
+     
+     
+     Message Digest -- Henk Wevers
+     -----------------------------
+     
+     Henk is a professional crypto-analyst. He talked about the
+     MD4 method of message authentication, which was devised by an
+     American corporation with the cooperation of M.I.T.
+     
+     The algorythm creates a 128-bit (16-byte) fingerprint which
+     would take 2^128 computations to fake. Due to its simplicity,
+     MD4 is very fast. Henk provided sample source code in Pascal
+     and C (the files MD4PAS.ARC and MD4C.ARC are available from
+     2:295/27). He urges everyone to take a look at this, and to
+     propose a way to utilise it in FidoNet.
+     
+     Before this, or any other method of authentication, can be
+     used, we need to define exactly what the 'message text' is.
+     Kludge lines are certainly not a part of the message text in
+     this respect: they should be skipped when calculating the
+     message digest, because they can change as the message
+     progresses through the network. The problem is that there
+     isn't really a definition of what a kludge line really is.
+     Henk has been talking to Randy Bush about this, specifically
+     about the definition of a 'physical line'. This must be
+     solved first.
+     
+     
+     Edifact -- Henk Wevers
+     ----------------------
+     
+     The type 2 packet, as it is currently in use, has proven to
+     be problematic, in that many of its uses are too loosely
+     defined, and that too little flexibility is allowed for. We
+     therefore need a solid standard on message structure, for
+     which there are two well-known contenders: X.400 and Edifact.
+     The X.400 standard is very difficult to implement, so let's
+     concentrate on Edifact.
+     
+     Edifact is an entirely text-based (not necessarily ASCII)
+     message standard, which is very simple to implement. (As a
+     matter of fact, the commercial version of Dutchie already
+     supports Edifact.) The standard comprises specifications on
+     the message format and on the bundling of those messages.
+     
+     The bundling part of the standard is very straightforward:
+     messages are simply concatenated in a file to form a bundle.
+     As for the message format: a group of people planning to
+     exchange Edifact messages is free to define its own message
+     building blocks, in addition to those that are predefined in
+     the standard. The FTSC could be the body that maintains a
+     list of building blocks for use in FidoNet: a database of
+     centrally allocated building block definitions.
+     EMBBS 2-34                   Page 5                   20 Aug 1990
+
+
+     The character set in use in most Edifact implementations to
+     date is 7-bit ASCII, because of the wide range of platforms
+     the messages need to be processed on. The standard is already
+     in common use in the transportation, the medical and the
+     banking sectors.
+     
+     Edifact allows for the easy implementation of forms: a
+     company could send its customers an Edifact message
+     containing a form for them to fill out, to order certain
+     goods, for example. Likewise, an NC could send such a message
+     to an applicant for a node number. Form fields can be
+     mandatory or optional, conditional, repetitive, etc. This
+     implies that a message editor for Edifact looks more like a
+     form processor than like a 'conventional' message editor.
+     
+     This standard is not difficult to implement, and it'll gain
+     us a lot of credibility in the world at large.
+     
+     For more info on Edifact, please ask Henk Wevers in netmail
+     how to order a copy of the standard.
+     
+     
+     Echomail -- Vince Perriello
+     ---------------------------
+     
+     A brain storming among a few attendants during the coffee
+     break caused Vince to bring a subject up that had previously
+     been discussed by a subcommittee of the FTSC: a way to
+     distribute conferences without having to insert PATH and
+     SEEN-BY information (or its equivalent).
+     
+     Vince's version of this concept was based on the idea that
+     each node has a maximum of one uplink for a certain area, and
+     that a bit in the message header (like the file request bit,
+     which isn't used in echomail anyway) would specify whether a
+     message is on its way up in the topology, or on its way down.
+     
+     After a number of questions from the audience, this mechanism
+     was proven not to be immune against dupes, and it was agreed
+     that any type of conference distribution system without PATH
+     or SEEN-BY information should be.
+     
+     Bob pointed out that GroupMail actually does all the things
+     we want, and that it's a mystery why the GroupMail standard
+     hasn't been used more widely. The standard is published, and
+     there is no reason why groupmail processors could not be
+     written that support different compression programs than Arc.
+     
+     
+     
+     OK, so that's the first part. The rest of it will appear in the
+     next issue, or so I hope...
+     
+     
+     Jan Ceuleers (2:295/53)
+
+     -----------------------------------------------------------------
+     EMBBS 2-34                   Page 6                   20 Aug 1990
+
+
+     =================================================================
+                              SOFTWARE REVIEW
+     =================================================================
+
+
+     QSCRTerm, a new terminal program
+     By Jeroen van Drie
+     2:286/255.15@fidonet
+     
+     
+     I was browsing through one of the local BBS in my area and
+     somewhere in a file area I ran across a new and nice BBS user
+     utility, called QSCR. In a way, the terminal has two sources of
+     information instead of one; the usual terminal programs have the
+     phoneline, but QSCR also has a data- and index file which are on
+     your own disk. These data- and index files are created by the
+     sysop of a BBS, using his ANSI files. QSCR features a program,
+     called QSCRcomp which compiles any BBS' ANSI files into a format,
+     suitable for use by QSCRTerm, so that the users who use QSCRTerm
+     can use those datafiles and get the BBS' ANSI screens from their
+     own disk instead of from the line. This is lightning fast indeed.
+     Remote BBS operation, this way, becomes about as fast as local
+     BBS operation.
+     
+     That is the mayor and new feature of the QSCR Terminal program,
+     the terminal itself is telix/procomm like in operation and is
+     easy to use. It has no built-in protocols, knows Zmodem-Auto-
+     Download, reads from several widely used phone-directory files;
+     it has all the features a terminal program of today should have.
+     Well, if you are a sysop, get this program somewhere and test it
+     out, I think it's really worthwile. Although sysops of large BBS'
+     will notice the size of the data-files, your regular users won't
+     frown to lose 100Kb of diskspace for such a fast operation.
+     
+     These are the files:
+     
+     QSCRT116 ZIP    77457   8-11-90   4:35a
+     QSCRDDIR ZIP    14643   8-11-90   4:36a
+     QSCRC116 ZIP    22567   8-11-90   4:36a
+     
+     A packed user data package will compress well, as a datafile can
+     be something like 28129 bytes whereas the header and index files
+     can be something like 119701 and 1168 bytes.
+     
+     The Quick Screen Terminal package was written by Yaron Munz and
+     Ziv Haparnas from Prince software systems in Tel Aviv, Israel.
+     They can be reached at the Prince BBS, phoneumber (972)-3-523-
+     7299 and in fidonet at 2:403/120.0
+     
+     The program is shareware (with a 30 days trial period) and costs
+     $10.
+
+     -----------------------------------------------------------------
+     EMBBS 2-34                   Page 7                   20 Aug 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-34                   Page 8                   20 Aug 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200, 2400 and V.32, with MNP5 and V.42
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The Independent Mail System, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:25/100 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/255 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+     EMBBS 2-34                   Page 9                   20 Aug 1990
+
+
+           ++47-71-34304 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-34                   Page 10                  20 Aug 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/255.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-34                   Page 11                  20 Aug 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/255.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

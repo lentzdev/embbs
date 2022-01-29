@@ -1,0 +1,920 @@
+     Volume 2, Number 22                                   28 May 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        Finally... WorldPol  ......................................  2
+     3. NOTICES  .................................................. 13
+        Calendar of Events  ....................................... 13
+        EMBBS Distribution & Support Sites  ....................... 14
+        EMBBS Article Submission Guidelines  ...................... 16
+
+                                 - - - - -
+     EMBBS 2-22                   Page 1                   28 May 1990
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     The Editor's
+     By Jeroen van Drie
+     
+     Pablo  Kleinman,  the  Latin American FidoNet coordinator of node
+     4:900/101  proposes  and  explains  'WorldPol',  a global FidoNet
+     policy to you in this issue.
+     
+     Personally  I  can agree on all but one point, ie the position of
+     points.  I  myself  am a point system within the FidoNet network,
+     and  although  a point is an undefined fidonet unit, it certainly
+     is  not  comparable  to a user in that respect that a point is on
+     the  same  side  as  the  sysop  where  the  actual communicative
+     possibilities   are   concerned:  using  the  fidonet  compatible
+     software.  I myself run a night BBS, am online during ZMH, have a
+     fully  compatible fidonet setup (I won't swear on that:-) yet the
+     only  thing  I  don't  have (and which I do not need as yet) is a
+     fidonet  address which is just that what would give me rights and
+     duties sysops have.
+     
+     So  what  do  we define as a point? the technical other than 0 in
+     the  point  field, and the not-appearing in the nodelist. There's
+     not  much  more  to define apart from that, because 'point' is an
+     equal  generalisation  as 'The Dutch'. As dupes are detected, the
+     sysop is blamed. Not the NC, not the RC, not the ZC, not the NEC,
+     not TurboC, but the sysop. There is one exception to that; if the
+     point  field  is  filled,  the  point  is  blamed. Yet points are
+     defined  as  being  users  (without  any legal status) and can go
+     ahaid  producing  dupes  as  they  have  no  official  status, no
+     responsability other than those which society implies by default,
+     though  de-facto, they are blamed and recognised as the origin of
+     the  dupes.  Such  differences between policy and actual everyday
+     practise  need to be taken into consideration in order to have an
+     effective policy.
+     
+     These (all IMHO) are my personal remarks, not EMBBS's views.
+     
+     Have a nice week.
+
+     -----------------------------------------------------------------
+     EMBBS 2-22                   Page 2                   28 May 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Pablo Kleinman (4:900/101)
+     Latin American FidoNet Coordinator
+     May 24, 1990
+     
+                            " Finally... WorldPol "
+     
+         This month is the first aniversary of Zone FOUR's creation
+     as such, and it's been almost a year too, since the vote that
+     instated POLICY4 as the network's official policy document.
+     
+         During all this time, many things occurred in the network:
+     it grew intensively outside of North America, and democratic
+     elections for Coordinators were held succesfully, all over the
+     world.
+     
+         POLICY4 was conceived as a strict and very -extremely-
+     general policy to cover all the zones within FidoNet. But the
+     results were not what it's promoters expected: it became an
+     obstacle in many cases, especially outside of Zone ONE, and it's
+     anti-democratic concept of administration was discredited by
+     simple reality.
+     
+         For the ones like me, that opposed it from the beginning,
+     the process of developing an alternative begun at the very
+     moment of its approval. Jason Steck in Zone ONE wrote a POLICY5
+     draft, Ron Dwight in Zone TWO also produced another draft, and
+     myself in Zone FOUR, wrote the first version of WorldPol back in
+     October of last year.
+     
+         WorldPol introduced the idea of an "umbrella" international
+     policy ocument establishing the basic rules for FidoNet,
+     empowering each Zone to establish its own policy document,
+     according to its needs and customs.
+     
+         A few minutes ago, the fourth revision of WorldPol was
+     published, and as the current policy document states, I begun to
+     ask all the Region Coordinators to concede a new referendum to
+     decide wether POLICY4 should be replaced by WorldPol.
+     
+         Here follows the text of the proposed World Policy Document
+     for FidoNet (version 1d), published on May 24, 1990. Please note
+     that it's about one fifth the size of POLICY4.
+     
+         Thanks for your time reading it.
+     
+     ----------------------------------------------------------------
+     
+     
+     
+     
+     
+     EMBBS 2-22                   Page 3                   28 May 1990
+
+
+                 FidoNet Worldwide Policy Document         Version 1d
+                                                         May 24, 1990
+     
+       This Worldwide Policy document has been released for vote by
+     the Coordinator structure and is not yet in force.
+     
+     
+     1 FidoNet
+     
+       This document establishes an international (inter-zonal)
+     policy for sysops who are members of the FidoNet organization of
+     bulletin board systems worldwide.  FidoNet is defined by a list
+     of nodes (NodeList) issued on a weekly basis by each of the Zone
+     Coordinators, on behalf of the International Coordinator.
+     
+       Each FidoNet Zone is authorized to issue its own policy
+     document, according to its own needs and customs.  This
+     International Policy, sets general rules which must be specified
+     -and may not be contradicted- by the Zone Policies.
+     
+       Regions and local Networks may also issue their own policies,
+     provided such policies do not contradict this International
+     Policy or the respective Zone's policy.
+     
+     
+     1.1 Overview
+     
+       FidoNet is an amateur electronic mail system.
+     As such, all of its participants and operators are unpaid
+     volunteers. From its nearly beginning in 1984, as a few friends
+     swapping messages back and forth mainly in North America, it
+     consists now of an International community of more than seven
+     thousand systems in six continents.
+     
+       FidoNet is not a common carrier or a value-added service
+     network and is a public network only as much as the independent,
+     constituent nodes may individually provide public access to the
+     network on their system.
+     
+       FidoNet exists to provide electronic mail services to its
+     member sysops.
+     To efficiently provide such services, various structure and
+     control mechanisms are necessary. The structure is organized
+     into multiple nets, with decentralized administration.
+     
+       This document describes all of the procedures at the
+     international level of FidoNet, as well as some general rules
+     for the lower levels (intra-zonal), developed to manage the
+     network.
+     Authorities in the international level not defined by this
+     document, shall be defined by the Zone Coordinators Council and
+     the International Coordinator.
+     
+     
+     2 Language
+     
+     EMBBS 2-22                   Page 4                   28 May 1990
+
+
+       Each zone has the right to determine its own official
+     language.
+     
+       At the international (inter-zonal) level, for practical
+     purposes, FidoNet adopts English as its official language. All
+     the FidoNet documents issued at the international level must
+     exist in English. Translation into other languages is
+     encouraged.
+     
+     
+     3 Organization
+     
+       The organizational structure of FidoNet, has been developed to
+     distribute the administration and control of FidoNet, to the
+     lowest possible level, while still allowing for coordinated
+     action over the entire system.
+       Effective administration is made possible by operating in a
+     top-down manner.
+       This means, that a person at any given level is responsible to
+     the level above, and responsible for administrating the level
+     below.
+     
+       If a person at any level above sysop is unable to properly
+     perform their duties, the person at the next level may replace
+     them.  For example, if a Region Coordinator fails to perform,
+     the Zone Coordinator may cause the Coordinator to be replaced.
+     Coordinators may also be removed by a majority vote of the level
+     below. For example, if network Coordinators in a region lose
+     faith in the ability of a Region Coordinator to effectively
+     perform, they may vote to have a new Coordinator appointed.
+     
+     
+     3.1 International Coordinator
+     
+       The International Coordinator (IC) is the Executive Officer of
+     FidoNet.
+     This is the highest authority of the network's top-down
+     organization and coordinates the joint production of the master
+     nodelist by the Zone Coordinators.
+     
+       The International Coordinator is selected by unanimous vote of
+     the Zone Coordinators, and removed by a majority vote of the
+     Zone Coordinators.
+     
+     
+     3.2 Zone Coordinator Council
+     
+       The Zone Coordinator Council (ZCC) consists of the Zone
+     Coordinators and the International Coordinator, each having a
+     single vote; in the event of a ZCC vote tie, the International
+     Coordinator may cast an additional vote.
+     
+       The Zone Coordinator Council is the legislative body of
+     FidoNet, it represents each of the zones in FidoNet.
+     
+       The International Coordinator must obtain the approval of the
+     EMBBS 2-22                   Page 5                   28 May 1990
+
+
+     ZCC before creating new Zones.
+     
+     
+     3.3 Zones and Zone Coordinators
+     
+       A zone is a geographic area containing one or many regions,
+     covering one or more countries.
+     
+       The Zone Coordinator is the Executive Officer of the Zone, and
+     the zone's representative to the other zones.
+     
+       The Zone Coordinator compiles the nodelists from all of the
+     regions in the zone, creates a master nodelist and a difference
+     file, which is then distributed over FidoNet within the zone. A
+     Zone Coordinator does not perform message-forwarding services
+     for any nodes in the zone, although the Zone Coordinator is
+     responsible for the formation and/or administration of one or
+     more zone-gates to provide interzone mail facilities.
+     
+       The method used for selection of Zone coordinators is left to
+     the  discretion of the relevant Zone Policy.  In the absence of
+     a Zone Policy selection method, Zone Coordinators are elected
+     and removed by a majority  vote of the Region Coordinators in
+     the Zone.
+     
+     
+     3.4 Regions and Region Coordinators
+     
+       A Region is a well-defined geographic area containing nodes
+     which may or may not be combined into networks. A typical Region
+     will contain many nodes in networks, and a few independent nodes
+     which are not part of the network.
+     
+       The Region Coordinator maintains the list of independent nodes
+     in the region, and accepts nodelists from the Network
+     Coordinators in the Region.
+     These are compiled to create a regional nodelist, which is sent
+     to the Zone Coordinator. A Region Coordinator may perform
+     message-forwarding services for any nodes in the region, but is
+     not forced to.
+     
+       Region Coordinators are elected and removed by a majority vote
+     of the Network Coordinators in the Region.
+       The method used for selection of Regional coordinators is left
+     to the discretion of the relevant Zone or Region Policy.  In the
+     absence of such a policy selection method, Region Coordinators
+     are elected and removed by a majority vote of the NCs in the
+     Region.
+     
+     
+     3.5 Networks and Network Coordinators
+     
+       A network is a group of nodes, normally in a local geographic
+     area. Networks coordinate their mail activity to decrease cost.
+     
+       The Network Coordinator is responsible for maintaining the
+     EMBBS 2-22                   Page 6                   28 May 1990
+
+
+     list of nodes for the network, and for forwarding netmail sent
+     to members of the network from other FidoNet nodes. The Network
+     Coordinator may make arrangements to handle outgoing netmail,
+     but is not required to do so.
+     
+       The method used for selection of Network coordinators is left
+     to the discretion of the relevant Zone/Region/Net Policy.  In
+     the absence of such a policy selection method, Network
+     Coordinators are elected and removed by a majority vote of the
+     Nodes in the Network.
+     
+     
+     3.5.1  Network Routing Hubs
+     
+       Network Routing Hubs exist only in some networks. They may be
+     appointed by the Network Coordinator, in order to assist the
+     management (especially routing tasks) of the network.
+     
+     
+     3.6 Individual systems (Nodes)
+     
+       The smallest subdivision of FidoNet is the individual system,
+     corresponding to a single entry in the nodelist. The system
+     operator (SysOp) formulates a policy for running the board and
+     dealing with the users. The sysop must mesh with the rest of the
+     FidoNet system to receive and send mail, and the local policy
+     must be consistent with other levels of FidoNet.
+     
+     
+     3.6.1 Users of an individual system
+     
+       The sysop is responsible for the actions of any user when they
+     affect the rest of FidoNet (i.e. if the user is annoying, the
+     sysop is annoying). The users have no rights under this policy
+     document.
+     
+     
+     3.6.2 Points
+     
+       A point is a system that is not in the nodelist, but
+     communicates with FidoNet through a node defined to as bossnode.
+     A point is generally regarded in the same manner as a user and,
+     for example, the bossnode is responsible for mail from the
+     point.
+     Points are addressed using the bossnode's nodelist address; for
+     example, a point system with a bossnode of 125/111 might be
+     known as 125/111.6. Mail sent to the point will be sent to the
+     bossnode, which then routes it to the point.
+     
+       Point operators are not FidoNet members, they are only users
+     of a FidoNet node, as any other regular user; they have no
+     rights under this policy document.
+     
+     
+     4 General Procedures for All Coordinators
+     
+     EMBBS 2-22                   Page 7                   28 May 1990
+
+
+     4.1 Making Available Difference Files and Nodelist
+     
+       Each Coordinator is responsible for obtaining and making
+     available for file request and download by users, on a weekly
+     basis, nodelist difference files and complete nodelists.
+     
+     
+     4.2 Processing Nodelist Changes and Passing Them Upstream
+     
+       Each Coordinator is responsible for obtaining nodelist
+     information from the level below, processing it, and passing the
+     results to the level above.
+     The timing of this process is determined by the requirements
+     imposed by the level above.
+     
+     
+     4.3 Ensure the Latest Policy is Available
+     
+       A Coordinator is responsible to make the current version of
+     the International Policy available to the level below, and to
+     encourage familiarity with it.
+     
+     
+     4.4 Minimize the Number of Hats Worn
+     
+       Coordinators are encouraged to limit the number of
+     FidoNet-related Coordinator functions they perform. A
+     Coordinator who holds two different positions, compromises the
+     appeal process. For example, is the Network Coordinator is also
+     the Region Coordinator, sysops in that network are denied one
+     level of appeal.
+     
+       Multiple hats are also discouraged due to the difficulty of
+     replacing services when a coordinator leaves the net.
+     
+     4.5 Be a Member of the Area Administered
+     
+       A Coordinator must be a member of the area administered. This
+     is, a Network Coordinator must be a member of that network by
+     virtue of geography.
+     A Region Coordinator must be either a member of a network in the
+     region, or an independent in a region.
+     
+     
+     4.6 Encourage New Sysops to Enter FidoNet
+     
+       A Coordinator is encouraged to operate a public bulletin board
+     system which is freely available for the purpose of distributing
+     Policy and Nodelists to potential new sysops. Dissemination of
+     this information to persons who are potential FidoNet sysops is
+     important to the growth of FidoNet, and Coordinators should
+     encourage development of new systems.
+     
+     
+     4.7 Tradition and Precedent
+     
+     EMBBS 2-22                   Page 8                   28 May 1990
+
+
+       A Coordinator is not bound by the practices of predecessor.
+     However, it must be clear that Coordinators are bound by all
+     requirements of this document, both as FidoNet sysops and as
+     Coordinators. The holding of a Coordinator title does not grant
+     license to annoy others or to flaunt policy.
+     
+     
+     4.8 Technical Management
+     
+       The primary responsibility of any Coordinator is technical
+     management of network operations. Decisions SHOULD be made only
+     on technical grounds. A Coordinator has the responsibility to
+     act as objectively as possible; objectivity must be considered
+     an essential factor when making a decision.
+     
+     
+     4.9 Exclusivity of Zone Mail Hour
+     
+       Zone Mail Hour is the heart of FidoNet, as this is when
+     network mail is passed between systems.  Any system which wishes
+     to be a part of FidoNet must be able to receive mail during this
+     time using the protocol defined in the current FidoNet Technical
+     Standards Committee publication (FTS-0001 at this writing).  It
+     is permissible to have greater capability (for example, to
+     support additional protocols or extended mail hours), but the
+     minimum requirement is FTS-0001 capability during this one hour
+     of the day.
+     
+       This time is exclusively reserved for netmail.  Many phone
+     systems charge on a per-call basis, regardless of whether a
+     connect, no connect, or busy signal is encountered.  For this
+     reason, any activity other than normal network mail processing
+     that ties up a system during ZMH is considered annoying
+     behavior.
+       User (BBS) access to a system is prohibited during ZMH.
+     
+       Zone Mail Hour will be defined by each Zone Policy. In the
+     absence of a Zone Policy, it will be defined by the Zone
+     Coordinator.
+     
+     
+     5. Election and Referendum Procedures
+     
+       Any election or referendum at any level of FidoNet, must be
+     democratic.
+       Each zone will issue its own election procedures, which must
+     be approved by the Zone Coordinator Council before
+     implementation.
+     
+       If a worldwide election, with the participation of all zones,
+     is to be held, the Zone Coordinator Council will determine the
+     election procedures.
+     
+     
+     6 Policy Referenda
+     
+     EMBBS 2-22                   Page 9                   28 May 1990
+
+
+     6.1 International Policy
+     
+       A referendum on International Policy modification is invoked
+     by the International Coordinator upon request from a majority of
+     the Zone Coordinators, or a majority of the Region Coordinators
+     of all zones, or a majority of the Network Coordinators of all
+     zones.
+     
+       All the members ao oni    before the election is called.
+     
+     
+     6.2 Zone Policy
+     
+       A referendum on Zone Policy modification is invoked by the
+     Zone Coordinator, by a majority vote of the Region Coordinators
+     in the zone, or by a majority vote of the Network Coordinators
+     in the zone.
+     
+       All the members of     p  Ê ¶p ù @tz  É þ  @ 	 ` ¶p  ÿ`tz  ÿÿ   o !&'O ¶p ø €tz   o !&'O ¶p ø  tzCÙ    ™ 4;<y ¶p ø Àtzv)   the zone are entitled to vote on a Zone
+     Policy referendum, which is to be held according to the
+     procedures described on the Zone Policy. If such document does
+     not exist, the procedures will be determined by the Zone
+     Coordinator with the approval of the Zone Coordinator Council.
+     
+       The formulation of Region and Network Policy documents is
+     encouraged, and must be regulated by the Zone Policy documents
+     in each zone.
+     
+     
+     7 Resolution of Disputes
+     
+       The FidoNet judicial philosophy can be summed up in two rules:
+     
+            1) Thou shalt not excessively annoy others.
+     
+            2) Thou shalt not become excessively annoyed.
+     
+       The parties involved in a dispute are encouraged to solve
+     their problems directly, without the intervention of a
+     Coordinator.
+     
+     
+     7.1 Mediation Requests
+     
+       Any of the parties involved may request the intervention of
+     the respective Coordinator: Network Coordinator if a dispute
+     between members of the same network, Region Coordinator if a
+     dispute between members of different networks on the same
+     region; Zone Coordinator if a dispute between members of
+  licy modification is invoked
+     by the International Coordinator upon request from a majority of
+     the Zone Coordinators, or a majority of the Region Coordinators
+     of all zones, or a majority of the Network Coordinators of all
+     zones.
+     
+       All the members of FidoNet are entitled to vote on an
+     International Policy referendum, which is to be held according
+     to the procedures described by the Zone Coordinator Council
+     before the election is called.
+     
+     
+    olve a dispute, may name a third
+     party to act as "mediator", provided the parties involved in the
+     dispute agree.
+     
+     7.2 Appealing to a Mediator's Decision
+     
+       A mediator's decision may be appealed to the immediately
+     superior level if considered unfair: Region Coordinators handle
+     appeals from decisions made by Network Coordinators;  Zone
+     Coordinators handle appeals from decision made by Region
+     Coordinators; The International Coordinator handles appeals from
+     decisions made by the Zone Coordinators; and the Zone
+     Coordinator Council will handle appeals from decisions made by
+     the International Coordinator,  being the Zone Coordinator
+     Council's resolutions, unappealable.
+     
+       For appealing to a decision made by a third person named by a
+     Coordinator to act as mediator, it will be as if the Coordinator
+     made the resolution and the previously enumerated sequence of
+     appealing will be appropriate.
+     
+       For appealing to a decision made by a mediator, the same terms
+     and procedures as for any Mediation Request apply.
+     
+     
+     7.3 Statute of Limitations
+     
+       A mediation request may not be filed more than 60 days after
+     the date of discovery of the source of the infraction, either by
+     admission or technical discovery of the source of an infraction,
+     either by admission or technical evidence. Mediation requests
+     may not be filed more than 120 days after the incident, unless
+     they involve suspected unlawful behavior.
+     
+     
+     7.4 Echomail
+     
+       Each FidoNet Zone is encouraged to establish it's Zone Policy
+     concerning the manner of handling Echomail and the resolution of
+     disputes arising from such distribution.
+     
+     
+     8 "CCCC": Comments, Changes, Credits and Copyright!
+     
+     This section will be automatically removed upon approval of this
+     document.
+     
+     
+     8.1 Comments on Implementation
+     
+       This document is not final; FidoNet sysops are encouraged to
+     make suggestions for changes, as well as comments, which can be
+     EMBBS 2-22                   Page 11                  28 May 1990
+
+
+     addressed to FidoNet node 4:4/50 (The Policy5 Project).
+     
+       This World Policy will be adopted according to the mechanisms
+     provided on the present policy document.
+     
+     
+     8.2 Changes from Version 1 to Version 1b
+     
+       * Better definition of the role of the International
+         Coordinator; more power given to the IC.
+       * The IC can now vote on the ZCC and votes twice to untie an
+         election if necessary.
+       * Bug fixed on point definitions.
+       * Changed the term "vote of trust" to "vote of confidence".
+       * Definition and acceptance of resolution of disputes not
+         based on technical grounds.
+       * Region Coordinators and Network Coordinators may now request
+         a referendum on International Policy too; modification on
+         ZCC referendum request.
+       * Modification on IC election.
+       * Modification on policy referendums; definition of Region and
+         Network Policy referendums added.
+     
+     8.3 Changes from Version 1b to Version 1c
+     
+       * Several syntactic corrections made.
+       * Drastic reduction on the rules affecting administration
+         internal to each zone.
+       * Elimination of the "FidoNet Vote Casting Policy" idea.
+       * More independence granted to zones for regulation.
+     
+     
+     8.4 Changes from Version 1c to Version 1d
+     
+       * More flexible policy regarding elections of coordinators.
+       * Region Coordinators are now "officially allowed" to forward
+         net-mail.
+       * Elimination of the paragraph referring to "Politics in
+         FidoNet" as well as some related references.
+       * Inclusion of Zone Mail hour and FTS-0001 definitions.
+       * "Polishing" of some parts of the text.
+     
+     8.4 Credits
+     
+       Here I list the names of some individuals that had some direct
+     or indirect influence in the shaping of this text (in
+     alphabetical order):
+     
+                         - Raul Artaza (4:900/106)
+                         - Bill Bolton (3:711/403)
+                         - Steve Bonine (1:115/777)
+                         - Randy Bush  (1:105/6)
+                         - Guillermo Coen (4:900/110)
+                         - Daniel Docekal (2:42/0)
+                         - Alejandro Hopkins (4:900/211)
+                         - Tom Jennings (1:125/111)
+     EMBBS 2-22                   Page 12                  28 May 1990
+
+
+                         - Rick Moore (1:115/333)
+                         - George Peace (1:270/101)
+                         - Jan Stozek (2:480/2)
+                         - Matt Whelan (3:712/627)
+     
+       Special thanks go to Ron Dwight (2:515/1), author of most of
+     the changes of the last two versions.
+     
+     8.5 Temporary Copyright
+     
+     This document is Copyright (C) 1990 by Pablo Kleinman.
+     Todos los Derechos Reservados / All Rights Reserved.
+     
+     Disclaimer: This document was written by a Spanish-speaking
+     individual, that uses English as a second language. If you find
+     any semantic, morphologic or syntactic errors, please forgive.
+     
+     TOTAL: 3018 WORDS!
+
+     -----------------------------------------------------------------
+     EMBBS 2-22                   Page 13                  28 May 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     12 Jun 1990
+        On  this  date it will be five years ago that FidoNet switched
+        to  multiple  nets, ie. numbers in the form 'net/node' instead
+        of just 'node'.  Things would just grow out of hand otherwise.
+     
+     13 Jul 1990 - 16 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        Friday   13th: Evening, registration.
+        Saturday 14th: 1st day of real conference.
+        Sunday   15th: 2nd day of real conference.
+        Monday   16th: Morning, going home.
+        For detailed information and registration forms see EMBBS 2-20
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 2-22                   Page 14                  28 May 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+     EMBBS 2-22                   Page 15                  28 May 1990
+
+
+           ++47-71-34304 at 1200 and 2400
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-22                   Page 16                  28 May 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/201.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/201)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-22                   Page 17                  28 May 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/201.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

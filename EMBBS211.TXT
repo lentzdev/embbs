@@ -1,0 +1,470 @@
+     Volume 2, Number 11                                 12 March 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        The DO-IT-YOURSELF Intel 80387 KIT  .......................  1
+     2. SOFTWARE REVIEW  ..........................................  3
+        The E! Programmers Editor  ................................  3
+     3. NOTICES  ..................................................  5
+        Calendar of Events  .......................................  5
+        EMBBS Distribution & Support Sites  .......................  6
+        EMBBS Article Submission Guidelines  ......................  8
+
+                                 - - - - -
+     EMBBS 2-11                   Page 1                   12 Mar 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+            The DO-IT-YOURSELF Intel 80387 KIT !!!!!!!!
+     
+                 (Now with Microwave Instructions)
+     
+                 Copyrighted 1989 by Paul Carroll
+     
+     
+     Congratulations  on  purchasing  this  fine  kit from the CARROLL
+     LIMITED  COMPANY(1).  This  80387  chip  is  designed(2)  to give
+     years  of  pleasure.  This  kit  contains the purest silicon from
+     Silicon  Valley(3)  to  help  you  build  the fastest and bestest
+     floating  point  processor  possible.  Just  follow the following
+     easy instructions:
+     
+     1.  Preheat  oven to 1600 degrees Centigrade (that's 3000 degrees
+     Fahrenheit  for  those of you who dropped out of chemistry). Wait
+     5 minutes.
+     
+     2.  Put  packet of PURE SILICON in ceramic crucible or, if one is
+     not handy, in your wife's favorite sauce pan.
+     
+     3.  Place  crucible  or pan in oven on middle tray. Bake well for
+     30  minutes  or until the PURE SILICON has the consistency of hot
+     chocolate.  WARNING:  It is NOT hot chocolate and is not intended
+     for internal consumption.
+     
+     4.  Pour  PURE  SILICON  mixture  into  patented(4)  wafer  mold.
+     Spread  mixture  evenly,  removing  any  lumps.  Wait 2 hours for
+     wafer to harden.
+     
+     5.  Sand  surface  of  wafer  until  it  is  smooth to the touch.
+     Number 5 grit is recommended.
+     
+     6.  Divide  wafer  into  a series of rectangles, each of which is
+     3.5  centimeters  by  1.2  centimeters.  Accuracy counts, so make
+     those lines straight!
+     
+     7.  Etch  the  easy-to-follow schematics for the Intel 80387 chip
+     onto  the  wafer  in  each  rectangle.  Each  rectangle  has  the
+     potential  to  be  an  80387  processor,  so be sure to make more
+     than  one  in  case  problems  develop. Remember, the smaller the
+     pattern,  the  faster the chip, so don't be afraid to go for real
+     detail. A magnifying glass may be useful.
+     
+     8.  Cut  rectangles  from  the wafer, making sure that you follow
+     the  lines.  Scissors may be used, although razor blades are also
+     useful(5).   Safety   scissors   are   recommended  for  software
+     engineers if this is their first hardware project.
+     
+     9.  Place  rectangle in handy plastic pin-out package(6). Be sure
+     to  get  the  rectangle  positioned in the middle of the package.
+     EMBBS 2-11                   Page 2                   12 Mar 1990
+
+
+     Wire  pins  to  indicated  areas on the 80387 schematics. You may
+     replace  the  supplied  18-gauge wire with a finer wire if you so
+     desire.
+     
+     10.  Glue  package  top onto package bottom, making sure that the
+     top  fits  firmly. Take your time. Remember, neatness counts! Now
+     is  not  the  time  to  make an unsightly error. Wait for glue to
+     dry (24 hours is recommended unless super glue is used(7))
+     
+     THAT'S IT!!!
+     
+     You  are  now  the  proud owner of an Intel 80387 processor(8)!!!
+     No  one  will  be  able  to tell the difference between it and an
+     actual chip(9)!!! Plug this chip into your PC and away you go!
+     
+     Be  sure  to  look  for  the  Do-It-YOURSELF  Intel 80386SX / AMD
+     80286 kit soon to be in stores near you!
+     
+     
+     
+     Microwave Instructions
+     
+     1.  Place  PURE  SILICON  packet  in  microwave  oven.  Set  heat
+     setting to ultra-ultra-high. Set time limit for 3 minutes.
+     
+     2.  Place  microwave oven in conventional oven on lower tray. Set
+     oven  temperature  to  1600  degrees  Centigrade.  Continue  with
+     normal instructions at step 3.
+     
+     Notes: 1) Only on weekends or between 6pm to 9pm.
+     
+     2) Not by us, of course.
+     
+     3)  Okay,  so  it  isn't  from  Silicon  Valley,  but  it is from
+     California(10).
+     
+     4) By someone, I'm sure.
+     
+     5) Especially when things go really wrong.
+     
+     6)  What,  you  don't have a handy plastic pin-out package? Shame
+     on you!
+     
+     7)  In  which  case,  the  package  is  probably  glued  to  your
+     fingers.  That's  okay,  it  should make digital calculations run
+     faster.
+     
+     8) Or at least a close facsimile.
+     
+     9) Unless they look, of course.
+     
+     10) Okay, so it isn't from California, but it is DIRT.
+
+     -----------------------------------------------------------------
+     EMBBS 2-11                   Page 3                   12 Mar 1990
+
+
+     =================================================================
+                              SOFTWARE REVIEW
+     =================================================================
+
+
+     The E! Programmers Editor
+     By Gerhard Hoogterp
+     FidoNet 2:286/201.6 or 2:283/400.2
+     
+     Well,  at  last  I found my editor.. the one that suits me best..
+     after  trying lots of them. Its name is simply E! and it has some
+     very  nice  features.  Not  to  mention the amount of wistles and
+     bells to keep live exiting...;-)
+     
+     Let's  start  with  the  basic  features which made me interested
+     enough  to  take a look at this beauty. It's a multi file editor,
+     up  to  6  windows on the screen at once (But more in memory). It
+     has  basic  wordprocessing features like word-wrap and justify (I
+     wrote  this  text with it for example), block functions, compiler
+     support and much more.
+     
+     Anybody who ever used an editor while programming knows that it's
+     very  handy  to  have  more than one file available at a time. It
+     makes  the  swapping  between files faster and with cut and paste
+     options  between the files its much easier to change something in
+     a  library  or  to  lookup  the usage info of a certain procedure
+     or  function call. And together with the wordprocessing functions
+     it's simple to re-arrange documentation.
+     
+     But  unto this points there's nothing really new.. there are more
+     programs  which can do exacly the same. The real power of E! lies
+     in the way one can customise it to his own style and taste.
+     
+     First  there  are  profile  files.  This is a file with a certain
+     default  installation. It's always saved in the current directory
+     and  when E! is fired up it first searches this directory for the
+     profile.  If  it's  not  found it takes the standard profile from
+     its   own  directory.  This  way  it's  simple  to  make  special
+     installations  for  for  example  a  C  or  Pascal  project  or a
+     wordprocessing directory. Of course one can select any profile at
+     any time and every window can have its own profile.
+     
+     Second  it's possible to re-define the keyboard, to put macros or
+     programs under a key, or to put an E! function under another than
+     the default key..
+     
+     But  the  real  power  is  in  the  EPI.  E!  has a real built in
+     programming  language  like  for  example  EMACS. E! was designed
+     around  an  interrupt  driver.  One can use this interrupt driver
+     from in one's own programs which should be called from within E!.
+     This  makes  extending E! with special functions and options very
+     simple  and  it  can be done through a program in the programming
+     language  which  the  user  prefers  and/or  uses already. Such a
+     program  can  be put under any key, making it virtually a part of
+     E! itself..
+     
+     EMBBS 2-11                   Page 4                   12 Mar 1990
+
+
+     Of  course  there's  also  a  build  in  macro ability and even a
+     program  to translate a macro to plain english and back so it can
+     be edited or changed.
+     
+     The  compiler  support  of E! is rather good. It understands most
+     commonly  used  styles  of  error  messages  and tries to put the
+     cursor  on  the  line  which generated the error. If there's more
+     than  one  error  it  builds  an  internal  list and one can jump
+     between  the  errors.  If it doesn't recognice the error style it
+     reads  the  error  file  into  a  window  so the user can see for
+     himself.  I've  used  it  with Turbo pascal and everything worked
+     quite excellent. (Only missed Borlands built in debugger...;-)
+     
+     Well, there's more.. much more.. but you should see for yourself.
+     Of  course  there are some minor points as well.. For example, E!
+     knows  two methods of defining a block for example, and of course
+     one  always  uses  the wrong method for the intended operation...
+     But  most  of  these lesser points are minor details. It's a real
+     full blown editor which one cannot learn in half an hour... There
+     are no windows.. (well, write them yourself if you want them..;-)
+     It's  all  single  key  commands.  But it's worth the troubles of
+     learning yet an other editor!
+     
+     I've  only seen it on one BBS in holland, but I will upload it to
+     the EMBBS HeadQuarters too. So it should be available there soon.
+     
+     The  program  was  written by Patrick Philippot, a french (likely
+     IBM)  programmer  and it the program is distributed as shareware.
+     He  only  gives the address of his representative for US & Canada
+     though.
+
+     -----------------------------------------------------------------
+     EMBBS 2-11                   Page 5                   12 Mar 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     17 Mar 1990
+        Opus CBCS 1.10 release date - really?  At last!
+     
+     12 Jun 1990
+        On  this  date it will be five years ago that FidoNet switched
+        to  multiple  nets, ie. numbers in the form 'net/node' instead
+        of just 'node'.  Things would just grow out of hand otherwise.
+     
+     12 Jul 1990 - 15 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        Thursday 12th: Evening, registration.
+        Friday   13th: 1st day of real conference.
+        Saturday 14th: 2nd day of real conference.
+        Sunday   15th: Morning, going home.
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 2-11                   Page 6                   12 Mar 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+     EMBBS 2-11                   Page 7                   12 Mar 1990
+
+
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-11                   Page 8                   12 Mar 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/201.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/201)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-11                   Page 9                   12 Mar 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/201.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

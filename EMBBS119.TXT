@@ -1,0 +1,423 @@
+     Volume 1, Number 19                              13 November 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        Transputers, Buildingstone of the Future - Part IV  .......  2
+        The Forth Programming Language - Part III  ................  4
+     3. NOTICES  ..................................................  7
+        Calendar of Events  .......................................  7
+        EMBBS Distribution & Support Sites  .......................  8
+
+                                 - - - - -
+     EMBBS 1-19                   Page 1                   13 Nov 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     I  wonder  when  we  will be able to welcome the first BBS and/or
+     FidoNet  node in the DDR?  Perhaps a bit premature, talking about
+     that, you think?  We'll see, all in good time....
+     
+     As you might have noticed, we're still in desperate need for more
+     submissions....  We  can't  do  it  all by ourselves. We can do a
+     lot, but really need some help from you guys!
+     
+     Ahyes,  sysops:  don't forget to vote on the IFNA resolution!!
+     All information is published in the first lines of the nodelist.
+     Closing date is november 30th, and no vote is a NO vote....
+
+     -----------------------------------------------------------------
+     EMBBS 1-19                   Page 2                   13 Nov 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Transputers Part IV - The Process Scheduler.
+     By Joost Voorhaar
+     FidoNet 2:286/201.13
+     
+     This  is  the final article that handles about that amazing small
+     black  box  called  'Transputer'. There might be a lot more to be
+     told about this subject, but I guess I will have given you enough
+     to  think  about  already.  Maybe  you got interested, maybe not.
+     Since  I didn't get any response on these articles, I assume that
+     you didn't dislike it... (how's that for human trust?).
+     
+     There's  one  very important piece in a transputer I haven't told
+     about  yet.  We've  had a look at the processor, the RAM, and the
+     links.  The  memory  interface  is  not  very sensational, reason
+     enough  to  ignore  it  for now. No, I 'm gone tell you about the
+     process  scheduler,  a  very  interesting  piece of hardware that
+     speeds up the transputer significantly.
+     
+     Most small systems have only one processor. That processor has to
+     do  a  lot  of  different  things.  In  some cases, there is some
+     external  hardware  support for the processor that takes over the
+     most  time-expensive  tasks.  These  tasks mostly have to do with
+     I/O.  The  most  expensive  task  remaining is the task-switcher.
+     This  is  a  piece  of  software  that switches between the other
+     tasks  so  that  it looks like all tasks run simultaneously. When
+     using  a  "normal"  processor,  this  results  in a lot of system
+     overhead, since there has to be done a lot of work before another
+     task  can be run without overwriting all kind of important stuff.
+     The  use  of  pointers  makes  this  process  rather  easy  for a
+     transputer.  The designers must even have found this such an easy
+     task,  that  they  decided  to  replace the software by a special
+     piece of hardware,  the process scheduler.
+     
+     There  are many ways a computersystem can handle multiprocessing.
+     In  a  transputer, there are two linked lists. A linked list is a
+     list  of  records,  connected  with  pointers.  In  the case of a
+     transputer,  these  records  consists  of  the  workspace and the
+     pointers  of  a  process.  The  workspace  pointer  points in the
+     current  process.  As  soon  as  the  process  scheduler's  timer
+     triggers,  the  current  instruction is terminated, the registers
+     are  saved  and  the  workspace  pointer  will be set to the next
+     record in the list.
+     
+     A  process  can  have  the  priority  zero or the priority one. A
+     process that has a priority level of zero is triggered by a timer
+     called "Clock0". A priority-level-one-process is triggered by the
+     other  timer called "Clock1". Processes with a priority level one
+     can be terminated after each instruction by a level-zero process.
+     The  level-zero  processes  cannot  be interrupted by a level one
+     process.   Clock0  is  triggered  every  microsecond,  clock1  is
+     triggered every 64 microseconds...
+     EMBBS 1-19                   Page 3                   13 Nov 1989
+
+
+     Well,   there's   nothing   more  I  wanted  to  tell  you  about
+     transputers...  Although,  you  might  ask  what that weird thing
+     brings in practice... Ok, here are some testresults:
+     
+       System               #Whetstones per second (x 1000)
+     
+       T800 Transputer              4000
+       WE 32200/32206-24            2800
+       VAX 11/780                   1083
+       MVII                          925
+       Sun-3                         860
+       NS 32332/32081                728
+       T414-20 Transputer            667
+       NS 32032/32081                390
+       80286/80287                   300
+       IBM RT-PC/FPA                 200
+       Intel 8086/8087               178
+       MC 68000                       13
+       IBM RT-PC                      12
+     
+     (Source: "MC", april 1988)
+     
+     Well,  as  you can see, the testresults are remarkable... And the
+     price?  I  can her you say: "Must be unpayable". No. A transputer
+     system  for  your  IBM  PC/XT  can  be bought for about 1000 U.S.
+     dollars...  add some random access memory, the transputer itself,
+     and  you  have  a  complete system for $2000.- (not including the
+     personal  computer, used as host-system). Compare that to the VAX
+     11/780  and the VAX (sorry guys...) is rather an overpaid device,
+     isn't it?
+     
+     This article concludes the series. I hope you enjoyed reading it.
+     If  you  want  to  know  more  about  transputers, just send me a
+     message!  For  now,  my  netmail  address will be 2:286/201.13...
+     You'll  be  able  to read more from me in the future here in this
+     magazine, so... stay tuned!
+
+     -----------------------------------------------------------------
+     EMBBS 1-19                   Page 4                   13 Nov 1989
+
+
+     The Forth Programming Language - Part III
+     By Johan Siegers
+     Fidonet 2:286/201.16
+     
+     Until  now,  we have only worked in the direct mode. Sentences we
+     entered  were interpreted and executed directly. Now it's time to
+     start to make some easy programmes.
+     
+     Making  a  program in forth is different than in other languages.
+     It  is a strongly structured language accoarding to the bottom-up
+     method. Forth has NO goto's.
+     
+     Writing  a  forth  program involves making new forth commands. We
+     can do that in other languages like Pascal, C or the new advanced
+     Basic versions. Here we can start making routines which solve one
+     piece  of  the  problem,  and then use a main program in which we
+     call these routines.
+     
+     A forth routine (or actuallay a command) is called a word has the
+     following syntax:
+     
+                            : word .... word ;
+     
+     : is the forth definition for start of a new word
+     next follows other forth words (or numbers)
+     ; is the end-of word delimiter.
+     
+     The  commands  between the two delimiters are seperated by spaces
+     or  a return. As soon as we have entered the end-delimiter, forth
+     starts to compile the new word.
+     
+     An  example:  suppose  we  want to make a word which calculates a
+     percentage of a number. This could be calculated as:
+     
+                                z=(x*y/100)
+     
+     First we multiply the two numbers, then we devide it by 100.
+     The forth colon-definition can be defined as:
+     
+                               : % * 100 / ;
+     
+     If we want to calculate 5 percent of 520 we say: 520 5 % .
+     
+     What does the colon definition mean ?
+     
+            :      %       * 100 /          ;
+     
+            ^      ^       ^     ^          ^
+            |      |       \_____/          |
+           Begin  Name      Body           End
+     
+     
+     Let's suppose we want to calculates 5 percent of 520.
+     What does this function do on the stack ?
+     
+     
+     EMBBS 1-19                   Page 5                   13 Nov 1989
+
+
+     Input       520       5      *       100      /         .
+             ___      ___     ___    ____      ____     ____     ___
+            |---|    |520|   |  5|  |2600|    | 100|   |  26|   |---|
+            |   |    |---|   |520|  |----|    |2600|   |----|   |   |
+     Stack  |   |    |   |   |---|  |    |    |----|   |    |   |   |
+     
+     
+     Now that we have the word %  we can use it in other words.
+     Suppose we have a bank-account which gives us 5 percent interest.
+     We could calculate the interest over 500 $ by:
+     
+                                     500 5 %
+     
+     
+     We  can  now make a new definition which adds the interest to our
+     account. First we have to create a variable account.
+     
+     VARIABLE ACCOUNT      ok       (ok is produced by forth)
+     
+     Now we put 500 $ to our account by:
+     
+     500 ACCOUNT !                  (see part 2)
+     
+     Now the new colon definition.
+     I  will  use  the forth-word +! which adds the value on the stack
+     to a variable.
+     
+     : INTEREST                     (name of the definition)
+            ACCOUNT @               (put current cash on the stack)
+            5 %                     (calculate interest)
+            ACCOUNT +!              (add to variable ACCOUNT)
+     ;  ok                          (end of definition)
+     
+     
+     Can you see why forth can be hard to learn ?
+     I will use a stack-view to make the INTEREST routine more clear :
+     
+     
+     input       ACCOUNT     @      5     %     ACCOUNT     +!
+     
+            ___         ___    ___    ___    ___        ___     ___
+           |---|       |acc|  |500|  |  5|  | 25|      |acc|   |---|
+     Stack |   |       |---|  |---|  |500|  |---|      | 25|   |   |
+           |   |       |   |  |   |  |---|  |   |      |---|   |   |
+     
+     
+     Note: acc = memory location of variable ACCOUNT
+     
+     
+     
+     Until so far, this time.
+     Did you already do some experiments in forth ?
+     
+     forth  has  a  command  that shows you all the words that you may
+     use.
+     
+     EMBBS 1-19                   Page 6                   13 Nov 1989
+
+
+     In the FORTH-79 standard   VLIST  is used
+     in FORTH83   WORDS   is used.
+     
+     BTW: You don't have to use capitals. I only use them to make more
+     clear what has to be entered.
+     
+     When  you  use  WORDS,  you  will see that also the variables are
+     shown.  So  not  everyting  you  see may be commands.
+     If you make mistake during a colon-definition forth will give you
+     a  warning.  Suppose I want to make a statement C to show all the
+     commands:
+     
+     : C WORDS ;   ok
+     
+     if I make a mistake:  : C WORS ;   wors ?
+     
+     Forth  doesn't  recognise  wors.  When  you  use  WORDS, you will
+     notice that forth still has created the command C.
+     You can delete this wrong definition by:    FORGET C
+     
+     if forth answers  C ?  try:  SMUDGE  FORGET C
+     
+     I  hope  I didn't make it too difficult. Next episode I will tell
+     someting about dealing with text and conditional tests.
+     
+     To be continued ....                                       Johan.
+
+     -----------------------------------------------------------------
+     EMBBS 1-19                   Page 7                   13 Nov 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     24 Nov 1989 - 25 Nov 1989
+        Micro Computer Days in Utrecht (Holland), from 10 to 17 hrs,
+        organised by the Dutch Hobby Computer Club.
+     
+      1 Dec 1989
+        All telephone numbers in The Hague (Holland), get an extra
+        (7th) digit, the prefix 3. (ie. 123456 becomes 3123456.)
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in Antwerp, Belgium: annual European FidoNet
+        Conference. Not only for sysops, mind you!  Also for points,
+        users and everyone else interested in FidoNet communications..
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-19                   Page 8                   13 Nov 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:    (FidoNet Region 2:34)
+        -  Rocky, Barcelona; sysop Jaime Roca
+           ++34-3-8746155 at 300 and 1200
+           FidoNet Node 2:343/0 aka 2:343/5 (Continuous mail)
+     EMBBS 1-19                   Page 9                   13 Nov 1989
+
+
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

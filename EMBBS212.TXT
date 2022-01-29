@@ -1,0 +1,440 @@
+     Volume 2, Number 12                                 19 March 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        How To Paint a Room  ......................................  1
+     2. SOFTWARE REVIEW  ..........................................  2
+        Amax, the Outbound utility  ...............................  2
+     3. NOTICES  ..................................................  5
+        Calendar of Events  .......................................  5
+        EMBBS Distribution & Support Sites  .......................  6
+        EMBBS Article Submission Guidelines  ......................  8
+
+                                 - - - - -
+     EMBBS 2-12                   Page 1                   19 Mar 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     How To Paint a Room...
+     
+     1. Put a paint shaker in the middle of the floor.
+     
+     2. Put an open can of paint in the paint shaker.
+     
+     3. Turn it on. Run out of the room very quickly.
+     
+     Everything in the room is now covered with paint.
+     
+     4. Wait until the paint dries.
+     
+     5. Cover every part of the room you really wanted painted
+        with masking tape.  Leave the floor, switch plates, etc.
+        uncovered.
+     
+     6. Put an open can of paint remover in the paint shaker.
+     
+     7. Turn it on.  Run out of the room very quickly.
+     
+     Everything not covered with masking tape is now clean again.
+     
+     8. Remove the masking tape.
+     
+     9. Remove the paint shaker and sludge from the floor.
+
+     -----------------------------------------------------------------
+     EMBBS 2-12                   Page 2                   19 Mar 1990
+
+
+     =================================================================
+                              SOFTWARE REVIEW
+     =================================================================
+
+
+     AMAX,  a  review  of  the  outbound  utility for Opus and Binkley
+     compatible outbound directories.
+     By Jeroen van Drie
+     2:286/201.15@fidonet
+     
+     Let's  start  with  what  I  think  of  AMAX; I think it's a very
+     useful, fast and multifunctional tool which I quite often use. It
+     is mainly for people using the BinkleyTerm mailer package, but it
+     will  be useable with Opus 1.10 just as well. In short, when your
+     outbound  directory  does  not  use  the .OUT .CUT, and .DLO-like
+     extentions,  you  will  find  AMAX of remarkably little use, this
+     would  be  the  case  when  you run with for example FrontDoor or
+     D'Bridge.
+     
+     AMAX  can  do  a  lot. It can Well, why not let this extract from
+     the documentation speak for itself:
+     AMAX  provides  file  request generation, file attach building or
+     appending,  clearing of undialables, outbound mail area examining
+     and  editing,  generation of poll files, on-the-fly message entry
+     direct  to the outbound mail area, and mailing list functionality
+     for  both  messages and files, multi-zone compatibility, nodelist
+     look-ups,  editing  of  existing  file  attaches,  and much more.
+     (End of extract)
+     
+     AMAX  can  extract  the  info  it  needs  to  work  with from the
+     BINKLEY.CFG  or  any other self-configured configuration file, it
+     supports  both  the  Opus  Rev.5  and 6 nodelist and the QuickBBS
+     nodelist,  it  can use your FIDOUSER.LST to automatically look up
+     nodenumbers.
+     
+     AMAX  uses a menu system. The menu you might use most of the time
+     is  the  View/Edit  outbound area option. In that menu, AMAX will
+     give  you  a  list  of  outbound  packets  with  their respective
+     destination (zone:net/node), systemname and location (as found in
+     the  Nodelist),  their type (ARCmail, attach, packet and request)
+     and  their  flavour  (Continuous,  Hold,  Normal, etc). This menu
+     gives  you  some  manipulation  options like deleting, rerouting,
+     changing of flavour, the usual screen scrolling and quit options,
+     and  a more information option. The latter displays date and time
+     of  the  packet  and  such  things, and has an option to view the
+     contents  of  both  Normal  mail  packets and ARCmail or ZOOmail.
+     (LHARC,   and   other  mail-packing  forms  unfortunately  aren't
+     supported  (yet?))  It  will read these packets directly from the
+     Outbound  directory,  so  this  might  be  usefull  for  checking
+     messages  when  you  have  changed something in your BBS or Point
+     setup.
+     
+     I  don't  really  know  what  to  say  about  normal- and update-
+     requests,   creating   poll-files,   sending  files,  etc.  Their
+     implementation  in  AMAX is as clear as crystal, you'll find that
+     out when you are going to use AMAX yourself.
+     EMBBS 2-12                   Page 3                   19 Mar 1990
+
+
+     AMAX  allows  you  to  enter  messages directly into the outbound
+     area,  that  is  usefull when you want to send someone a note you
+     almost forgot about. It asks you for the flavour, and can set the
+     private  and  file-attach  flags. The editor uses the same way of
+     editing  as  line-editors  on  Bullettin  Boards. Better use your
+     normal  editor  for  the usual stuff, use this one when you don't
+     want  to  waist too much time loading your editor and packing the
+     message.  This editor limits you to 20 lines, but can also insert
+     a text file.
+     
+     AMAX  provides  the  possibility  to  clear the undialable system
+     list, this is a list maintained by the BinkleyTerm mailer system;
+     The  undialable list contains systems which are - for some reason
+     -  undialable.  AMAX  also  lets  you sent a file or message to a
+     mailing  list;  that  is a list of nodes which is compatible with
+     Joe  De  Rosa's  PLEASE  program,  where one keyword represents a
+     number  of  nodes.  Suppose a Hub wants to send a file to all his
+     nodes,  then  he  could make an entry MYNODES in PLEASE.ALL after
+     which he would have stated all "his" nodes. Now sending a file to
+     MYNODES using this feature, will result in attaches for all "his"
+     nodes,  with just one send operation. A *real* hub would then put
+     them on hold :-) (Whereas the rich hub marks them crash)
+     
+     Well..  AMAX  allows  you to display the information found with a
+     certain  nodenumber,  that is not a find utility, but still quite
+     usefull. AMAX can Shell to DOS, can invoke a packer, can generate
+     a  so-called  courtesy  message  which will automatically display
+     your  gratitude  to  the  sysop  you  request a file from, that's
+     rather  rude,  but  who would know.. AMAX lets you toggle between
+     zones,  ways  of  sorting the outbound directory and yes or no an
+     --- AMAX 2.10 tearline below the messages entered.
+     
+     The  configuration  file  (when  you  don't use BINKLEY.CFG) is a
+     plain  easy  job.  It  only  needs  to  know  the location of the
+     outbound  directory and Nodelist, and needs to know your address,
+     name, and pointnet. That's all, folks!
+     
+     Then  there  are  the  usual  command  line  parameters,  the  -?
+     displays them, and this is how that would look like:
+     
+     
+     AMAX Version 2.10
+     Copyright (C) 1988, 1989 Alan D. Applegate, All Rights Reserved
+     
+     Optional command line parameters:
+     
+          -c  Designate alternate configuration filespec.
+          -d  Use direct hardware screen writes. *
+          -b  Bypass user warning panel on start-up.
+          -p  Designate packer filespec.
+          -m  Create courtesy message for file requests.
+          -t  Omit tearline from messages.
+          -s  Outbound examine sort mode.
+          -a  Include compressed mail in outbound listing.
+     
+     Example:
+     EMBBS 2-12                   Page 4                   19 Mar 1990
+
+
+          amax -cc:\opus\mybink.cfg -d -b -ppack.bat -m -t -sa -a
+     
+     NOTE:  All  parameters  can be used alone, in any combination, or
+     not at all.
+     
+     * Requires 100% IBM-PC compatible hardware.
+     "IBM-PC" is a trademark of Int'l. Business Machines Corp.
+     
+     
+     Now that's an easy way to review a product, isn't it?
+     
+     One  can  say  that AMAX is a whole set of utilities in one, only
+     using  about  75  kilobytes of memory, (that is without loading a
+     nodelist  or  using  the  PacketView  (tm) option) and that ain't
+     much. It's less than the fee you'll have to pay for it; you don't
+     have to pay a dime! (Though excluding the commercial users.)
+     
+     
+     Reviewed: AMAX version 2.10, (AMAX_210.ARC)
+     (C) 1988, 1989 by Alan D. Applegate (1:104/36)
+                       P. O. Box 260723,
+                       Lakewood, CO, 80226-0723,
+                       USA.
+     
+     Buy this man a beer whenever you run into him. He asked for it.
+
+     -----------------------------------------------------------------
+     EMBBS 2-12                   Page 5                   19 Mar 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     12 Jun 1990
+        On  this  date it will be five years ago that FidoNet switched
+        to  multiple  nets, ie. numbers in the form 'net/node' instead
+        of just 'node'.  Things would just grow out of hand otherwise.
+     
+     12 Jul 1990 - 15 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        Thursday 12th: Evening, registration.
+        Friday   13th: 1st day of real conference.
+        Saturday 14th: 2nd day of real conference.
+        Sunday   15th: Morning, going home.
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 2-12                   Page 6                   19 Mar 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+     EMBBS 2-12                   Page 7                   19 Mar 1990
+
+
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-12                   Page 8                   19 Mar 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/201.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/201)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-12                   Page 9                   19 Mar 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/201.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

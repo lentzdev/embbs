@@ -1,0 +1,514 @@
+     Volume 1, Number 22                               4 December 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        Advanced TurboPascal - Part III (Changing the Environment)   2
+     3. SOFTWARE REVIEW  ..........................................  7
+        Speaker Driver  ...........................................  7
+     4. NOTICES  ..................................................  9
+        Calendar of Events  .......................................  9
+        EMBBS Distribution & Support Sites  ....................... 10
+
+                                 - - - - -
+     EMBBS 1-22                   Page 1                    4 Dec 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     This week Gerhard Hoogterp continues his series on Advanced Turbo
+     Pascal  with  a  closer  look at environment variables and how to
+     access them from his favorite language.
+     
+     And there it finally was, our first Software Review. Not about an
+     entirely  new program, but still relatively unknown and therefore
+     very interesting.  Jeroen van Drie tells us all about it!
+     
+     And  of  course  this  edition of EMBBS still features the almost
+     frantic technical coordinator eating up his keyboard while hoping
+     somewhat larger quantities of copy will arrive very soon.
+     
+     Now  let  me  ask you, what more could anyone possibly ask from a
+     communication magazine?
+
+     -----------------------------------------------------------------
+     EMBBS 1-22                   Page 2                    4 Dec 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Advanced TurboPascal - Part III (Changing the Environment)
+     By Gerhard Hoogterp
+     FidoNet 2:286/201.6
+     
+     One of the always returning questions in the international PASCAL
+     echo is the question how to change the environment. Or to be more
+     specific, how to change the prompt, As most professional programs
+     say  something  like  :  'Use EXIT to return to program...' while
+     shelled  to  dos.  Well  here  it  is....  A  way to change every
+     environment variable from within your own pascal programs.
+     
+     Every  program  under  ms-dos  has  something  called the Program
+     Segment Prefix (PSP).  It's a record which looks like :
+     
+       $0000 INT $20
+       $0002 Segment, end of allocation block
+       $0004 reserved
+       $0005 long call to ms-dos function dispatcher
+       $000A previous contents of int. $22
+       $000E previous contents of int. $23
+       $0012 previous contents of int. $24
+       $0016 reserved
+       $002C segment address of the environment block
+       $002E reserved
+       $005C default FCB #1
+       $006C default FCB #2
+       $0080 command tail.
+       $00FF
+     
+     Well.. the segment address of the environment block is what we're
+     looking  for..  The environment block contains a series of ASCIIZ
+     strings  (C  type: null terminated, no length counter in front of
+     the  string)  which contain the various environment variables and
+     their  value. The environment is terminated with an empty string.
+     It looks like :
+     
+         Var1 #00 Var2 #00 Var3 #00 #00
+         -------- -------- -------- ---
+     
+     So  what the program has to do is to copy the ASCIIZ strings to a
+     new  environment  block  and replace the variable which has to be
+     changed  to  its  new  value.. Simple isn't it.. In pseudocode it
+     looks like this:
+     
+     MakeNewEnvironmentBlock(EnvBlock)
+     Repeat
+       TempVar := ReadAsciiz(OldEnv);
+       SplitVar(TempVar,VarName,Value)
+       If VarName = VarToChange
+           Then Write(NewEnv,VarName,'=',NewValue)
+           Else Write(NewEnv,TempVar);
+     EMBBS 1-22                   Page 3                    4 Dec 1989
+
+
+     Until TempVar[1]=NUL;
+     
+     A program using the unit would look something like :
+     
+     Program EnvTest;
+     Uses Dos,
+          Env_Play;
+     
+     Var NewPrompt : String;
+     
+     Var TempEnvironment : AsciizPtr;
+     
+     Begin
+     NewPrompt:= '$_Type EXIT to return to heaven...$_$P$G';
+     New(TempEnvironment);             { Make  some space for  the new
+                                         environment}
+     Fillchar(
+               TempEnvironment^,       { and clear it..}
+               AsciizSize,
+               #00
+             );
+     
+     TempEnvironment:=GetEnvironment; { Copy the  old environment into
+                                        it..}
+     ChangeEnvVar(
+                   TempEnvironment,   { Change the Prompt.. }
+                   'PROMPT',
+                   NewPrompt
+                 );
+     SetNewEnvironment(TempEnvironment); { Install it.. }
+     Exec(GetEnv('ComSpec'),'');         { And enjoy.. }
+     RestoreOldEnvironment;              { Good housekeeping, restore
+                                           the old }
+                                         { environment.. }
+     End.
+     
+     Well.. Enjoy it.. and tune in next week for more.....
+     
+     Gerhard.
+     
+     -------->8---------
+     
+     {**************************************************************
+     
+     *  Environment Play, A unit for changing the environment.
+     
+     *  Author   Gerhard Hoogterp
+     *  Fidonet  2:286/201.6
+     *  Version  1.0
+     *  Released 29/9/89
+     
+     * Ok, this unit has NO guaranthees, use it at your own risk...
+     *      ( but first check the insurance papers... ;-)
+     
+     * Donated to the public domain... As long as you don't make money
+     * out of it.. If you do :
+     EMBBS 1-22                   Page 4                    4 Dec 1989
+
+
+     * Copyrights :  LiveSystems 1989,1990,..
+     
+     ********************}
+     
+     {$F+}
+     Unit Env_Play;
+     Interface
+     
+     Const AsciizSize = 1024;
+     Type Asciiz    = Array[1..AsciizSize] Of Char;
+          AsciizPtr = ^Asciiz;
+          Str20     = String[20];
+     
+     
+     {******************
+     * First get a pointer to the old environment segment..
+     
+     *****}
+     
+     Function GetEnvironment:AsciizPtr;
+     
+     {******************
+     * Change the things you like to change..
+     
+     * EnvVar has to be an all uppercase string. (F.e. 'PROMPT')
+     * Newvalue is the string that is assigned to the EnvVar.
+     
+     * Example :
+     
+     *   ChangeEnvVar(NewEnvironment,'PROMPT','Type  EXIT  to go  to
+     *   heaven..$_$P$G')
+     
+     * Results in an environment which contains the string :
+     
+     *     PROMPT=Type EXIT to go to heaven..$_$P$G#00
+     
+     ******}
+     
+     Procedure ChangeEnvVar( Var EnvPtr   : AsciizPtr;
+                                 EnvVar   : Str20;
+                                 NewValue : String);
+     
+     {*******************
+     * Put the new environment into position..
+     
+     *******}
+     
+     Procedure SetNewEnvironment(EnvPtr : AsciizPtr);
+     
+     {*******************
+     * And afterwards, restore the old environment..
+     
+     *******}
+     
+     Procedure RestoreOldEnvironment;
+     
+     EMBBS 1-22                   Page 5                    4 Dec 1989
+
+
+     {**********************} Implementation {*********************}
+     
+     
+     Const OldEnvStr : AsciizPtr = Nil;
+     
+     Function GetEnvironment:AsciizPtr;
+     Var TempPtr   : AsciizPtr;
+         EnvStr    : Pointer;
+         Count     : Word;
+     
+     Begin
+     EnvStr:= Ptr(MemW[PrefixSeg:$2C],$00);
+     Count:=0;
+     Repeat
+      Inc(Count);
+     Until (Asciiz(EnvStr^)[Count]=#00) And
+           (Asciiz(EnvStr^)[Count+1]=#00);
+     
+     New(TempPtr);
+     Move(EnvStr^,TempPtr^,Count+1);
+     OldEnvStr:=TempPtr;
+     
+     GetEnvironment:=TempPtr;
+     End;
+     
+     Procedure ChangeEnvVar( Var EnvPtr   : AsciizPtr;
+                                 EnvVar   : Str20;
+                                 NewValue : String);
+     Var NewEnvStr   : AsciizPtr;
+         CurrCharNo  : Word;
+         CurrChar    : Char;
+         TempStr     : String;
+         Count       : Word;
+         StartEnvVar : Word;
+     
+     Begin
+     New(NewEnvStr);
+     FillChar(NewEnvStr^,AsciizSize,#00);
+     
+     CurrCharNo:=1;
+     While EnvPtr^[CurrCharNo]<>#00 Do
+      Begin
+      TempStr:='';
+      StartEnvVar:=CurrCharNo;
+     
+      While EnvPtr^[CurrCharNo]<>#00 do
+       Begin
+       TempStr:=TempStr+EnvPtr^[CurrCharNo];
+       Inc(CurrCharNo);
+       End;
+     
+       If Pos(EnvVar+'=',TempStr)>0
+          Then TempStr:=EnvVar+'='+NewValue;
+     
+       For Count:=StartEnvVar to StartEnvVar+Length(TempStr)-1 Do
+         NewEnvStr^[Count]:=TempStr[Count-StartEnvVar+1];
+     EMBBS 1-22                   Page 6                    4 Dec 1989
+
+
+       NewEnvStr^[StartEnvVar+Length(TempStr)]:=#00;
+       Inc(CurrCharNo);
+       End;
+     
+     DisPose(EnvPtr);
+     EnvPtr:=NewEnvStr;
+     End;
+     
+     Procedure SetNewEnvironment(EnvPtr : AsciizPtr);
+     Begin
+     MemW[PrefixSeg:$2C]:=Seg(EnvPtr^);
+     End;
+     
+     Procedure RestoreOldEnvironment;
+     Begin
+     MemW[PrefixSeg:$2C]:=Seg(OldEnvStr^);
+     End;
+     
+     End.
+
+     -----------------------------------------------------------------
+     EMBBS 1-22                   Page 7                    4 Dec 1989
+
+
+     =================================================================
+                              SOFTWARE REVIEW
+     =================================================================
+
+
+     The  Speaker  Driver,  a  .SYS file which makes your speaker more
+     speaker than it was before!
+     By Jeroen van Drie
+     Lepelaarstraat 15
+     6883 EK  Velp
+     Holland
+     FidoNet 2:512/30.3
+     & EMBBS Conference
+     
+     I  thought  that  it's  a  good idea to start some articles about
+     utilities,  but  for  that, I also need your input. I, and others
+     with  me,  would like to know what your favourite utility is, and
+     why,  how  it  works,  who  the writer is, and of what kind it is
+     (Shareware or Public Domain).  Wouldn't that be interesting?  And
+     it's not only for the IBM & compatible machines, also for others.
+     Please send your articles with an extention .REV, in plain ASCII,
+     65 characters per line.
+     
+     The  utility  which  I  want  to  get  your your attention for is
+     SPKRDRV.SYS,  for IBM & compatibles, which is a device driver for
+     your  speaker. It's ShareWare by Mr. Gordon D. Peterson II. I ran
+     into it on a bulletin board, just the other day.
+     
+     After  having  installed  SPKRDRV.SYS  in  your  config.sys,  and
+     rebooting  your  system,  a  new  device is created, which can be
+     addressed  by  SPKR:. You can send data to it, just with the copy
+     command:  COPY  EXAMPL.TXT  SPKR: an ordinary text file will give
+     a  queue of ticking sounds, but in the package DRVSPKR.SYS, there
+     are  a  few files with an .SPK extention which are written in the
+     right format to produce music. A piece of Bach's music looks like
+     this:
+     
+     0g256t
+      0g2d698f 587f 932f 233f 587f 932f 117f 587f 932f 698f 587f 932f
+      784f 622f 932f 831f 622f 932f 784f 622f 932f 784f 622f 932f
+      1047f 622f 880f 740f 622f 880f 698f 622f 880f 1047f 622f 880f
+     
+     There  is  some  logic  in  this,  as  you would expect. The code
+     represents  the  sort  of tone. In this case, 880f means that the
+     speaker  will produce a tone with a frequency of 880 Hz. But it's
+     not only the frequency which is there to be changed, you can also
+     change  the gap between tones, the duration of a tone, the tempo,
+     a  pause (and resume), and even fill the 128 bytes long buffer of
+     the  device  with  instructions which are to be 'beeped' lateron.
+     There  are  things which are physically impossible, like altering
+     the  volume or producing more than one tone at the same time; but
+     the msdos machine is not a music computer. And as for the volume?
+     Well  you  can  always  connect  the  speakerwires  to your audio
+     equipement.
+     
+     One  of  the things which makes this device driver most useful is
+     EMBBS 1-22                   Page 8                    4 Dec 1989
+
+
+     the  buffer.  You  know  what  it  means when ten beeps are to be
+     played? A long waiting time indeed. While the processor moves the
+     cone  of the speaker, nothing else can be done, but by installing
+     this  buffer,  the processor can put the commands for the speaker
+     in the buffer, and work on other things. This eliminates the long
+     waiting  time,  overflow of communication buffers, etc, which can
+     damage  data.  You  can implement instructions for the speaker in
+     any program you write, and it surely makes a difference.
+     
+     Information from DRVSPKR.DOC   Rev. November 13, 1986 23:40:55
+     
+     Author:        Gordon E. Peterson II
+                    Noah Systems
+                    P.O. Box 40476
+                    San Antonio, Texas  78229-0476
+     
+     Note: Copyright,  disclaimers  and  shareware  notices  are to be
+           found  in  the  documentation  which  is  included  in  the
+           archive.
+           This file came from European Cybernetics (Node 2:280/280)
+
+     -----------------------------------------------------------------
+     EMBBS 1-22                   Page 9                    4 Dec 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in Antwerp, Belgium: annual European FidoNet
+        Conference. Not only for sysops, mind you!  Also for points,
+        users and everyone else interested in FidoNet communications..
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-22                   Page 10                   4 Dec 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:    (FidoNet Region 2:34)
+        -  Rocky, Barcelona; sysop Jaime Roca
+           ++34-3-8746155 at 300 and 1200
+           FidoNet Node 2:343/0 aka 2:343/5 (Continuous mail)
+     EMBBS 1-22                   Page 11                   4 Dec 1989
+
+
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

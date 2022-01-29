@@ -1,0 +1,298 @@
+     Volume 1, Number 24                              18 December 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................. 1
+        Change of Editor in Chief  ................................. 1
+     2. SOFTWARE REVIEW  ........................................... 2
+        DOSedit - An aid in the use of DOS commands  ............... 2
+     3. NOTICES  ................................................... 4
+        Calendar of Events  ........................................ 4
+        EMBBS Distribution & Support Sites  ........................ 5
+
+                                 - - - - -
+     EMBBS 1-24                   Page 1                   18 Dec 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     So,  here  I am. I existed before this all happened, but now I am
+     the  Editor in Chief of EMBBS, and there has emerged another line
+     on my forehead. (the second, to be exact:-).
+     
+     EMBBS  was in for a change after about 20 editions, so we planned
+     a  coup  d'etat  against  our former Editor in Chief, the program
+     ART,  and  we gave him another function just the other day. Now I
+     have  taken  over  his  position,  and  I  will  try to make this
+     magazine more vivid..
+     
+     What is required here, in this magazine, is not only the input of
+     ourselves  and  of  the  few  people  we  know  in  this world of
+     telecommunications  and  BBS, but also the input of the people we
+     don't   know,  and  amongst  them,  there's  you.  When  you  are
+     dissapointed  by  whatever  you thought this magazine might bring
+     you, don't be dissapointed because of us, the editorial team, but
+     because  of  all  those  people  in  Europe who seem to download,
+     request  or  get  and  read this magazine, but never write, as if
+     EMBBS  is  a ROM and the editorial team is the programmer of that
+     ROM.  Well,  that  is  not  the case. The thing we want to be (to
+     continue this example in the ROM-RAM field) are the RAM-chips. We
+     should collect the information we get from all across Europe, and
+     when  the  processor  (the  program ART) asks us for what we have
+     been collecting, we send that to him, and he publishes it. That's
+     it.
+     
+     It  seems  that  we,  the  EMBBS  editorial  team,  are the mayor
+     contributors  to  what  is  actually  written  in EMBBS, and that
+     doesn't agree with these intentions we have (had?).
+     
+     Now,  when  you  feel  that  a magazine like EMBBS should work in
+     Europe,  why  not  try to help? What we need are people who would
+     like  to  see  a  European  magazine work, and who are willing to
+     contribute  to  make  it  work. What? Not only articles, but also
+     people  who  would  want  to become member of the editorial team,
+     because a European magazine needs a European team. No matter what
+     you  eat,  what  you  do,  or  how  good  you  are in the English
+     language,  when  you feel like supporting this initiative, let us
+     know!;  there  is  a messagearea on all EMBBS-distribution sites,
+     (their  telephone numbers are displayed at the end of each EMBBS)
+     called EMBBS, where you can write messages to us and others about
+     what  you  think  of  EMBBS, what you would like to see in EMBBS,
+     (because we also did this for you) and whatever you would like to
+     write. And whenever you decide to join in on this initiative, you
+     are  wholeheartedly  welcome.  Remember, it's only up to you what
+     you do for EMBBS. Please do consider it.
+     
+     Jeroen van Drie, now Editor in Chief of EMBBS..
+     FidoNet: 2:286/201.15  &  2:512/30.3
+     And of course the EMBBS echo on your local distribution site.
+
+     -----------------------------------------------------------------
+     EMBBS 1-24                   Page 2                   18 Dec 1989
+
+
+     =================================================================
+                              SOFTWARE REVIEW
+     =================================================================
+
+
+     DOSedit - An aid in the use of DOS commands
+     By Johan Siegers
+     FidoNet 2:286/201.16
+     
+     The  standard  MS-DOS  function  keys  provide  you with a set of
+     editing  tools  which  may  save  you  time.  You can use them to
+     correct  typing  mistakes,  repeat  frequently  used commands, or
+     create similar command lines. For example:
+     
+     F1: Copies one character from the template to the command line.
+     F3: Copies  all  the  remaining characters in the template to the
+         command line.
+     
+     This  may  be  very useful when you have typed: dor c:\util\*.doc
+     instead  of  the  DIR command, or when you decide to copy all the
+     .doc files from the previous directory listing.
+     
+     However  only  the most recently entered command can be recalled.
+     Wouldn't it be much nicer is your PC stored the commands you have
+     typed,  so  you  can recall more than one ?  Dosedit is a utility
+     that performs this function for you.
+     
+     DOSedit is a ShareWare program written by Jack Gersbach. It needs
+     about  5k of your memory and gives you access to previous entered
+     commands  simply  by  using  the  cursor keys.  The function keys
+     aren't used anymore.
+     
+     The keys which may be used to edit previous commands are:
+     
+     * Right arrow:    Advances the cursor one character position.
+     * Left arrow:     Backs up the cursor one character position.
+     * Ctrl-Right:     Advances the cursor to the next word.
+     * Ctrl-Left:      Backs up the cursor to the previous word.
+     * LeftShift-tab:  Backs   up  the  cursor  to  the  previous  tab
+                       position.
+     * RightShift-tab: Advances the cursor to the next tab position.
+     * Home:           Moves the cursor to the beginning of the line.
+     * End:            Moves the cursor to the end of the line.
+     * Del:            Erases the character at the cursor position.
+     * Back Space:     Erases the character to left of the cursor.
+     * Esc:            Erases the entire line.
+     * Ctrl-Home:      Erases  from  the  beginning of the line to the
+                       cursor.
+     * Ctrl-end:       Erases from the cursor to the end of the line.
+     * Up arrow:       Recalls the previous instruction from the stack.
+     * Down arrow:     Recalls  the  following  instruction  from  the
+                       stack.
+     * Ctrl-PgUp:      Clears the current stack of all entries.
+     * Ctrl-PgDn:      Erases the currently displayed stack entry.
+     * Ins:            Toggles  the  insert  mode.  If  active, cursor
+                       changes.
+     EMBBS 1-24                   Page 3                   18 Dec 1989
+
+
+     * Ctrl-A:         Displays alias list when under DOS control.
+     * Ctrl-Z:         End of file marker (1AH).  Replaces the F6 key.
+     
+     The insert mode is automatically turned off with ENTER or ESC.
+     
+     How does DOSedit work ?
+     Two  circular  stacks  of 256 bytes each, store all new or edited
+     commands that are entered from the keyboard. One stack serves the
+     DOS  command  mode  and  the  other  serves  calls  from external
+     commands and application programs.
+     
+     The  currently  displayed  command line is executed when enter is
+     pressed.
+     
+     Besides recalling and editing previous commands, DOSedit provides
+     you with aliases. An alias is a short notation for a long command
+     line. For example:
+     
+             d  may be an alias for:  dir *.doc /p
+     
+     An alias be be simple defined by:
+     
+             Alias replacement-phrase
+     
+     e.g.:       d dir *.doc /p
+     
+     The  length  of the replacement-phrase is only limited by the 128
+     bytes input buffer of DOS.
+     
+     Apart  from  direct  entry  of  aliases, they may be defined in a
+     separate file that dosedit will read when it is installed.
+     
+     Since  DOSedit  isn't a really new program, I think that you will
+     be able to find it on almost every bulletin board.
+
+     -----------------------------------------------------------------
+     EMBBS 1-24                   Page 4                   18 Dec 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in Antwerp, Belgium: annual European FidoNet
+        Conference. Not only for sysops, mind you!  Also for points,
+        users and everyone else interested in FidoNet communications..
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-24                   Page 5                   18 Dec 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     EMBBS 1-24                   Page 6                   18 Dec 1989
+
+
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

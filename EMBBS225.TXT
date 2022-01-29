@@ -1,0 +1,618 @@
+     Volume 2, Number 25                                  18 June 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+        EMBBS HQ Nodenumber Change  ...............................  1
+     2. NOTICES  ..................................................  2
+        Calendar of Events  .......................................  2
+        EMBBS Distribution & Support Sites  .......................  3
+        EMBBS Article Submission Guidelines  ......................  5
+        EuroCon IV Information, & Registration Forms  .............  7
+
+                                 - - - - -
+     EMBBS 2-25                   Page 1                   18 Jun 1990
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     EMBBS HQ Nodenumber Change
+     
+     EMBBS'  nodenumber  has been changed from 2:286/201 to 2:286/255.
+     We  knew it was going to happen, but due to a nice gesture of our
+     nethost,  the  /201  entry  was  removed from the nodelist in the
+     same  week  /255 was put in (nodediff.166), so we couldn't change
+     over and inform everyone quietly.....
+     We're terribly sorry if this has caused you any trouble.
+     
+     At  the  end  of  EMBBS, you will find a shortened version of the
+     EuroCon IV information and registration forms.
+     We will definately be there in July, hope to meet you all there!
+
+     -----------------------------------------------------------------
+     EMBBS 2-25                   Page 2                   18 Jun 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     13 Jul 1990 - 16 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        Friday   13th: Evening, registration.
+        Saturday 14th: 1st day of real conference.
+        Sunday   15th: 2nd day of real conference.
+        Monday   16th: Morning, going home.
+        For info, and registration forms, see the end of this EMBBS...
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-25                   Page 3                   18 Jun 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/255 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+     EMBBS 2-25                   Page 4                   18 Jun 1990
+
+
+           ++47-71-34304 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-25                   Page 5                   18 Jun 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/255.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-25                   Page 6                   18 Jun 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/255.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+     EMBBS 2-25                   Page 7                   18 Jun 1990
+
+
+           B-)-NET, the Belgian Sysop Association presents ...
+     
+                                                  __
+           ****************                      /  \
+          *   EUROCON-IV   *                    /|oo \
+           ****************                    (_|  /_)
+                                                _`@/_ \    _
+           Antwerp, Belgium                    |     | \   \\
+           July 14-15, 1990                    | (*) |  \   ))
+                                  ______       |__U__| /  \//
+                                 / Fido \       _//|| _\   /
+                                (________)     (_/(_|(____/ (tm)
+     
+     
+                                                         Payment
+      Rate Plan Schedule:                Full Rate   Before June 15th
+                                         ---------   ----------------
+     A. Single Occupancy per day ....... Bfr  3.250     Bfr  3.000
+     B. Double Occupancy/person per day. Bfr  2.150     Bfr  1.800
+     C. Youth Hostel....................        295
+     D. Camping-site tent...............     pm
+     E. Camping-site trailer............     pm
+     F. Camping-site mobil-home.........     pm
+     G. Conference/incl. lunch (2 days). Bfr  2.000     Bfr  1.800
+     H. Dinner/Cruise 1st evening....... Bfr  2.500
+     I. Computer Widow-programme........     pm
+     J. Children programme..............     pm
+     K. Infant-care.....................     pm
+     
+     The following registration and payment forms must be completed
+     and mailed to:
+     
+                    B-)-NET vzw
+                    c/o Ward Dossche
+                    Drabstraat 142
+                    2510 Mortsel
+                    Belgium
+     
+     or fax it to
+     
+                    +32-3-455.16.55
+     
+     You may register by Netmailing this completed form to 2:2/999 as
+     well, which is the official Eurocon-IV-node, for processing.
+     Rename it to ZNNNXXXX.PPP where Z is your Zone number, N is your
+     Net number, X is your Node number and P your point-number. If you
+     are a sysop, then PPP should be '000'. If you are a user, then
+     PPP should be 'USR'.
+     
+     E-mailed and faxed registrations must be confirmed by regular
+     mail within 14 days, after this period the registration becomes
+     void unless full payment is received in the meantime.
+     
+     Hotel reservations and participation in the programme must be
+     paid in advance to the EUROCON-IV-team.
+     
+     EMBBS 2-25                   Page 8                   18 Jun 1990
+
+
+     Cancellations prior to June 15th will receive a full refund minus
+     20% service charge.
+     
+     Cancellations on June 15th or between June 15th and July 1st will
+     receive a 50% refund, cancellations on or after July 1st will not
+     be refunded.
+     
+     All valid registrations will be confirmed by e-mail.
+     
+     
+          E U R O C O N - IV     R E G I S T R A T I O N   F O R M
+         **********************************************************
+     
+      Name: _________________________________________________________
+     
+      Address: ____________________________  Apt. or Suite: _________
+     
+      City: ________________________  State or Province: ____________
+     
+      Postal Code: _________________  Country: ______________________
+     
+      Voice Phone: _____________________  Data: _____________________
+     
+      Zone:Net/Node.Point@Domain: ___________________________________
+     
+     +------+------------------+---+------+-------+-------+-------+
+     |Option|   Full  Name     |Qty|Day in|Day out|Pricing| Total |
+     +------+------------------+---+------+-------+-------+-------+
+     |PLAN A|                  |   |      |       | 3.200 |       |
+     +------+------------------+---+------+-------+-------+-------+
+     |PLAN B|                  |   |      |       | 2.000 |       |
+     +------+------------------+---+------+-------+-------+-------+
+     |PLAN C|                  |   |      |       |   295 |     0 |(1)
+     +------+------------------+---+------+-------+-------+-------+
+     |PLAN D|                  |   |      |       |xxxxxxx|     0 |(1)
+     +------+------------------+---+------+-------+-------+-------+
+     |PLAN E|                  |   |      |       |xxxxxxx|     0 |(1)
+     +------+------------------+---+------+-------+-------+-------+
+     |PLAN F|                  |   |      |       |xxxxxxx|     0 |(1)
+     +------+------------------+---+------+-------+-------+-------+
+     |PLAN G|                  |   |   V O I D    | 2.000 |       |
+     +------+------------------+---+--------------+-------+-------+
+     |PLAN H|                  |   |   V O I D    | 2.500 |       |(2)
+     +------+------------------+---+--------------+-------+-------+
+     |PLAN I|                  |   |   V O I D    |   pm  |       |(3)
+     +------+------------------+---+--------------+-------+-------+
+     |PLAN J|                  |   |   V O I D    |   pm  |       |(4)
+     +------+------------------+---+--------------+-------+-------+
+     |PLAN K|                  |   |   V O I D    |   pm  |       |(4)
+     +------+------------------+---+--------------+=======*********
+                                                  | Total =       *
+                                                  +=======*********
+     
+     o Special requirements: ________________________________________
+     
+     o Arrange a room under plan-B for me, I am : male / female   (5)
+     EMBBS 2-25                   Page 9                   18 Jun 1990
+
+
+       My roommate should be : smoker / no-smoker / no preference (5)
+     
+       I prefer to share my room with : ____________________________
+     
+     o For my meals, I prefer : vegetarian / non-vegetarian       (5)
+     
+     o My main interest is for : EUROCON-IV / TECHCON-I           (5)
+     
+     (1) = Reservations accepted, but payment must be performed
+           by customer on-site.
+     (2) = Event subject to enough participants
+     (3) = To be paid at the conference at a cost-covering fee
+     (4) = Subject to enough participants at a cost-covering fee
+     (5) = Strike-out whichever is inappropriate
+     
+     
+         E U R O C O N - IV     P A Y M E N T   F O R M
+       ************************************************
+     In order to process your registration properly and book your
+     conference fees accordingly, we request you to indicate below
+     your mode of payment.
+     
+     I am paying the total sum of _________________ Belgian Francs as
+     follows (please tick one) :
+     
+     O  Cheque (Euro-cheque only! Non-European participants can send a
+        certified bankers cheque)
+     
+        Cheques must be made payable to
+     
+                    "B-)-NET vzw"
+     
+        and mailed to
+     
+                             B-)-NET vzw
+                             c/o Ward Dossche
+                             Drabstraat 142
+                             2510 Mortsel
+                             Belgium
+     
+     O  Bank-transfer
+     
+        Money must be transferred into account number
+     
+             001-1995049-29
+     
+             of B-)-NET vzw at the ASLK-Bank
+     
+     O Credit-Card
+     
+       Card-holders name ______________________________
+       (as it appears on the card)
+        American Express _____  MC _____  Visa _____
+        Card Number: ________________ Expiration: ______
+        Signature ______________________________________
+        ( Credit card registrations require valid signature )
+     EMBBS 2-25                   Page 10                  18 Jun 1990
+
+
+     For your own security, do not route any message with your credit
+     card number on it.  Crash it directly to 2:2/999.
+     
+     You must pay by Cheque, Money Order, or Credit Card.  Please send
+     no cash!
+     
+     ALL PAYMENTS MUST BE IN BELGIAN CURRENCY OTHERWISE EXTRAS WILL BE
+     CHARGED.
+     
+     (We are not making one penny of profit, so ... we prefer to avoid
+     losses as well).
+     
+     
+          E U R O C O N - IV : C O N F E R E N C E   A G E N D A
+         ********************************************************
+     
+     Day-1 : Friday July 13th
+     
+          14:00 Registration opens in VIP-room Pullman Hotel
+          17:30 Reception Town Hall by the mayor of Antwerp
+          19:00 Social get-together in the Pullman-hotel
+     
+     Day-2 : Saturday July 14th
+     
+          09:15         Opening-address by the mayor of Antwerp
+     
+          09:30         Start session-1 : "Political Politics"
+     
+             09:30-09:40 = Introduction
+             09:40-10:15 = Changing-policy in the great internal
+                           market
+             10:15-10:30 = FidoNet into the former Eastern Bloc
+             10:30-10:45 = Coffee-break
+             10:45-11:15 = Auto-censoring, privacy and ownership of
+                           public electronic mail information
+             11:15-11:45 = The private computer-communication market
+                           after 1992
+             11:45-12:00 = Questions and answers
+     
+          12:00-13:30        Lunch
+     
+             13:30         Start session-2 : "FidoNet Politics"
+     
+             13:30-14:00 = Telephone companies and future European
+                           approval standards for telecommunications
+                           hardware
+             14:00-14:45 = Democracy within FidoNet
+             14:45-15:00 = Coffee break
+             15:00-15:30 = FidoNet in the world - or how to survive
+                           without IFNA
+             15:30-16:30 = Complaint procedure
+             16:30-17:00 = Questions and answers
+             17:00-18:00 = Blowing-off steam
+     
+          18:00-22:00 = Dinner/Cruise
+     
+     EMBBS 2-25                   Page 11                  18 Jun 1990
+
+
+          22:01-..... = Let's hit town (But please be back before
+                        9 am on Sunday)
+     
+     
+     Day-3 : Sunday July 15th
+     
+          09:15         Start session-3 : "Workshops"
+     
+             09:15-10:15 = Workshop session-A
+                  - E-mail routing
+                  - E-mail policy
+                  - European Fidonet Association
+                  - Technical standards committee
+                  - ................
+             10:15-10:30 = Coffee-break
+             10:30-11:30 = Workshop session-B
+             11:30-12:00 = Plenary session with working-party
+                           chairmen reporting.
+     
+          12:00-13:30 = Lunch
+     
+          13:30 : Start session-4 : "Questions & answers, conclusions
+                                     & solutions"
+     
+             13:30-14:30 = Creation European FidoNet Association
+             14:30-14:45 = Coffee-break
+             14:45-15:30 = Elections Board EFNA
+             15:30-16:00 = Appointing Eurocon-V site
+             16:00-17:00 = Unfinished business
+             17:00-17:15 = Closing statement(s)
+             17:15-18:00 = Closing reception at Pullman Hotel
+     
+          19:00 : "Olympic hard-disc throwing trials"
+     
+     Day-4 : Monday July 15th
+     
+          08:00-12:00 = Office in VIP-room is available for people
+                        needing assistance.
+          12:00:01 ... you're on your own ... see you next year in ???
+     
+     
+          E U R O C O N - IV : A C C O M O D A T I O N
+         **********************************************
+     
+     1) Hotel :
+     ----------
+     Accommodation is in the "Pullman Hotel" in Antwerp, it is the
+     same hotel where EUROCON-IV takes place.
+     
+     It is a *****-hotel, but we managed to negotiate with them ***-
+     prices for hotel-rooms as well as renting the conference-rooms.
+     These rates are only possible because the organization-committee
+     is handling reservations and payments themselves.
+     
+     So when registering, please do not wait too long with your
+     payment.
+     EMBBS 2-25                   Page 12                  18 Jun 1990
+
+
+     2) Youth-Hostel :
+     -----------------
+     We have reserved a number of sleeping-places at the International
+     Youth Hostel of Antwerp. It is 5-10 minutes walking from the
+     conference-hotel.
+     
+     The Youth Hostel Rates are :
+     
+            - Bed & breakfast : ...................  295 Bfr
+            - Lunch : .............................  100 Bfr
+            - Dinner : ............................  210 Bfr
+            - Renting sheets : ....................  100 Bfr
+     
+     You have to be a member of the International Youth Hostel
+     Federation. If you are not a member, 80 Bfr extra will be charged
+     per night.
+     
+     If you are interested in staying overnight at the Youth Hostel,
+     we will make the reservations for you but in no case will we
+     handle the payments as bank-charges on international transfers
+     would nearly double that amount.
+     
+     Please be advised that these reservations are on a "first
+     come/first served" basis and the number of beds is limited.
+     
+     3) Municipal camping-ground :
+     -----------------------------
+     If you bring your camping-equipment we can arrange a place for
+     you at the municipal camping ground. If you wish, we will make
+     these reservations for you, but in no case will we handle the
+     payments, that is completely up to you.
+     
+     The municipal camping ground is 5-10 minutes walking from the
+     conference-hotel.
+     
+     4) General remark :
+     -------------------
+     Please keep in mind that for each valid registration, 4 coffee-
+     breaks and 2 lunches are included in the conference-fee.
+
+     -----------------------------------------------------------------
+

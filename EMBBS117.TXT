@@ -1,0 +1,610 @@
+     Volume 1, Number 17                               30 October 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        Transputers, Buildingstones of the Future - Part II  ......  1
+        The Forth Programming Language - Part I  ..................  3
+        Ray Tracing  ..............................................  6
+     2. WEEKLY PUZZLE  ............................................  9
+        Puzzle (Last words) & Solution 8913  ......................  9
+     3. WANTED  ................................................... 10
+        Information about structure of dBASE III(+) index files  .. 10
+     4. NOTICES  .................................................. 11
+        Calendar of Events  ....................................... 11
+        EMBBS Distribution & Support Sites  ....................... 12
+
+                                 - - - - -
+     EMBBS 1-17                   Page 1                   30 Oct 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Transputers Pt.II: About links and their use.
+     By Joost Voorhaar
+     
+     Last  week  I gave a general view of one of the finest, state-of-
+     the-art  processors  available nowadays, the transputer. We had a
+     look  at it's structure and the internal registerset. Today we'll
+     have  a  look  at  the  major I/O channels of the transputer, the
+     links.
+     
+     A  link, as said last week, is a fast bidirectional communication
+     channel  that  allows  the  transputer  to  be connected to other
+     transputers.  The transputer we took for example, the T414, has 4
+     links,  numbered  0  to  3.  These  links work with direct memory
+     access.  This  allows  the  processor to continue to work without
+     having to worry about communications.
+     
+     Physically,  a link connection consists of two wires. One wire is
+     used  for  transfer  from  one transputer to the other, the other
+     wire  is  used  vice  versa.  The link-signals have a normal TTL-
+     compatible  level (positive logic, i.e.: a zero is represented by
+     0  Volt,  a  digital  1  is represented by a tension of +5 Volt).
+     Each  byte  is  transmitted  with 2 start-bits, 8 data-bits and a
+     stop-bit.  There's no parity or any other error detection system.
+     As  soon  as  the  receiving side received the final stop-bit, it
+     transmits  a  1  and  a  0. This is the "acknowledge" signal that
+     signals  the  transmitter  that the receiver is ready for another
+     transfer.  Realtime  full-duplex  connection  is only possible if
+     two  links  per  transputer are used to connect both transputers.
+     More  or less "normal" full-duplex transmission is possible using
+     one  link  per  connection  if each link alternately receives and
+     transmits.  To  control  the  speed at which all of this happens,
+     there   are  three  connections.  These  connections  are  called
+     "Link123Special",    "Link0Special"    and   "LinkSpecial".   The
+     transferrate  for link #0 can be different from the transferrates
+     that are used by the other links. To control the transferspeed on
+     link  #0  the  pins "LinkSpecial" and "Link0Special" are used. To
+     control  the  transferrate  on  all  three  other links, the pins
+     "LinkSpecial"   and  "Link123Special"  are  used.  The  following
+     transferrates are available for link #0:
+     
+                  Link    Link0   MBit/sec    Data rate
+                Special  Special  (Link #0)  (kByte/sec)
+     
+                   0        0        10         400
+                   0        1         5         200
+                   1        0        10         400
+                   1        1        20         800
+     
+     
+     And for the three other links:
+     
+     EMBBS 1-17                   Page 2                   30 Oct 1989
+
+
+                  Link   Link123  MBit/sec    Data rate
+                Special  Special             (kByte/sec)
+     
+                   0        0        10         400
+                   0        1         5         200
+                   1        0        10         400
+                   1        1        20         800
+     
+     The  transferrates  10  MBit/sec  are used by INMOS as a standard
+     transferrate.  All periphery devices, made by INMOS, can handle a
+     10 MBit/sec connection. Especially when used in a tree-structure,
+     the  different treatment for link #0 can come in handy. The root-
+     transputer   could,   for  example,  use  links  1,2  and  3  for
+     connections  to  it's childs. When connected to link #0 from each
+     child,  the  root  transputer  is  able  to communicate with it's
+     children  at the highest speed available (800 kByte/sec) although
+     the host-system may not be able to handle over 5 MBit/sec...
+     
+     I  could  tell a lot more about the links here, but I guess it is
+     much  more  fun  for you to find something out your own way (that
+     is,  if you think it is interesting enough). Next week we'll have
+     a look at the instructionset of this refreshing new device.
+     
+     Do  you  like  to hear more about transputers? Or do you have any
+     questions?  I've  been  told that there's no special message area
+     for transputers... yet. Since I'm busy myself in setting up a new
+     BBS,  I'd  like  to hear from you if you think it would be a nice
+     topic  to  open a (local) mail area for. Maybe, in the future, it
+     will even be possible to open a special echo-mail area for it...
+
+     -----------------------------------------------------------------
+     EMBBS 1-17                   Page 3                   30 Oct 1989
+
+
+     The Forth Programming Language - Part I
+     By Johan Siegers
+     Fidonet 2:286/201.16
+     
+     Forth  is  a  remarkable  and  for  the beginner somewhat strange
+     programming  language  which  has  been  developed  in  the early
+     seventy's for scientific purposes. It was primarily developed for
+     control  of  all kind of processes, from chemical process control
+     till  alignment  of  radiotelescopes.  There  was  a  need  for a
+     powerfull,  fast  and  flexible language. Existing languages like
+     basic  were  too  slow,  and  assembly  was hard to learn for the
+     beginner.
+     
+     Forth  is  quite  different  from  other languages, as it expands
+     whilst  programmes are written. Actually, this is the way a forth
+     program  is  written.  Using  existing  commands  we  can add new
+     commands to the language.
+     
+     Because  of  the  syntax  of  forth, it isn't an easy language to
+     learn.  It hardly makes any difference whether the programmer has
+     any  expierience  in  basic,  pascal  or  C.  But  once the basic
+     principles are known turns out as an interesting language.
+     
+     There  are  Public Domain versions of forth, so nothing stands in
+     your way to expand your programming horizons.
+     
+     I  already explained that writing a forth program involves making
+     new commands. An example:
+     The forth equivalent of: print chr$(x) is: emit.
+     
+                      32 EMIT   will print a space
+     
+     A routine that prints 10 spaces could be programmed as follows:
+     
+     : tenspc
+               10 0 DO
+                        32 EMIT
+               LOOP
+     
+     
+     Tenspec is the name of the command that will print 10 spaces.
+     As  you  can see, there is a loop from 0 to 10, in which a single
+     space  is  printed.  In  the same way we can write a command that
+     will print any desired amount of spaces:
+     
+     : spaces
+              0 DO
+                    32 EMIT
+              LOOP
+     
+     
+     If we want 17 spaces, we simply type:  17 SPACES
+     
+     of  course,  this  can  also  be  used  in  further routines, and
+     although  you  may  not  understand the above routine completely,
+     perhaps  you  can see that forth is an ideal language for process
+     EMBBS 1-17                   Page 4                   30 Oct 1989
+
+
+     control,  since a temperature setpoint could be set with a simple
+     
+                               77 DEGREES
+     
+     
+     Now how does forth work ?
+     
+     First of all, forth has some kind of an in-line compiler. As soon
+     as  a  sentence is completed, it is compiled to a sub-code, which
+     consist of vectors to other (earlier) routines. These vectors are
+     interpreted during the execution of a forth program. This makes
+     forth a relative fast language.
+     
+     Forth  uses two stacks of the LIFO type (Last In First Out). Such
+     a  stack  could be compared to a box in which you put messages by
+     laying them on top of the other messages. If you want to recall a
+     message you simply pick the top message.
+     
+     One stack in forth is used as a return stack. This is used in all
+     programming  languages.  If you call another routine, the current
+     memory  address  is  put on top of the stack. When the routine is
+     ended,  the  processor  pulls  the  address  from  the  stack and
+     continues  the  original  routine.  The  only difference is, that
+     forth has routines to tamper with the return stack.
+     
+     The  other stack is used for calculation. This is quite different
+     from  other  languages.  You  cannot  simply multiply two values.
+     First  you have to put both the values on the stack. Then you can
+     call the multiply routine. Afterwards you will find the answer on
+     the stack.
+     
+     In forth a multiplication may look like this:
+     
+                                 7 8 * .
+     
+     (Forth uses spaces to seperate commands)
+     The decimal point is the forth command for: Print as decimal.
+     Now what happens:
+     
+     Input:           7        8         *         .
+               ____      ____      ____      ____      ____
+     Stack:   |----|    |  7 |    |  8 |    | 56 |    |----|
+              |    |    |----|    |  7 |    |----|    |    |
+              |    |    |    |    |----|    |    |    |    |
+     
+     
+     When  we read the above figure from left to the right, we can see
+     that  forth  simply  puts  the  numbers  on the stack. During the
+     multiplication  the  two  numbers  on  the  top  are removed, and
+     replaced  by  the  result.  Finally the print command (.) removes
+     the top number and prints it.  Perhaps now you can understand why
+     forth uses the unusual order of
+     
+                                  7 8 *
+     
+     instead of:
+     EMBBS 1-17                   Page 5                   30 Oct 1989
+
+
+                                  7 * 8
+     
+     The  forth  way  of dealing with formulas is known as the postfix
+     method.  The  reason  for  using this method is that the language
+     can be faster.
+     
+     Now let's see a more complex formula: 7 + ( 2 * 3 )
+     
+     or in forth:   7 2 3 * + .
+     
+     
+     
+     Input:       7       2       3       *       +       .
+     
+             ____    ____    ____    ____    ____    ____    ____
+     Stack: |----|  |  7 |  |  2 |  |  3 |  |  6 |  | 13 |  |----|
+            |    |  |----|  |  7 |  |  2 |  |  7 |  |----|  |    |
+            |    |  |    |  |----|  |  7 |  |----|  |    |  |    |
+     
+     Please  try  to  understand this. It's vital if you want to learn
+     more about forth.
+     
+     To be continued ...                                     Johan.
+
+     -----------------------------------------------------------------
+     EMBBS 1-17                   Page 6                   30 Oct 1989
+
+
+     Ray Tracing
+     By Michiel Overtoom
+     FidoNet 2:286/201.4
+     2e Hunzestr 5
+     9715 BN  Groningen
+     The Netherlands
+     Voice: ++31-50-774790
+     
+     
+     What is ray-tracing?
+     --------------------
+     Ray-tracing is a method to generate a very realistic picture of a
+     mathematical  constructed  scenery.  Unlike  the  conventional 3D
+     rotation/projection methods, ray-tracing allows all kinds of real
+     world  effects  like  mirroring surfaces, transparent objects and
+     shading  etc...  However,  it  is a very computative process. One
+     picture  can take hours or even days to generate. But the quality
+     is worth the waiting...
+     
+     
+     How is it done?
+     ---------------
+     In pratice, a ray-tracing program shoots electronic arrows into a
+     scene  and  traces  the  path  it  follows.  Fascinating, no? The
+     program  assumes  a  eyepoint  (your eye position, probably 40 cm
+     before  the  glass  of your CRT). It then processes each point of
+     the  screen,  constructing  a  vector  FROM  the eyepoint, TO the
+     current  pixel,  INTO  the  scenery.  It  then scans it's list of
+     objects to see if the ray hits any of these objects. If so, a new
+     ray  is constructed (if the surface is mirroring) and the process
+     is repeated until a opaque surface is hit, or until the number of
+     deflections has reached a preset maximum. The pixel on the screen
+     is then painted to a appropriate color (eg, the color of the last
+     object hit dimmed by the number of deflections)
+     
+     
+     Scenery objects
+     ---------------
+     Common  scenery objects are spheres, planes, cylinders, cones and
+     cubes.  In  a  perfect  situation any of these objects can have a
+     surface   with  a  deflection  factor  anywhere  between  totally
+     transparent  or  totally opaque. For a start, it's enough to have
+     total reflecting, total transparent or total opaque surfaces. All
+     these objects can be represented by vector geometry. Lets see how
+     this can be done:
+     
+     o    A  ray  is  described  by  a BASE vector to its start, and a
+          DIRECTION vector to denote the direction of travel.
+     
+     o    A  sphere  is described by a BASE vector to its center point
+          and a RADIUS.
+     
+     o    A  sqare  plane is described by a BASE vector to its center,
+          and two DIRECTION vectors describing the plane's orientation
+          and size.
+     
+     EMBBS 1-17                   Page 7                   30 Oct 1989
+
+
+     o    A  cylinder can be described by a BASE vector to its bottom,
+          a RADIUS and a DIRECTION vector denoting the orientation and
+          size of its center axis. Such a cylinder would be hollow.
+     
+     o    A cone is described by a BASE vector to its bottom, a RADIUS
+          and  a  DIRECTON  vector which specifies the orientation and
+          size of the cone.
+     
+     o    A  'cube'  is  described  by  a  BASE vector to one of its 8
+          vertex  points  and  three  DIRECTION vectors describing the
+          ribs  of the cube. Note that a cube can also be described by
+          6 planes.
+     
+     Using these geometrical building objects, many real-world objects
+     can  be  represented by combining them. A cocktail-glass would be
+     represented  by  a cone, a cylinder and another cone. A chair can
+     be  build  of 'cubes' and cylinders. Certain complex shapes (like
+     the  human  body)  need also 3d-surfaces etc; but this seems *too
+     complex* to me and my PC.
+     
+     
+     Deflection
+     ----------
+     Mirroring  surfaces  deflect  rays  into  another direction. It's
+     evident  that  spheres  reflect light in another way flat mirrors
+     do.  So  for  each  of  the  above  scenery elements, a different
+     algorithm  is  needed  to  calculate  the  direction in which the
+     deflected ray will travel.
+     
+     Transparent  surfaces  do  not  deflect rays; but they change its
+     direction  (like a lens). This depends on the material: Water and
+     glass  have different coefficients. This has to do with optics, I
+     believe Snellius has some figured out some laws on this subject..
+     
+     
+     Absorption
+     ----------
+     Opaque  surfaces  do not deflect rays, so if a ray hits an opaque
+     surface  the color of the pixel on the screen is known and can be
+     displayed.  But...  opaque  objects  show difference in luminance
+     over  their surface, given one or more lightpoints. The luminance
+     of  a  specific  spot on an object can be calculated by comparing
+     the  angle  of  the ray and the angle of the lightpoint to obtain
+     the  luminance  of  the spot. It is this luminance which provides
+     the color of the pixel to be displayed on the screen.
+     
+     
+     Program flow
+     ------------
+     A ray-tracing program will be build like this:
+     
+          Define eyepoint and scenery
+          For each pixel on the screen
+               construct a ray from the eye into the scenery
+               Now repeat:
+                    does the ray hits any object?
+     EMBBS 1-17                   Page 8                   30 Oct 1989
+
+
+                    if NO:
+                         the ray leaves the scenery. The color to
+                         display probably will be black, or according
+                         to a checkerboard-pattern.
+     
+                    if YES:
+                         consider the object hit.
+                         is it a transparent object?
+                              its direction is changed according to
+                              Snellius' law, which handles deflection
+                              by lenses. continue calculation.
+                         is it a mirroring object?
+                              the ray is deflected into another
+                              direction. continue calculation.
+                         is it an opaque object?
+                              end of repeating procedure; the color to
+                              display is the color of the object hit.
+     
+                    Repeat until the number of deflections gets too
+                    high, or an opaque object has been hit.
+     
+               Dim the found color by the number of deflections
+               (optional, but gives nice effect on VGA)
+     
+               Display the pixel (Pheww...)
+     
+          Do this for each pixel.
+     End-of-program
+     
+     
+     Mathematicians sought!
+     ----------------------
+     Although  I'm  able  to  design a ray-tracing program and scenery
+     editor,  my  knowledge  of vector mathematics is not something to
+     write home about. I don't know, for example, how to figure out if
+     a  ray  hits  a  sphere,  and if it does, in what direction it is
+     reflected.   There  are  books  on  this  subject,  but  I  don't
+     understand them (My math grade in school used to be around the 4)
+     
+     I would like to contact somebody who can give the formulas needed
+     to  carry  out  intersections  of  a vector line with the various
+     scenery-objects. Even if you know only one or two, give a call or
+     a msg, because I really would like to run ray-tracing graphics on
+     my  PC.  If you're interested, write/call me too. If you have any
+     ray-tracing program or source, even for non-PC computers, ditto.
+
+     -----------------------------------------------------------------
+     EMBBS 1-17                   Page 9                   30 Oct 1989
+
+
+     =================================================================
+                               WEEKLY PUZZLE
+     =================================================================
+
+
+     Ok,  folks.. this is the end.. As I don't receive any comments or
+     answers  on the puzzles anymore I stop with the puzzle.. But I'll
+     be  back  with something of more interest for computer users. I'm
+     working  on  something  to fill up the space which has come free.
+     You'll here more about it in a few weeks..
+     
+     This  and  the coming weeks there are only the answers of puzzles
+     8913 to 8916. And of course you may still send in your answers..
+     
+     See ya..
+      GH.
+     
+     ------>8------
+     
+     The answer of puzzle 8913. The indians round the campfire ....
+     
+     There  were  7 indians, and the poorest had 2 goldpieces to start
+     with.
+
+     -----------------------------------------------------------------
+     EMBBS 1-17                   Page 10                  30 Oct 1989
+
+
+     =================================================================
+                                  WANTED
+     =================================================================
+
+
+     I'm  desperately  looking  for information about the structure of
+     dBASE  III(+)  index  files.  Some (people, AND books) say it's a
+     B+Tree,  others  say it's plain sorted and should be read using a
+     binary  search.  Finding  out from an .NDX file by looking at the
+     hex  dump isn't of much use either, because dBASE fills up unused
+     sections  with garbage from memory - so it looks like data but it
+     isn't....
+     
+     Please, any information, source or specification will be of help.
+     I  can be contacted by FidoNet mail at node 2:286/201 or directly
+     on AINEX-RBBS ++31-33-633916, and by SnailMail at Langegracht 7B,
+     3811 BT Amersfoort, The Netherlands.  Thank you..... Arjen Lentz.
+
+     -----------------------------------------------------------------
+     EMBBS 1-17                   Page 11                  30 Oct 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+      1 Dec 1989
+        All telephone numbers in The Hague (Holland), get an extra
+        (7th) digit, the prefix 3. (ie. 123456 becomes 3123456.)
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in Antwerp, Belgium: annual European FidoNet
+        Conference. Not only for sysops, mind you!  Also for points,
+        users and everyone else interested in FidoNet communications..
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-17                   Page 12                  30 Oct 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:513/50 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colijn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:    (FidoNet Region 2:34)
+        -  Rocky, Barcelona; sysop Jaime Roca
+           ++34-3-8746155 at 300 and 1200
+           FidoNet Node 2:343/0 aka 2:343/5 (Continuous mail)
+     EMBBS 1-17                   Page 13                  30 Oct 1989
+
+
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

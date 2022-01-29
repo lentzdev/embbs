@@ -1,0 +1,408 @@
+     Volume 2, Number 33                                13 August 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        Iraq and the Middle East  .................................  1
+     2. COLUMNS  ..................................................  3
+        Informational Column?  ....................................  3
+     3. NOTICES  ..................................................  5
+        Calendar of Events  .......................................  5
+        EMBBS Distribution & Support Sites  .......................  6
+        EMBBS Article Submission Guidelines  ......................  8
+
+                                 - - - - -
+     EMBBS 2-33                   Page 1                   13 Aug 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Iraq and the Middle East - A political review
+     By Jeroen van Drie
+     2:286/255/15@fidonet
+     
+     The main reason for the Iraqi invasion of Kuwayt is of course
+     oil, power and money. But it does not  end there. If you
+     visualize yourself the political map of those parts, then the
+     North is a place where more or less modern Arabic governments
+     settle. In Iran, the Orthodox Islamite government established by
+     Khomeini; In Syria, the socialist inspired Great-Arabic
+     Nationalist Baath party is the only allowed party; In Iraq, the
+     country is dominated by Saddam Hussein, also the leader of the
+     Iraqi Baath party; In Egypt, an Arabic version of democracy. In
+     the south on the Arabic sub-continent, the Emirs reign. The Emirs
+     are the last remnant of the Arabia which was established by Great
+     Britain and King Fahd is the only powerfull king left on this
+     planet. They are conservative and have up to now ignored the call
+     for change from the other Arab nations. So there is a contrast
+     between the 'modern' Arab governments in the north, and the
+     traditional Arab governments in the South. Hussein, now openly
+     attacking that traditional system, finds a lot of support amongst
+     people in the Middle East.
+     
+     Syria, Iraq and Iran are the three nations in the North. The
+     Iran-Iraq war displayed the great tension in the region, both
+     wanting to be dominant in the area, one the Baath-way, the other
+     the Islam-way. Syria and Iraq, although dominated by parties with
+     the same name and ideology, will try to do anything to gain by
+     the other's loss and strifle for the ideological dominance of
+     Arab anti-semitism.
+     
+     Israel is a strange fish in the net. Out of fear for the USA and
+     because of the efficiency of the Israeli security system, Arab
+     countries do not wish to attack Israel openly but if they're at
+     war with the USA, they are at war with Israel.
+     
+     
+     The total picture of the Arab world is conflict. Conflict between
+     old and new, between ideologies, between religions, between rich
+     and poor, between Shiite and Sunnite, and all those amongst each
+     other. Most of the Arabs want Arab unity so as to be able to make
+     a fist against the West who profites from competition and
+     conflict between Arab nations. The intervention of the USA in the
+     conflict will make massive amounts of Arabs doubt. Whom to
+     support? The old traditional Kingdom of Saudi-Arabia, and the
+     Americans (who, to the Arabs, are apart from the Israeli's, the
+     greatest foes), the Christians and such? Or would they support
+     Saddam Hussein, who now sais that it's a holy war for the Islam
+     against the archaic Emirs and their Christian-Zionist servants, a
+     war for great Arab unity, a war for oil, power and wealth for all
+     Arabs, a war against Israel. But Saddam is a brute who will not
+     EMBBS 2-33                   Page 2                   13 Aug 1990
+
+
+     respect the rights of all arabs equally. And the propaganda
+     machinery works 25 hours a day.
+     
+     In the light of the doubts of the 'average' Arab, the result of
+     Mubarak's meeting is applaudable, because most Arab governments
+     now take side against Iraq, risking thereby their own credibility
+     significantly.
+     
+     Specialists think that war is almost inevitable. The conditions
+     for an Iraqi retreat from Kuwayt issued by the Iraqi government
+     on august 12th can not be accepted and the effect of mentioning
+     those conditions can but escalate the conflict.
+     
+     Whatever may happen, Arabia as we know it now will change for
+     sure. Saddam Hussein put to words what has been living amongst
+     Arabs ever since the fall of the Turkish empire; a call for
+     autonomy from the west and the wish for wealth.
+
+     -----------------------------------------------------------------
+     EMBBS 2-33                   Page 3                   13 Aug 1990
+
+
+     =================================================================
+                                  COLUMNS
+     =================================================================
+
+
+     Information Column?
+     
+     I have no experience whatsoever with writing columns. This on is
+     the first of a - who knows? - series of, perhaps critical or
+     slightly cynical, columns. Personaly I think that the readers
+     should know with who the are dealing, therefore I will first
+     introduce myself.
+     From my birth on, twentyfour years ago, I carry the name of
+     Stephan Ververda, born and raised in Deventer, Netherlands.
+     Since a few months I'm a sysop from CERBERUS BBS (this should
+     ring a bell to the Mytholigists amongst us) and just a few days
+     ago I became also a HUB. The network I reside in doesn't belong
+     to the worldwide Fido network but is a substraction from the
+     former /\LIEN net (or the 666 net). Of course, by now you all
+     know what network it is I'm speaking about.. It's the ()LYMPIC
+     NETWORK FOUNDATION.... What do you say? You've never heard of it?
+     Shame on you, this means it's time for you to broadden (well my
+     English isn't that good!) your horizon and start looking, just
+     for once, outside of the Fido network. You will see that there
+     is more to life than just Fido!
+     
+     One of the reasons for me to start writing this column is that I
+     wanted the people from Fido to know that there also excists
+     indepentent, private ( er.. well private?) networks, mostly not
+     larger than 50 nodes, but never the less they do excist.
+     One of the reasons that ()LYMPIC started of as a independent
+     network was that the sysops felt that the users and sysops should
+     be totaly free to do whatever the like and, for just a few rules,
+     they are! And I can say that this is something users like, the
+     network therefor is growing, slowly but growing.
+     Hence, I'm not saying that Fido is a bad concept, but the problem
+     of Fido is that it is getting bigger and bigger. You could
+     compare it with a living being wich is getting bigger and bigger
+     (read fatter), the bigger they get the slower they start moving.
+     Fido on it's own is something wonderfull, exchainging mail just
+     all over the world but, Fido is getting a bureaucratic organis-
+     ation with rules and musts that, if they don't watch it, is get-
+     ting worser than your local civil service.
+     For example, in Holland there is a computerclub called the HCC
+     wich started of as purly amateuristic computerclub. Along the
+     years they started growing and now a days they are the biggest
+     computerclub in Holland. It's no fun anymore to work with a
+     organisation from wich you don't know the people that are running
+     it, a organisation that is getter more and more commercial.
+     What I call fun is getting together with about 10 to 20 people,
+     have a drink, have fun, solve problems, getting some gossep and
+     argueing about C is better than Pascal, admire people who can
+     speak assemble as if it where their second language.
+     
+     As you propably all know, there was at the beginning of August
+     the FidoCon 1990. This should by now all be finished and there-
+     EMBBS 2-33                   Page 4                   13 Aug 1990
+
+
+     fore I would like to conclude in the spirit of my column with
+     the words from the Editor Emeritii from FidoNews 7-31:
+     "perhaps the gathering could get back to what it's all about:
+     an amateur electronic mail network, and not an organizational
+     debating society.". I sincerly hope that this has been so.
+     
+     
+     
+                                  Stephan Ververda,
+                                  CERBERUS BBS, 17:778/2
+                                  HUB ()LYMPIC NET MIDDLE 17:778/200
+                                  31-5700-41779 (continues mail)
+     
+     
+     PS. Any reactions or words of critics should be sent to the
+     author (that's me) at the above address.
+
+     -----------------------------------------------------------------
+     EMBBS 2-33                   Page 5                   13 Aug 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-33                   Page 6                   13 Aug 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200, 2400 and V.32, with MNP5 and V.42
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The Independent Mail System, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:25/100 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/255 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+     EMBBS 2-33                   Page 7                   13 Aug 1990
+
+
+           ++47-71-34304 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-33                   Page 8                   13 Aug 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/255.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-33                   Page 9                   13 Aug 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/255.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

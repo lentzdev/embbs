@@ -1,0 +1,465 @@
+     Volume 2, Number 24                                  11 June 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        A Public Service Announcement  ............................  1
+     2. NOTICES  ..................................................  5
+        Calendar of Events  .......................................  5
+        EMBBS Distribution & Support Sites  .......................  6
+        EMBBS Article Submission Guidelines  ......................  8
+
+                                 - - - - -
+     EMBBS 2-24                   Page 1                   11 Jun 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+                       A public service announcement
+     
+     TIRED  of  celebrating  your  anniversary or birthday on the SAME
+     DAY, YEAR after YEAR?
+     SICK  of  all  those unwanted relatives coming over to abuse your
+     hospitalities  on  such exploitable holidays as Thanksgiving, and
+     the 4th of July? CONFUSED as to how to solve these problems?
+     
+     Then  DO  what  SANE  PEOPLE  are  doing  ALL  OVER  the country!
+     Celebrate PRIME-NUMBERED anniversaries!!
+     
+     HOW  does  it  work? Simple. Instead of celebrating anniversaries
+     every  year,  celebrate  ONLY  prime-numbered anniversaries (2nd,
+     3rd,   5th,  7th,  11th,  etc).  This  new  and  exciting  Prime-
+     Celebration Paradigm (or PCP for short) is sweeping the country.
+     
+     WHY  do  this?  Easy.  As any socially competant person is aware,
+     anniversary  celebration  soon  becomes  tiresome after the first
+     few  years. Fortunately, the primes occur fairly often during the
+     first  10  years,  commonly  referred to as the "gosh-wow" years,
+     when  the concept of celebrating anniversaries is still a new and
+     wonderful  idea. But when anniversaries become as tiresome as the
+     event  they  are  commemorating,  the beauty of the PCP technique
+     becomes  apparent  --  although  there  is  no  known closed-form
+     formula  for computing the nth prime, examination of prime tables
+     reveals  that after 20 years or so, there are only 2-3 primes per
+     decade!  The  prime  number theorem also guarentees that the more
+     days pass, the fewer primes occur.
+     
+     -----------------------------------------------------------------
+     The   PCP   technique  has  an  interesting  history.  After  its
+     invention,  sophisticated  PCP  followers  cleverly  extended the
+     basic  PCP  technique  to  solve  the  same-day  holiday dilemma.
+     Initially, they began celebrating their events every prime-number
+     of  days since it occured, instead of every prime-number of years
+     since  its occurrence. Critics were quick to pounce on this early
+     version  of  Augmented PCP (APCP) by claiming it reintroduced the
+     same  problem  original  PCP  was  designed to solve (namely, the
+     constant   celebration  of  anniversaries  after  the  "gosh-wow"
+     period).  Indeed,  they argued, if we celebrated events using the
+     APCP  technique,  we  might expect to celebrate events atleast 50
+     times per calendar year after the "gosh-wow" years.
+     
+     It  did not take long for the APCP followers to develop the basic
+     PCP   technique  which  is  presently  practiced  throughout  the
+     country.   To   combat  the  frequent-holiday  problem  of  APCP,
+     followers began celebrating events not after every prime-numbered
+     days,  but  after every prime-number of prime-numbered days. This
+     Meta APCP (MAPCP, or "mapcap") calls for celebrations after every
+     
+           3,  5,  11,  17,  31, ...
+     EMBBS 2-24                   Page 2                   11 Jun 1990
+
+
+     days.  Of course, celebrations are still quite frequent, but this
+     idea  can be simply extended to MetaMeta APCP (MMAPCP, pronounced
+     "Muh-mapcap") and MetaMetaMeta (M^3APCP, usually not pronounced),
+     etc.,  thereby  solving  the  frequent-celebration  problem.  For
+     example here is a table of the first few meta-prime varieties:
+     
+       primes  meta-pr.  meta-meta-pr. ...  meta-meta-meta-meta-primes
+       (APCP)  (MAPCP)     (MMAPCP)                 (M^4APCP)
+     
+           2        3            5                       31
+           3        5           11                      127
+           5       11           31                      709
+           7       17           59                     1787
+          11       31          127                     5381
+          13       41          179                     8527
+          17       59          277                    15299
+          19       67          331                    19577
+           .
+           .
+           .
+     
+     Of  course, many factions of PCP now exist -- some follow all M^n
+     factions for n > 2, for example. As a result, various "nicknames"
+     have  been  given  to  these various groups. Early groups were as
+     follows:
+     
+              1) the  "mapcaps",  who  follow  only  the original Meta
+                 Augmented  prime-celebration  paradigm  (MAPCP). They
+                 are a dying, but well-respected, breed.
+     
+              2) the  "hard  cores",  who only follow MMAPCP, MMMAPCP,
+                 etc.,  varieties  of  MAPCP.  Hard-cores  are usually
+                 considered stubborn and anal retentive.
+     
+              3) the  "catholics" who follow all M^nAPCP varieties for
+                 all n. Catholics are considered pompous boobs as they
+                 do not realize that they are identical to mapcaps.
+     
+              4) "choozy  whoozies"  are  essentially  a subset of the
+                 catholics,   as   they   celebrate  only  a  (perhaps
+                 infinite)  subset  of M^nAPCP varieties. Because they
+                 are   an   offshoot   of   the  catholics,  they  are
+                 particularly  ridiculed.  Because  they don't realize
+                 they  are  essentially  equivalent  to  a  hard  core
+                 faction,  they  are frequently offered as examples of
+                 "those  mapcap  idiots".  Rest  assured  that  choozy
+                 whoozies  are  not  offically  accepted in the mapcap
+                 community.
+     
+              5) the  "hyper metas", who follow only an M^nAPCP, where
+                 n  itself  is  prime.  They are much better respected
+                 than  the  hard  cores  (of  which they are subsets),
+                 since becoming a hyper meta requires a fair amount of
+                 ingenuity  and  cleverness.  In fact, many hard cores
+                 who just happened to follow a hyper-meta variety have
+                 tried  to  pass  themselves  off as true hyper metas.
+     EMBBS 2-24                   Page 3                   11 Jun 1990
+
+
+                 There  are  "catholic hyper-metas" and "choozy-whoozy
+                 hyper-metas"  as  well,  although  their  numbers are
+                 extremely  few  since  choozy  whoozies and catholics
+                 lack both ingenuity and cleverness.
+     
+     
+     The  newest  category  which has been added to the PCP arsenal is
+     the   technique  of  "importance  shading"  for  various  M^nAPCP
+     holidays  for  different  values  of n. Invented by catholics and
+     choozy-whoozies  who  disliked  being  labelled  as "idiots", the
+     importance  shading  (IS)  technique has found wide acceptance in
+     the  PCP  community.  As a simple example, consider an IS mapcap.
+     Although  all  meta-prime  days of an event are celebrated, those
+     days  that  are  also meta-meta or meta-meta-meta primes might be
+     particularly  celebrated  (for example, on a meta-meta holiday an
+     IS  mapcap  might  be prompted to take a day off work, while on a
+     meta-meta-meta  holiday,  he  or  she  might  wish to take a long
+     weekend  and  actually  invite guests over.) By incorprorating IS
+     techniques,  the  catholics  and  choozy whoozies have managed to
+     save  some  face.  An  IS  catholic, for example, can distinguish
+     himself  from  a  mapcap or even an IS mapcap simply by attaching
+     different importances to various M^nAPCP holidays. Moreover, many
+     choozy-whoozies  are  simply  thrilled by the IS concept, but few
+     have  been  able  to  implement  it  properly. As a result of its
+     widespread appeal and capability to support originality, over 90%
+     of  all  PCP  followers consider themselves affiliated with an IS
+     variety.  The  other  10%  stick  with the early groups mentioned
+     above.
+     
+     
+     Having understood PCP and its subtle intricacies, we may now give
+     several  examples of its use in combatting the problems mentioned
+     at  the  beginning  of this public service announcement. We shall
+     give  somewhat  arbitrary examples to show how arbitrary factions
+     might  deal  with some problems. We hope that these examples will
+     demonstrate the flexibility of the PCP approach.
+     
+     Problem 1 -- annual holiday celebration. What a pedestrian way to
+        celebrate  an  important  event in one's life. How would an IS
+        mapcap  solve  the  problem?  He or she might choose to ignore
+        meta-primes  beginning  with  an odd digit, for example. Thus,
+        event  celebration might occur after 41, 67, 83, 211, 241, ...
+        days.  Note  the  convenient  absence of 3xx (particularly any
+        meta-prime   near  365)  in  this  brilliant  scheme,  thereby
+        insuring  that  celebrations  will  never  occur anywhere near
+        1-year apart.
+     
+     Problem  2  --  abusive, unwanted relatives. The solution to this
+        agonizing problem can be attacked along the lines of problem 1
+        above.  For  variety's  sake  assume  we  are  dealing  with a
+        hardcore M^4APCP couple, who have deftly decided to apply this
+        scheme  to  their  wedding anniversary. Neither can stand Aunt
+        Elda  and  Uncle  Bob,  so  instead of humiliating them by not
+        inviting  them  to  their anniversary (after all, Elda and Bob
+        mean  well,  it's just that they are extremely annoying), they
+        invite them to their
+     EMBBS 2-24                   Page 4                   11 Jun 1990
+
+
+             10th meta-meta-meta-meta anniversary,
+     
+        and  furthermore  tell  Elda  and  Bob  that they are the ONLY
+        ONES  invited  to  this  glorious occasion. Of course, this is
+        somewhere between their 115th and 120th year of marriage. Such
+        techniques  can  be  applied more frivolously, for example, by
+        inviting complete strangers to one's
+     
+             golden meta-meta-meta-meta anniversary,
+     
+        or  applied simply to confuse, as when one sends an invitation
+        to a
+     
+     
+             5th hyper-silver-meta-hyper-meta-golden birthday party,
+     
+        (whenever that may be).
+     
+     
+     It  is hoped the above examples serve to demonstrate the flexible
+     nature  of PCP paradigms, and motivite the reader into adopting a
+     PCP variety.
+
+     -----------------------------------------------------------------
+     EMBBS 2-24                   Page 5                   11 Jun 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     12 Jun 1990
+        On  this  date it will be five years ago that FidoNet switched
+        to  multiple  nets, ie. numbers in the form 'net/node' instead
+        of just 'node'.  Things would just grow out of hand otherwise.
+     
+     13 Jul 1990 - 16 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        Friday   13th: Evening, registration.
+        Saturday 14th: 1st day of real conference.
+        Sunday   15th: 2nd day of real conference.
+        Monday   16th: Morning, going home.
+        For detailed information and registration forms see EMBBS 2-20
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 2-24                   Page 6                   11 Jun 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+     EMBBS 2-24                   Page 7                   11 Jun 1990
+
+
+           ++47-71-34304 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           No FidoNet node at present
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-24                   Page 8                   11 Jun 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/201.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/201)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-24                   Page 9                   11 Jun 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/201.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

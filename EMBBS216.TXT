@@ -1,0 +1,477 @@
+     Volume 2, Number 16                                 16 April 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. ARTICLES  .................................................  1
+        EuroCon IV: A General Overview to a Great Happening !  ....  1
+     2. NOTICES  ..................................................  5
+        Calendar of Events  .......................................  5
+        EMBBS Distribution & Support Sites  .......................  6
+        EMBBS Article Submission Guidelines  ......................  8
+
+                                 - - - - -
+     EMBBS 2-16                   Page 1                   16 Apr 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     EuroCon IV: A General Overview to a Great Happening !
+     _____________________________________________________
+     
+     
+     0. Maybe a small introduction ?
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     
+     Msg : 111, 14 Oct 89 21:06:00
+     From: Joop Mellaart
+     To  : All
+     Subj: announcement Eurocon IV
+     -------------------------------------
+     Hello to you all,
+     
+     On behalf of the organisation committee of Eurocon III I herewith
+     announce  that Belgium will be the organising country for Eurocon
+     IV.
+     
+     Ward  Dossche  has  sent  us  a  very  good  proposal which Peter
+     Janssens  will  post  here within a few days. [...] we think that
+     the Belgian proposal is very good and Eurocon IV should therefore
+     be organised in Belgium.
+     
+     Regards, <JM>
+     
+     --- FD 2.00
+      * Origin: PCC Zonegate - Gateway to the Continents! (2:512/99)
+     
+     
+     
+     1. ... or maybe a bit clearer ?
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     When  I  was preparing this article, it crossed my mind, to start
+     telling  you something about the history of FidoNet. But probably
+     most  of  you would already know all that stuff, so there was the
+     chance  that you would drop of, just because of boredom. And that
+     would  be  a shame, really, because EuroCon is an occasion, which
+     every European FidoNet sysop should have seen at least once !
+     
+     EuroCon  is  a  happening  which  developed  itself  thru FidoNet
+     history:  Apparently,  sometimes echomail is just not good enough
+     to  keep  good contacts between regions, so at a certain point in
+     time,  it  became  clear  that  it  would  be really nice (if not
+     actually necessary), to organise a European Sysop-meeting. In the
+     United  States, these happenings had already been organised: They
+     called it FidoCon.
+     
+     So  four  years  ago,  the first European Sysop-meeting, EuroCon,
+     was  organised.  From then on, it was decided to organise such an
+     international meeting yearly.
+     
+     EMBBS 2-16                   Page 2                   16 Apr 1990
+
+
+     2. And this year...
+     ~~~~~~~~~~~~~~~~~~~
+     This year, Eurocon will be organised in Antwerp, Belgium, on July
+     14th  and  15th.  Antwerp  is one of Belgium's biggest ports. The
+     historical  city  is  a  very  convenient  conference-city:  Many
+     suitable  hotels, in all price-classes are available, there is an
+     International  Youth Hostel and a camping place. Since Antwerp is
+     an  international  city,  it  is very easy for foreigners to find
+     their  way  around:  Most touristical, hotel- and other staff are
+     multilingual (Dutch, French and English are common; German is not
+     unusual).  Furthermore,  the city of Antwerp is easily reached by
+     car, train and airplane.
+     
+     
+     3. But what about the meeting itself ?
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     You're  right.  Better  tell  you  someting about what's going to
+     happen on EuroCon IV. As matter of fact, EuroCon IV will be a bit
+     different  from  the EuroCon's before. This time, there will be 3
+     FidoNet  conferences  going  on simultaneously ! The first one is
+     USERCON  I.  This conference will be dedicated entirely to Region
+     29  matters (Belgium). It is a meeting between sysops, points and
+     users  of FidoNet Belgium. It will be open to the general public.
+     Obviously,  this  meeting won't be too interesting to the foreign
+     guests.  It  is  merely  a practical matter to organise UserCon I
+     during  EuroCon  IV.  The  other  2  conferences  however will be
+     *very* interesting. Let's start with the new one...
+     
+     The  new  one  is  TECHCON  I.  It  will  be  a  purely technical
+     conference  on  FidoNet  matters.  Provisions  are being made, to
+     invite  as  many  as  possible  developers  of P.D., ShareWare or
+     commercial  software.  In  particular,  people  being  active  in
+     developing   mailers,   terminal   programs,   BBS  software  and
+     utilities,  packers,  and  whatever else is being used by amateur
+     communication  freaks.  Also manufacturers of comms hardware will
+     be invited.
+     It  will be required to register in advance. You will be informed
+     about  this  in  a  few weeks, thru the EMBBS magazine, thru some
+     echomail  channels  (e.g.  ENET.SYSOP),  and  in FidoNews.
+     But the main conference of course will be EuroCon IV ...
+     (tataaah...)
+     
+     EuroCon  IV  will  traditionally  be  devoted  exclusively to the
+     phenomenon  'netpolicy'.  Netpolicy,  is the whole of rules which
+     are   keeping   the   net   up  and  operational.  Without  them,
+     communication  in  FidoNet  would be impossible. Some main themes
+     that will be discussed are:
+     
+     EEC- and European matters :
+     
+     * The private computer-communication market after 1992
+     * Changing policy in the great internal market
+     * Creation of a European sysop-association
+     * Telephone  companies and future European approval standards for
+       telecommunications hardware
+     * Auto-censoring, privacy and ownership of public electronic-mail
+     EMBBS 2-16                   Page 3                   16 Apr 1990
+
+
+       information
+     * Developments in Eastern-Europe
+     
+     Internal policy matters :
+     
+     * Electronic-mail policy
+     * Electronic-mail routing
+     * Elections
+     * Appointing EUROCON-V site
+     * Democracy within FidoNet
+     * Complaint-procedure
+     
+     Technical matters :
+     
+     * Fast modems (V32 - PEP - HST)
+     * Automated mailer software
+     * Technical standards
+     * New communication protocols
+     
+     I  guess  you've got a general idea now, about what's going to be
+     discussed  at  EuroCon  IV.  Clearly  EuroCon is a very important
+     conference.  Because  even  if  an amateur network is technically
+     capable   of  functioning  well,  it  is  only  thru  real  human
+     communication, agreement and understanding, between the thousands
+     of  participants,  that  such  a  huge network can be maintained.
+     And  that  really  needs  some  agreements. Without them, FidoNet
+     would  surely  collapse. It is at meetings like EuroCon, that one
+     builds  the  strong  structures that have kept FidoNet alive, all
+     these years !
+     
+     
+     4. Back down to the 'earthly' matters...
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     The  programme,  which  of  course  can  be subject to some minor
+     changes, will look like this:
+     
+     * Friday July 13th
+     - Evening: Arrival most participants.
+     - Pre-meeting  between  the organising committee and the RC's and
+       ZC2,  to discuss the coming days, set some priorities, and iron
+       out whatever needs to be ironed out.
+     
+     * Saturday July 14th
+     - Morning: EuroCon session-1
+     - Noon: Luch of course !
+     - Afternoon: EuroCon session-2
+     - Evening:  Dinner,  and  optional  '11-kroegentocht',  not to be
+       missed  by all beer-drinkers ! (Belgium is a country famous for
+       it beers !)
+     
+     * Sunday July 15th
+     - morning: EuroCon session-3
+     - noon: lunch
+     - afternoon: EuroCon session-4
+     - evening:  Dinner-cruise on the River Scheldt for all registered
+       participants,  sponsors,  companies  and other people that have
+     EMBBS 2-16                   Page 4                   16 Apr 1990
+
+
+       contributed to the organising of EuroCon-IV.
+     - After 10pm: Everybody can seek a form of entertainment suitable
+       to his/her own needs.
+     
+     * Monday July 16th
+     - morning: Check-out and departure of most participants.
+     
+     
+     There  is also a fringe-programme for participants and relatives.
+     Including:
+     - Visit to the port of Antwerp.
+     - Visit to the famous Antwerp ZOO.
+     - Factory-visit.
+     
+     
+     5. But, isn't there always one more thing to say ?
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Yes, there is:
+     You  can send us your remarks, questions and suggestions. We have
+     opened   a   special  node  for  EuroCon-IV.  It  has  nodenumber
+     2:2/999.0,  and  it  is  open for mail 24 hours a day. We will be
+     happy  to get some feedback, so that we can keep your suggestions
+     in mind, while setting up the meeting in detail.
+     You can address your messages to Ward Dossche, the team-leader of
+     the  organising  team. You can also write Ward or me a message in
+     ENET.SYSOP.
+     And  above all: Be looking out for more information about EuroCon
+     IV.  In  a  few  weeks,  we  will start distributing registration
+     forms. Don't hesitate to join the conference. Don't put away that
+     form  somewhere  you'll probably forget it. Without you, it would
+     be much less fun !  We count on you !  Try to be there in July !
+     
+     Jan Spooren (2:295/20.0)
+     Electronic-Press attache (Umpf!)
+     
+     P.S.: We just received a message from Tomas Bremin (2:201/110.0),
+     moderator  of InterUser: He tells us, we can expect a group of 15
+     to  30  people from InterUser, who are going to meet eachother at
+     EuroCon IV ! Watch my words: It'll be quite a happening !!
+
+     -----------------------------------------------------------------
+     EMBBS 2-16                   Page 5                   16 Apr 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     12 Jun 1990
+        On  this  date it will be five years ago that FidoNet switched
+        to  multiple  nets, ie. numbers in the form 'net/node' instead
+        of just 'node'.  Things would just grow out of hand otherwise.
+     
+     13 Jul 1990 - 16 Jul 1990
+        EuroCon IV:  annual European FidoNet Conference,  this time in
+        in Antwerp, Belgium.  Not only for sysops, mind you!  Also for
+        points,  users  and  everyone  else  interested in FidoNet and
+        other communications via computers and modems.....
+        NOTE: THE CONFERENCE DATES WERE SHIFTED 1 DAY !!
+        Friday   13th: Evening, registration.
+        Saturday 14th: 1st day of real conference.
+        Sunday   15th: 2nd day of real conference.
+        Monday   16th: Morning, going home.
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 2-16                   Page 6                   16 Apr 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+     EMBBS 2-16                   Page 7                   16 Apr 1990
+
+
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-16                   Page 8                   16 Apr 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/201.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/201)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-16                   Page 9                   16 Apr 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/201.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

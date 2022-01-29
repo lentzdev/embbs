@@ -1,0 +1,240 @@
+     Volume 1, Number 25                              25 December 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             MERRY CHRISTMAS!
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................. 1
+     2. ARTICLES  .................................................. 2
+        Scientists Discover New Element!  .......................... 2
+     3. NOTICES  ................................................... 3
+        Calendar of Events  ........................................ 3
+        EMBBS Distribution & Support Sites  ........................ 4
+
+                                 - - - - -
+     EMBBS 1-25                   Page 1                   25 Dec 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     By Jeroen van Drie
+     (Editor in Chief)
+     
+     We  don't  have  much  articles  this week, but the one we got is
+     funny, so that could perhaps compensate it. The number of reviews
+     we  received wasn't very big. One, to be exact, published in last
+     week's embbs. We all here really do hope that it'll be more, next
+     year perhaps?
+     
+     So,  this  week  has been a historical one again. Potsdammerplatz
+     is  again  open  for  public  access, and Rumania faces a new era
+     after  a  very  long time of Feudal government. The United States
+     invaded  Panama,  and  invited  the  Soviets  to  do  the same in
+     Rumania.
+     
+     Modems  have  been  invading the eastern block. As far as I know,
+     Fidonet  has  new  Nodes  in Poland (they have a network of their
+     own) and Bulgaria. People in West Berlin have set up a connection
+     with  people in East Germany, and there are rumours in the Soviet
+     Union.  I still cannot grab it. The impacts will be big, consider
+     those  millions  of  people  who are free again, and who can make
+     their  contribution to our "common" culture again. A poet will be
+     the  next  president of Tsjechoslovakia. Anyone remember how rich
+     the  Russian  culture  was? With all it's composers and authors?,
+     does  anyone  remember  how  it was before 1916?, before 1933? It
+     will  not  be  the  same,  times  have  changed, and new forms of
+     communication  have  rose  to see the daylight, like our form! We
+     are  the  first!; You are on the first row between the people who
+     will  start  or participate in the communication between east and
+     west.  When you haven't seen any of them yet; they are there, and
+     they will also start to participate in the echo's you frequent.
+     
+     But  we  are not at that point yet. Just relax, and read what has
+     been  made  for  you  here, perhaps even you will decide to write
+     something for the next or any EMBBS.
+     
+     Have a <fill in whatever you wish> 1990!
+
+     -----------------------------------------------------------------
+     EMBBS 1-25                   Page 2                   25 Dec 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Scientists Discover New Element!
+     
+     The  heaviest  element  known  to science was recently discovered
+     by   University   physicists.   The  element,  tentatively  named
+     Administratium  (Ad),  has  no  protons or electrons, which means
+     that its atomic number is 0.
+     
+     However,  it  does have 1 neutron, 125 assistants to the neutron,
+     75 vice neutrons and 111 assistants  to the vice neutrons.   This
+     gives it  an atomic  mass of  312.   The 312  particles are  held
+     together in the nucleus  by a force that involves  the continuous
+     exchange of meson-like particles called "memos."
+     
+     Since  it  has  no  electrons,  Administratium is inert. However,
+     it can be  detected chemically because  it seems to impede  every
+     reaction  in which  it  is  present.   According  to  one of  the
+     discoverers,  a  very  small amount  of  Administratium  made one
+     reaction that normally  takes less than  a second take more  than
+     four days.
+     
+     Administratium  has  a  half-life  of  approximately three years.
+     It   does   not   actually   decay,   instead,   it  undergoes  a
+     reorganization in which the assistants to the neutron, assistants
+     to  the  vice-neutron, and the vice-neutron exchange places. Some
+     studies  have  indicated  that its atomic mass actually increases
+     after each reorganization.
+     
+     The  element  was  discovered  by accident. A researcher, angrily
+     resigning  from chairpersonship of the physics department, dumped
+     all  of  his  papers  in  the  intake  hatch  of the University's
+     particle accelerator.
+     
+     "Apparently,  the  interaction of all those reports, grant forms,
+     et  cetera, with the particles in the accelerator created the new
+     element," according to an unnamed source.
+     
+     Research  at  other laboratories seems to indicate Administratium
+     might  occur  naturally  in  the  atmosphere.  According  to  one
+     scientist,  the element is most likely to be found on college and
+     university  campuses  and  in  large  corporation  and government
+     centers, near the best-appointed and best-maintained building.
+
+     -----------------------------------------------------------------
+     EMBBS 1-25                   Page 3                   25 Dec 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in Antwerp, Belgium: annual European FidoNet
+        Conference. Not only for sysops, mind you!  Also for points,
+        users and everyone else interested in FidoNet communications..
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-25                   Page 4                   25 Dec 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     EMBBS 1-25                   Page 5                   25 Dec 1989
+
+
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

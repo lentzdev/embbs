@@ -1,0 +1,285 @@
+     Volume 2, Number 1                                 1 January 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                              HAPPY NEWYEAR!
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................. 1
+     2. ARTICLES  .................................................. 2
+        The Hunter  ................................................ 2
+     3. COLUMNS  ................................................... 3
+        From the Owner of the Establishment  ....................... 3
+     4. NOTICES  ................................................... 4
+        Calendar of Events  ........................................ 4
+        EMBBS Distribution & Support Sites  ........................ 5
+
+                                 - - - - -
+     EMBBS 2-01                   Page 1                    1 Jan 1990
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     Well, I have heard that there are people in South Africa (No Art,
+     we  are  not  involved  in  politics here, don't worry..) who are
+     interested  in  helping  EMBBS  or even interested in joining the
+     EMBBS editorial team. The distributor there, Ralph Colyn, told me
+     so.  This  Editorial is somewhat an addition to the one published
+     in EMBBS124.
+     And  as  people  in  South Africa are no different from people in
+     Europe,  then  there must be a reason that I do not hear of them.
+     So  I  wondered:  "What  would  be  the cause of that..?" and two
+     answers  emerged.  The  first was that there aren't enough people
+     receiving  EMBBS,  but  we distribute it to big networks and with
+     the  aid  of supportive people, and there are a lot of people who
+     read  it.  I  have heard and seen some figures, they were not bad
+     for  a  european  magazine,  I  thought,  though  I  have no real
+     standards on which to base such an assumption. So would it be the
+     other  answer?  People  who would want to but cannot seem to find
+     the  channels  through  which  to  communicate  with those behind
+     EMBBS?  Question  in between.. Who are those behind EMBBS anyway?
+     Well,  all sorts of people. In the EMBBS editorial team there are
+     people  who  work  for companies, people who work for themselves,
+     people  who  are  trying  to  get something started with applying
+     fidonet  to  other branches, students, and others. One thing they
+     have  in  common,  and  that's that they like to spend their time
+     behind  the  keyboard. Those are the people behind it. But how to
+     get  in  touch  with  them.. There are numerous possibilities, of
+     course,  but  for  those who log on to a bbs, it would be best to
+     dial  one  of the EMBBS distribution sites which are published at
+     the  end  of  each  EMBBS  issue. There you'll find a message are
+     called  EMBBS, and that's it. People who are Sysop or point Sysop
+     can  write  me  at  2:286/201.15.  But  I  think I have told both
+     before, haven't I?
+     Those interested in South Africa asked what was expected. Nothing
+     is  expected,  everything is hoped for. You can't be claimed when
+     you  join  EMBBS, it's entirely up to you what you do. What we at
+     EMBBS  would  like  to  have is somewhat more input, and we don't
+     care  how  you  get  it,  just  as long as you consider something
+     interesting, EMBBS is the Medium for it. When you want, join us.
+     
+     Jeroen van Drie, Editor in Chief of EMBBS
+     FidoNet: 2:286/201.15
+     and the EMBBS echo on your local distribution site.
+
+     -----------------------------------------------------------------
+     EMBBS 2-01                   Page 2                    1 Jan 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     The Hunter
+     
+     A  hunter  was  wandering around the country side trying to bag a
+     duck.  Coming  from the city, he found it quite frustrating to be
+     trying  for  over  three  days  without  success. Finally, a duck
+     flies  overhead.  Lining  up  the  duck  in  his rifle sights, he
+     pulls the trigger.  The duck squawks and to the ground, dead.
+     
+     The  duck,  on  it's  decent,  lands in a farmer's back yard. The
+     hunter,  adamant  about getting the duck, climbs the high, wooden
+     fence to get the duck. Just before he's about to pick up the duck
+     and leave, the owner of the farm calls out to him.
+     
+     "What are you doing with my duck?" he says.
+     
+     The  hunter,  confused  by  the  farmer's  reference to the duck,
+     stands  looking back at the farmer, "But I  just shot this  duck,
+     it's mine."
+     
+     I  own this property. The duck is on my property. I own the duck,
+     "the farmer states."
+     
+     "Sir,  I  am from the city and have been attempting to get a duck
+     fo  three  days  now,  surely  you  won't  deny me this duck just
+     because he happened to land on your property?"
+     
+     "It  is  my duck, and don't call me Shirley." [sorry, I had to do
+     it].  The farmer stands thinking a moment. "How about if  we play
+     a little game  for the duck.   We keep kicking each  other in the
+     *****  [sorry,  censored: everyone will know anyway so why offend
+     anyone?]  until  only  one  of us is left. The one left keeps the
+     duck."
+     
+     Taken  off  guard  by  the  unusual  proposal, and not wanting to
+     seem like a whimp, the hunter agrees, "Okay."
+     
+     "I'll go first," says the farmer.
+     
+     The  farmer  approaches  the hunter. Sizing him over a second, he
+     takes  a  step  back  and  squares  away  for a major blow to the
+     hunter's *****.
+     
+     The  hunter  immediately  falls to the ground letting out a sound
+     only  a dying animal would. Writhing around on the ground in pain
+     and  screaming  for  nearly a half hour, the farmer just watches.
+     Finally,  the  hunter  is able to remove his hands from his *****
+     and wipe the tears from his eyes.
+     
+     Attempting  to  stand,  the  hunter finds it difficult, but he is
+     ready  to  get  back at the farmer for this extreme pain when the
+     farmer says: "I give up.  You can keep the duck."
+
+     -----------------------------------------------------------------
+     EMBBS 2-01                   Page 3                    1 Jan 1990
+
+
+     =================================================================
+                                  COLUMNS
+     =================================================================
+
+
+     From the Owner of the Establishment...
+     
+     Well, that's me. Just mixing my second cocktail (3/4 orange juice
+     and  1/4  green  Spa), I'd like to be the first to wish you all a
+     very happy newyear.
+     I'm  pretty  sure  I'm  the first because the guys in Britain are
+     somewhat more conservative in such matters, the people in Germany
+     are  currently  checking  whether East and West Berlin are in the
+     same  timezone,  and the Romanians have only just reenstated time
+     as  an  official  measurement  unit.
+     As for the Americans, well, it'll take them AT LEAST a quarter of
+     a day to figure out that a new year (and decade) has begun. We'll
+     probably take them by surprise in 1992 as well !!
+     
+     Ahyes, have you heard that much less (especially noisy) fireworks
+     have been sold this year? You probably also know that setting off
+     fireworks  is  an  ancient  (heathen)  ritual  to  scare off evil
+     spirits.  Even  the spirits get wiser these days, they fled a few
+     months early this year, and mostly without any fireworks.....
+
+     -----------------------------------------------------------------
+     EMBBS 2-01                   Page 4                    1 Jan 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in Antwerp, Belgium: annual European FidoNet
+        Conference. Not only for sysops, mind you!  Also for points,
+        users and everyone else interested in FidoNet communications..
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 2-01                   Page 5                    1 Jan 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  KESHER BBS, Londen; sysop Amos Wittenberg
+           ++44-1-458-0521 at 1200 and 2400
+           FidoNet Node 2:253/178 (Continous mail)
+        -  The London Mail Centre, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:254/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     EMBBS 2-01                   Page 6                    1 Jan 1990
+
+
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+

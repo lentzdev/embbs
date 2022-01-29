@@ -1,0 +1,519 @@
+     Volume 2, Number 41                                8 October 1990
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                   Jeroen van Drie
+     Executive Producer                                      Art v1.10
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+     
+     EMBBS COPYRIGHT (C) 1989,1990 by Arjen Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/255)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        'Terrorist proclamation'  .................................  2
+        Two Wampum: the Mohawk view  ..............................  5
+     3. NOTICES  ..................................................  7
+        Calendar of Events  .......................................  7
+        EMBBS Distribution & Support Sites  .......................  8
+        EMBBS Article Submission Guidelines  ...................... 10
+
+                                 - - - - -
+     EMBBS 2-41                   Page 1                    8 Oct 1990
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     The Mohawk crisis in Canada is over and now some questions lay
+     lingering around in our head; what is the position of native
+     Americans in North America and how do these people see things
+     from their side. I ran across two interesting messages in the
+     FidoNet InterUser area (available almost allover Europe), one
+     dealing with an old treaty between Indians and Europeans followed
+     by a report of an Indian committee on the events in Canada the
+     other message contained a 'Terrorist proclamation' by the Chief
+     of Seattle.
+     
+     Jeroen.
+
+     -----------------------------------------------------------------
+     EMBBS 2-41                   Page 2                    8 Oct 1990
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     From the fidonet Interuser area I picked up following text:
+     
+     
+     Thought some folks might be interested in the thoughts of a
+     native American "terrorist" (nee: savage). Said Chief Seattle:
+     
+          Yonder sky that has wept tears of compassion upon my people
+     for centuries untold, and which to us appears changeless and
+     eternal, may change. Today is fair. Tomorrow may be overcast with
+     clouds. My words are like the stars which never change. Whatever
+     Seattle says the great cheif at Washington can rely upon with as
+     much certainty as he can upon the return of the sun or the
+     seasons. The White Chief says that Big Chief at Washington sends
+     us greetings of friendship and goodwill. That is kind of him for
+     we know he has little need of our friendship in return. His
+     people are many. They are like the grass that covers vast
+     praries. My people are few. They resemble the scattering trees of
+     a storm-swept plain. The great, and I presume - good, White Chief
+     sends us word that he wishes to buy our lands but is willing to
+     allow us enough to live comfortably. This indeed appears just,
+     even generous, for the Red Man no longer has rights that he need
+     respect, and the offer may be wise also, as we are no longer in
+     need of an extensive country.... I will not dwell on, nor mourn
+     over, our untimely decay, nor reproach our paleface brothers with
+     hastening it, as we too may have been somewhat to blame.
+     
+          Youth is impulsive. When our young men grow angry at some
+     real or imaginary wrong, and disfigure their faces with black
+     paint, it denotes that their hearts are black, and then they are
+     often cruel and relentless, and our old men and old women are
+     unable to restrain them. Thus it has ever been. Thus it was when
+     the white men first began to push our forefathers further
+     westward. But let us hope that the hostilities between us may
+     never return. We would have everything to lose and nothing to
+     gain. Revenge by the young men is considered gain, even at the
+     cost of their own lives, but the old men who stay at home in the
+     times of war, and the mothers who have sons to lose, know better.
+     
+          Our good father at Washington - for I presume he is now our
+     father as well as yours, since King George has moved his
+     boundaries further north - our great good father, I say, sends us
+     word that if we do as he desires he will protect us. His brave
+     warriors will be to us a bristling wall of strength, and his
+     wonderful ships of war will fill our harbors so that our ancient
+     enemies far to the northward - the Hydas and the Tsimpsians -
+     will cease to frighten our women, children and old men. Then in
+     reality will he be our father and we his children. But can that
+     ever be? Your God is not our God! Your God loves your people and
+     hates mine. He folds His strong and protecting arms lovingly
+     about the paleface and leads him by the hand as a father leads
+     his infant son - but He has forsaken His red children - if they
+     EMBBS 2-41                   Page 3                    8 Oct 1990
+
+
+     really are His. Our God, the Great Spirit, seems also to have
+     forsaken us. Your God makes your people wax strong every day.
+     Soon they will fill the land. Our people are ebbing away like a
+     rapidly receeding tide that will never return. The white man's
+     God cannot love our people or he would protect them. They seem to
+     be orphans who can look nowhere for help. How then can we be
+     brothers? How can your God become our God and renew our
+     prosperity and awaken in us dreams of returning greatness? If we
+     have a common heavenly father he must be partial - for He came to
+     his paleface children. We never saw Him. He gave you laws but he
+     had no word for His red children whose teeming multitudes once
+     filled this vast continent as stars fill the firmament. No; we
+     are two distinct races with seperate origins and seperate
+     destinies. There is little in common between us.
+     
+          To us the ashes of our ancestors are sacred and their
+     resting place is hallowed ground. You wander far from the graves
+     of your ancestors and seeminly without regret. Your religion was
+     written upon tables of stone by the iron finger of your God so
+     that you could not forget. The Red man could never comprehend nor
+     remember it. Our religion is the tradition of our ancestors - the
+     dreams of the old men, given them in solemn hours of night by the
+     Great Spirit; and the visions of our sachems; and it is written
+     in the hearts of our people.
+     
+          Your dead cease to love you and the land of their nativity
+     as soon as they pass the portals of the tomb and wander way
+     beyond the stars. They are soon forgotten and never return. Our
+     dead never forget the beautiful world that gave them being.
+     
+          Day and night cannot dwell together. The Red Man has ever
+     fled the approach of the White Man, as the morning mist flees
+     before the morning sun. However, your proposition seems fair and
+     I think that my people will accept it and will retire to the
+     reservation you offer them. Then we will dwell apart in peace,
+     for the words of the Great White Chief seem to be the words of
+     nature speaking to my people out of dense darkness.
+     
+           It matters little where we pass the remnant of our days.
+     They will not be many. A few more moons; a few more winters - and
+     not one of the descendants of the mighty hosts that once moved
+     over this broad land or lived in happy homes, protected by the
+     Great Spirit, will remain to mourn over the graves of a people
+     once more powerful and hopeful than yours. But why should I mourn
+     the untimely fate of my people? Tribe follows tribe, and nation
+     follows nation, like the waves of the sea. It is the order of
+     nature, and regret is useless. Your time of decay may be distant,
+     but it will surely come, for even the White Man, whose God walked
+     and talked with him as friend with friend, cannot be exempt from
+     the common destiny. We may be brothers after all. We will see.
+     
+          We will ponder your proposition, and when we decide we will
+     let you know. But should we accept it, I here and now make this
+     condition that we will not be denied the privilege without
+     molestation of visiting at any time the tombs of our ancestors,
+     friends and children. Every part of this soil is sacred in the
+     EMBBS 2-41                   Page 4                    8 Oct 1990
+
+
+     estimation of my people. Every hillside, every valley, every
+     plain and grove, has been hallowed by some sad or happy event in
+     the days long vanished.... The very dust upon which you now stand
+     responds more lovingly to their footsteps than to yours, because
+     it is rich with the blood of our ancestors and our bare feet are
+     conscious of the sympathetic touch.... Even the little children
+     who lived here and rejoiced here for a brief season will love
+     these somber solitudes and at eventide they greet shadowy
+     returning spirits. And when the last Red Man shall have perished,
+     and the memory of my tribe shall have become a myth among the
+     White Men, these shores will swarm with the invisible dead of my
+     tribe, and when your children's children think themselves alone
+     in the field, the store, the shop, along the highway, or in the
+     silence of the pathless woods, they will not be alone.... At
+     night when the streets of your cities and villages are silent and
+     you think them deserted, they will throng with the returning
+     hosts that once filled and still love this beautiful land. The
+     White Man will never be alone.
+     
+          Let him be just and deal kindly with my people, for the dead
+     are not powerless. Dead, did I say? There is no death, only a
+     change of worlds.
+
+     -----------------------------------------------------------------
+     EMBBS 2-41                   Page 5                    8 Oct 1990
+
+
+     Another extract from the fidonet Interuser conference:
+     
+     
+     Received via fax from the Mohawk Nation, Kahnawake reserve:
+     
+                     TWO ROW WAMPUM BELT AGREEMENTS
+     
+     The Two Row Wampum is an agreement whereby two nations co-exist
+     and travel the River of Life in peace and friendship. In a
+     comprehensive manner it is at once a social, political, and
+     constitutional relationship. It can be summarized as follows:
+     "You keep your laws, ways and traditions in your vessel, and we
+     will keep our laws, ways and traditions in our vessel; we will
+     travel the River of Life side by side in parallel paths (two
+     rows) which never meet, in peace and friendship, never
+     interfering with one another." Legally, it means that each of the
+     two nations retains its own respective laws and constitution, and
+     maintains its own respective jurisdiction. Neither of the two
+     nations can apply or impose its laws over the other.
+     
+     The Two Row Wampum Belt Agreement has its roots in the arrival of
+     the Europeans across the great water to this continent. It became
+     clear to our people that the Europeans had brought a different
+     way. We, the people of the Haudenosaunee Six Nations Iroquois
+     Confederacy, saw how they acted toward each other, towards the
+     land and everything that was on it. We saw that it was different
+     from what we were instructed in our way under the Great Law of
+     Peace. We realized that it was not possible to bring these
+     nations (the Dutch, French, English, and later the American)
+     under the wing of the Confederacy and the Great Law. Something
+     had to be done. Therefore an agreement was drawn up by which two
+     peoples could live in peace and friendship. The first people with
+     which the Two Row Wampum Belt Agreement was drawn up was the
+     Dutch. With each succedding European people - the French, the
+     English, the American, etc. - the Two Row Wampum principle was
+     followed by our people. An early recording of the Europeans of
+     the Two Row principle was the Treaty of Fort Albany of 1664.
+     
+     The Two Row Wampum Belt Agreement, in terms of government, calls
+     for the two nations to deal with each other as equals; it calls
+     for separate jurisdictions of the two nations. Neither the Six
+     Nations nor the Dutch, neither the Six Nations nor the French,
+     neither the Six Nations nor the English, neither the Six Nations
+     nor the Americans, neither the Six Nations nor the British
+     Colonial Dominion of Canada, were to make laws or force our
+     respective ways on each other. We were to live in peace and
+     friendship, fully respecting each others' rights to exercise
+     one's own jurisdiction and sovereignty.
+     
+     
+     STATEMENT ISSUED BY HAUDENOSAUNEE CRISIS COMMITTEE,
+     Wednesday,September 26, 1990
+     
+     On Thursday, September 27, 1990, the Rotiskannenketeh,
+     women, children, and their allies who have managed the heroic
+     standoff-at the Treatment Center will unilaterally terminate
+     EMBBS 2-41                   Page 6                    8 Oct 1990
+
+
+     hostilities.
+     
+     After several attempts at trying to find a peaceful and
+     creative solution to the situation we have all realized that we
+     are dealing with an essentially Neanderthal attitude on the part
+     of the Quebec and Canadian governments. All Native people in
+     Canada need to take note of the clear statements that our
+     people's heroic stand has evoked from Canada and Quebec.  On
+     September 25, 1990, Prime Minister Mulroney declared:  "...native
+     self-government does not now and cannot ever mean sovereign
+     independence." This statement is declaration of Canada's intent
+     to keep Native nations, peoples, and their territories in a
+     perpetual state of colonialism, and domination.  This position
+     leaves us all with but one course of action -- the liberation of
+     our nations and peoples.The siege at the Treatment Center has
+     been only one battle in the long struggle that lies before all of
+     us.  Rather than a defeat it has been a victory on many
+     fronts. First, we have the victory of the unity of Native people
+     across this vast land.  From coast to coast our peoples have
+     been inspired by the heroic stand at the Treatment Center, and
+     have been moved to action in support of our defenders of the
+     nation. Secondly, we have moved the international community to
+     recognize the hypocrisy of Canada, and its image as a defender of
+     democracy and minority rights.  They have been seen as a "settler
+     state" not unlike South Africa in its repressions of indigenous
+     rights and peoples.
+     
+     Our people are freely choosing to leave the battle field of the
+     Treatment Center in order to be free to wage the on-going
+     struggle on other fronts. We ask all other Native nations and
+     peoples to join us indeclaring tomorrow as a day of International
+     Native Solidarity and Celebration.  We ask you to organize
+     positive, affirming activities to celebrate the end of this
+     phase, and the beginning of the next. We call upon your prayers
+     throughout tonight and tomorrow to pray for the safety of our
+     people.  We call on you to organize pow-wows, parades,
+     demonstrations, whatever you feel is appropriate to mark this
+     historic turning point in the Native Struggle for Liberation.
+     This is the beginning, not the end.  Now, more than ever, we
+     need to re-affirm our unity, and our commitment to continue to
+     move forward to the day when our nations regain their rightful
+     places in the world community.
+     
+     For more information contact the Haudenosaunee Crisis
+     Committeeat:  (514) 426-8167/8 or fax:  (514) 426-8173
+
+     -----------------------------------------------------------------
+     EMBBS 2-41                   Page 7                    8 Oct 1990
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+     16 Feb 1991
+        Exactly  five years before this date, Jeff Rush introduced his
+        first ECHOSCAN/ECHOTOSS programs, the beginning of echomail...
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/255.
+
+     -----------------------------------------------------------------
+     EMBBS 2-41                   Page 8                    8 Oct 1990
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14k4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200, 2400 and V.32, with MNP5 and V.42
+           Fidonet Node 2:292/100 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Micro Maniacs, Espoo; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        West Germany:  (FidoNet Region 2:24)
+        -  File Fabrik TPBoard BBS, Werdohl; sysop Jona Boettcher
+           ++49-2392-70149 at 1200, 2400 and HST 14k4 with MNP5
+           FidoNet Node: 2:245/2 (Continuous mail)
+     
+        Great Britain:  (FidoNet Region 2:25)
+        -  The Independent Mail System, Londen; sysop Mike Simkins
+           ++44-1-534-1200 at 1200, 2400 and HST, with MNP5
+           FidoNet Node 2:25/100 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200 and 2400
+           FidoNet Node 2:286/255 aka 2:2/102 (Continuous mail)
+     
+        Italy:  (FidoNet Region 2:33)
+        -  EUreka!, Torino (Turin); sysop PaoloGiulio Gialli
+           ++39-11-692-4400 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:334/9 (Continuous mail)
+     
+        Norway:  (FidoNet Region 2:21)
+        -  Bogneset Bulletin Board Service, Aalesund; sysop Bjorn Nornes
+           ++47-71-34304 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           No FidoNet node at present
+     
+     EMBBS 2-41                   Page 9                    8 Oct 1990
+
+
+        Republic of South Africa:  (FidoNet Region 5:49)
+        -  Capricorn Too FIDO, Hout Bay; sysop Ralph Colyn
+           ++27-21-790-4551 at 2400
+           FidoNet Node 5:492/3 (Continuous mail)
+     
+        Spain:  (FidoNet Region 2:34)
+        -  -* PC-INFO *-, Flix; sysop Richard W. Burton
+           ++34-7-7410618 at 1200 and 2400
+           FidoNet Node 2:343/9 aka 2:343/0 (Continuous mail)
+     
+        Sweden:   (FidoNet Region 2:20)
+        -  Pallas BBS, Lund;  sysop Ulf Nilsson
+           ++46-46-304878 at 1200, 2400, V.32 and HST 14k4, with MNP5
+           FidoNet Node 2:200/112 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/255  for  more  information.  More sites in one country are
+     possible (though more than two seems unnecessary at this moment).
+
+     -----------------------------------------------------------------
+     EMBBS 2-41                   Page 10                   8 Oct 1990
+
+
+     EMBBS Article Submission Guidelines
+     First version, dated Feb 8th 1990
+     By Jeroen van Drie
+     Editor in Chief of EMBBS
+     FidoNet 2:286/255.15
+     
+     Now writing an article for EMBBS isn't as hard as it may seem. It
+     requires some knowlegde of english, and a wordprocessor which can
+     output  normal  ASCII,  for we cannot allow anything but ASCII to
+     appear  in EMBBS. So take care that your wordprocesor doesn't put
+     values above ASCII code 128 into your text. (no, those low values
+     are  not  allowed  either.) You can make graphics with characters
+     like (\+/=|<>:-), etcetera.
+     Your  lines  should only be as long as 65 characters or less, and
+     will  have  to start at position 1 (no spaces before the start of
+     a  line). The lenght of your article is your own concern, as long
+     as  you  are  not boring, it's fine with us:-) You can start your
+     article with a *, then everything after that * (on the same line)
+     will be printed in the index at page 1. It will not be printed in
+     the  article  itself,  so  if you'd for instance write an article
+     about  a  cat  who  swallows  entire 386 computers, start it with
+     someting like this:
+     *Cat Eats 386 in Curry Sauce!
+     Cat Eats 386 in Curry Sauce!
+     Then "Cat Eats 386 in Curry Sauce!" will be published in both the
+     index, and above the article itself.
+     
+     There  are  some  extentions  which denominate where your text is
+     about.  You  can of course compress your article with ZIP, ARC or
+     LZH,  but please tell us you do so because ART, the program which
+     assembles  EMBBS,  needs  to know what is his and what is not. If
+     you  decide  to  send  in  your contribution in an archived form,
+     please send a message alongside with it that it is an article for
+     EMBBS,  then,  Arjen  Lentz at the EMBBS Headquarters (2:286/255)
+     can extract it and feed it to ART. Inside the archive, you should
+     pick your extention out of one of those below.
+     
+     .ART    Is  the  extention  for  a normal ARTicle. You'd best use
+             this extention in cases the others don't seem to fit, and
+             that's in most cases, really.
+     .REV    Is  the  extention  for a REView of software, hardware or
+             whatever you would want to review.
+     .NOT    Is  a  NOTice. Is there an interesting event you know of?
+             Is there a severe bug in the software you developed?
+     .LET    Is  the  extention  for  a LETter to the Editor (me!). We
+             will publish that letter, and I might even reply..
+     .COL    Is a COLumn. A  column, well, there are enough columnists
+             around the  world to challenge your qualities, so give it
+             a try!
+     .WAN    Are  you desperately looking for something,  we offer you
+             to place a WANted add in EMBBS.
+     .SAL    And  of  course,  have  you  got something for SALe? Rare
+             things  like  a  registration key for a program or a high
+             speed modem; anything: we'll place it.  NO commercials.
+     .NEW    Is  a NEW software announcement. Have you been writing an
+             excellent  program,  and would you want to reveal that to
+     EMBBS 2-41                   Page 11                   8 Oct 1990
+
+
+             those  poor folks who don't have it? Send in a .NEW! (and
+             don't   forget  about  the  .NOT  when  that  severe  bug
+             appears :-( )
+     
+     We  have  got  quite  a number of EMBBS D&S sites (nodes) allover
+     Europe  (and even one in South Africa) these days, and the sysops
+     of  those  Distribution  and Support sites have kindly offered to
+     forward  your contribution to EMBBS Headquarters (the place where
+     ART  is  run)  in  Amersfoort, the Netherlands. They also have an
+     EMBBS  conference,  and  we  of EMBBS would like to invite you to
+     participate  in  it,  so that we know what you think. For regular
+     editors  there also is a special conference. If you like the idea
+     of  a  European  Magazine, and think it should work before we are
+     united  in 1993, then join the team! We can always use people who
+     want to do something. And time is not the point, you can spend as
+     much or as little time on EMBBS as you want.
+     
+     You  can find the FidoNet addresses and telephone numbers of your
+     local  EMBBS D&S site at the end of each EMBBS issue. We hope you
+     like EMBBS, and hope to see you or your contribution soon!
+     
+     Thank you for your attention,
+     Jeroen van Drie.
+     
+     Any  comments  to  2:286/255.15  or  in  the EMBBS Echo/GroupMail
+     Conference.  (You could, of course, also write a .LET!)
+
+     -----------------------------------------------------------------
+

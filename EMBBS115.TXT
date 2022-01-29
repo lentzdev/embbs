@@ -1,0 +1,452 @@
+     Volume 1, Number 15                               16 October 1989
+     =================================================================
+      ********   ***        ***  *******     ********       *********
+     **********  ****      ****  ********    *********     ***********
+     **      **  ** **    ** **  **    ***   **     ***   ***       **
+     **          **  **  **  **  **    ***   **     ***   ***
+     ******      **   ****   **  ********    *********     *********
+     ******      **    **    **  *********   **********     *********
+     **          **          **  **     ***  **      ***           ***
+     **      **  **          **  **     ***  **      ***   **      ***
+     **********  **          **  *********   **********    ***********
+      ********   **          **  ********    *********      *********
+     EUROPEAN     MAGAZINE     FOR      BULLETIN     BOARD     SYSTEMS
+     =================================================================
+     Editor in Chief                                         Art v1.10 
+     Technical Coordination                                Arjen Lentz
+     Regular Contributors                             Gerhard Hoogterp
+                                                       Amos Wittenberg
+                                                       Jeroen van Drie
+     
+     EMBBS   COPYRIGHT (C) 1989 by Arjen G. Lentz; ALL RIGHTS RESERVED
+     An electronic magazine,  by and for BBS users,  published weekly.
+     May  be  distributed  and/or duplicated freely for non-commercial
+     use and via Bulletin Board Systems only.   For other uses, please
+     contact:   Arjen G. Lentz,  Langegracht 7B,  3811 BT  Amersfoort,
+     The Netherlands.    AINEX-RBBS ++31-33-633916 (FidoNet 2:286/201)
+     
+     Article  submissions  will  be greatly appreciated, and should be
+     mailed  or  uploaded  to  one  of the distribution/support sites.
+     More submission information can be found in the NOTICES section.
+     
+     The   contents   of  the  articles  included  here  are  not  our
+     responsibility,  nor  do  we necessarily agree with them. We will
+     publish   ANYTHING  which  is  properly  attributed  and  legally
+     acceptable.
+
+
+                             Table of Contents
+
+     1. EDITORIAL  ................................................  1
+     2. ARTICLES  .................................................  2
+        Midi on the Personal Computer  ............................  2
+        WP 5.0 Macros - Part V  ...................................  5
+     3. WEEKLY PUZZLE  ............................................  7
+        Puzzle 8915 (At dinner) & Solution 8911  ..................  7
+     4. NOTICES  ..................................................  9
+        Calendar of Events  .......................................  9
+        EMBBS Distribution & Support Sites  ....................... 10
+
+                                 - - - - -
+     EMBBS 1-15                   Page 1                   16 Oct 1989
+
+
+     =================================================================
+                                 EDITORIAL
+     =================================================================
+
+
+     Hello world,
+     
+     Another week, a new issue of EMBBS... number 15, which means that
+     we entered our 4th month.. To me it looks like I've been involved
+     in this project for a much longer time...
+     
+     This  week  we  started  to  set  up  an echomail area for  EMBBS
+     readers..  Just  to  make us, the editorial team, easier to reach
+     via  a  perhaps more common way known to the regular user. But of
+     course  you also welcome to state questions about articles, EMBBS
+     in  general  and  so  on...  For  us  it is an alternative way to
+     contact  our readers and to hear what they like and dislike about
+     the magazine..
+     
+     It's  available  from  and  via  the Distribution & Support Sites
+     right now, where everybody can find it..
+     So.. hope to see you there..
+     
+      Gerhard.
+
+     -----------------------------------------------------------------
+     EMBBS 1-15                   Page 2                   16 Oct 1989
+
+
+     =================================================================
+                                 ARTICLES
+     =================================================================
+
+
+     Midi on the Personal Computer
+     By Paul Beyerinck
+     SysOp 1e Dutch PC-MIDI BBS
+     Arnhem, Netherlands
+     Tel: ++31-85-510944
+     FidoNet 2:283/311
+     
+     Midi  is  an abbreviation of Musical Instrument Digital Interface
+     and  has  proven  to  be one of the most revolutionary agreements
+     ever  made  in music_business!! Midi makes it possible to connect
+     synthesizers,  drumcomputers  and  every other musical instrument
+     with  a  midi  in  /  output, and let them operate as one complex
+     instrument.  For  example,  you  can connect a midi synth. with a
+     midi-guitar and while playing the guitar, use all the sounds from
+     the  synth!  Can  you  imagine  a guitar player who sounds like a
+     trumpet, violin or saxplayer??
+     
+     But in principle the basic idea of MIDI is very simple. Make sure
+     that every digital instrument has an asynchronous  interface, and
+     make an agreement about the transmission speed (31,25 Kbps +/-1%)
+     
+     Midi has a lot in common with the well- known  RS232C  and  RS423
+     serial interfaces. Midi can send information about volume, level,
+     delay, attack, sustain, decay  etc....  But if your synth doesn't
+     support all these  possibility's, don't  worry  because  all  the
+     unsupported information will be ignored.  I can imagine  that  by
+     reading  this  you  think,  great  but  " WHAT IS THE ROLE OF THE
+     PERSONAL COMPUTER in this??"  Well let me tell you the possibili-
+     ties of MIDI increase when you connect your synth. or other midi-
+     instrument to a computer!!
+     
+     With the right software you can use your computer as an SEQUENCER
+     (in  fact  some  kind  of  multitrack  recorder)  which  makes it
+     possible to record a song and (while playing back) to add another
+     part  and  so  on for at least eight tracks!! For example if your
+     synth.  is  multitimbral (it can play several different sounds at
+     the  same time) you can record on track one a BASE part, on track
+     two  a  PIANO  part,  on track three a STRING part and so on, and
+     then  playback  all  the  tracks at the same time, and you hear a
+     complete  song!!  Didn't  you  play  all  the  notes in the right
+     rhythm?  Don't  worry,  you  can  use the QUANTIZER for automatic
+     rhythm  correction.  Every  note will be pushed up or down to the
+     nearest  1/8  1/16 or 1/32 note, so the result will be a complete
+     errorfree rhythm!
+     
+     Have  you  played  a false note? No problem, use the EVENT-EDITOR
+     and  point with the cursor (or mouse) to the false note, click on
+     the  mousebutton (or push the enter key) Next step is to point to
+     the  right possition and push the mousebutton again. Now the work
+     is  done!  Another  great advantage is the LIBRARIAN mode. Anyone
+     who has a digital synthesizer will reach (soon enough) a point of
+     EMBBS 1-15                   Page 3                   16 Oct 1989
+
+
+     discontent  about the sounds his instrument produces. If you have
+     a  computer  connected  to  your  synth.  you  can  store all the
+     original  sounds  (patches)  on  your (hard)disk and replace them
+     with other (selfmade, or pathes downloaded from a BBS!)
+     
+     The major point is that you'll be able to collect a whole library
+     of  sounds (patches), and send your favorite sounds (trough MIDI)
+     to  your synth!! The last aspect that I will mention is the SCORE
+     possibilty that some software packets have. Imagine that you play
+     a  melody  on a keyboard which will be "recorded" by a SEQUENCER.
+     If  the  software  you use has a SCORE mode then it's possible to
+     convert  the  data  recorded by the sequencer to graphics, so you
+     can  see  on  the screen a nice layout of standard music notation
+     from  the  melody you just played!! Sounds incredible doesn't it?
+     
+     
+                         WAT DO YOU NEED TO START?
+                         =========================
+     
+     System requirements:
+     --------------------
+     The things you need to set up a "simple workstation" are:
+     
+        1: soundmodule, synthesizer or other midi-instrument
+        2: computer (in my case a PC/MS-DOS machine)
+        3: MIDI-interface to make the connection
+        4: MIDI software (sequencer/editor/librarian)
+     
+     (1) There is a great assortment of soundmodules these days. Cheap
+         multitimbral and popular are the Roland MT32 and the Kawai K1
+     
+     (2) You  can  use almost any home or personal computer. In Europe
+         Atari  scores  high  on  the MIDI market, while the Commodore
+         AMIGA is coming up quickly. In America the most popular MIDI_
+         computers  are  the  Apple MACINTOSH and the IBM PC. The main
+         reason why APPLE isn't that popular in Europe can be found in
+         the  price difference between Europe and America. In the last
+         few years the PC/MSDOS computer has reached such a tremendous
+         popularity  through  which  this  computer  became  more  and
+         more  multifunctional. Today you can find lots of fanatic PC/
+         MSDOS MIDI users in Europe. (on the MIDI Bulletin board which
+         I run are already more than thousand fanatic MIDI users!)
+     
+     (3) It's very important to know that most of the PC_MIDI software
+         is  written for the ROLAND MPU-401 or MPU-IPC. (Good news for
+         the  happy owners of a IBM with microchannel. Roland has made
+         a  MPU for it, called the MPU-IMC). MPU means Midi Processing
+         Unit. So if you want to buy a MIDI-interface for your PC take
+         care of its compatibility with the MPU-401 (because otherwise
+         you  most  write your own MIDI software for it, or accept the
+         limits  of the software enclosed to your interface (if any!!)
+     
+     (4) Popular MIDI packets for the personal computer are:
+                Personal Composer system 2   (Jim Miller)
+                Voyetra SPI,II,III           (Voyetra technologies)
+                Cakewalk 2.0                 (Greg Hendershott)
+     EMBBS 1-15                   Page 4                   16 Oct 1989
+
+
+                The Copyist level I,II,III   (Doctor T's)
+                Prolib  X.X                  (Club Midi Software)
+                Texture 3.11                 (Roger Powell)
+                Patch Master Plus            (Voyetra technologies)
+     But  if  you can't afford to buy one of these packeges, feel free
+     to  join  the  First Dutch PC-MIDI BBS, so you'll soon be able to
+     download lots of nice public domain and shareware MIDI programs.
+
+     -----------------------------------------------------------------
+     EMBBS 1-15                   Page 5                   16 Oct 1989
+
+
+     WP 5.0 Macros - Part V.
+     By Gerhard Hoogterp
+     Fidonet 2:286/201.6
+     
+     In  this  last  edition  I  will  show you some more of the often
+     used language constructs of the WP 5.0 macro language.
+     
+     Like  most  languages, the WP features the possibility to trap an
+     error. Three of this traps are available :
+     
+       {ON ERROR}command~
+       {ON CANCEL}command~
+       {ON NOT FOUND}command~
+     
+     The  {ON  ERROR} condition is trapped when an error occurs in WP,
+     macro  execution  or  dos. The {ON CANCEL} condition is triggered
+     when  the user pressed the CANCEL key (F1) and the {ON NOT FOUND}
+     trap  is  triggered when a search fails. The commands that can be
+     executed  by  these  exception handlers are limited. Only {QUIT},
+     {BREAK}, {RESTART}, {RETURN}, {RETURN ERROR}, {RETURN NOT FOUND},
+     {GO} and {CALL} instructions are allowed. Be sure to put a tilde
+     after commands that need them. i.e :
+     
+       {ON ERROR}{GO}errorhandler~~
+     
+     As  the  {GO}  command  needs  its own tilde, there should be two
+     tildes after the command.
+     
+     Last  week  I  used  the  {CHAR}  command in our menu macro. This
+     command  accepted  a  single  key  as  response.  But  there is a
+     second  command  much  like  the  {CHAR}  command which accepts a
+     line  with  up  to 120 characters. It's syntax is the same as the
+     {CHAR} command :
+     
+       {TEXT}var~prompt~
+     
+     
+     As  a  macro  variable can have a numeric or text value there are
+     also  some  operations which can be preformed on these variables.
+     Here is an overview.
+     
+       !var          is the  logical  NOT operant. So  !TRUE  is equal
+                     to FALSE.
+       -var          Gives the negative value of the variable
+       var1+var2     Add the to variables
+       var1-var2     Subtract the two variables
+       var1*var2     Multiply the two variables
+       var1/var2     Divides  var1 by  var2  and  results  the integer
+                     part.   This  is  the  same  as  the  pascal  DIV
+                     operator
+       var1%var2     Divides var1 by var2  and results  the  remainder
+                     part. This is the pascal MOD operator.
+       var1$var2     The logical AND
+       var1|var2     The logical OR
+       var1=var2     If var1 is  equal  to  var 2  the  result is  -1,
+                     else the result is 0.
+     EMBBS 1-15                   Page 6                   16 Oct 1989
+
+
+       var1!=var2    If var1 is not equal  to  var 2 the result is -1,
+                     else the result is 0.
+       var1>var2     If var1 is  greater  than  var2 the result is -1,
+                     else the result is 0.
+       var1<var2     If  var1 is less  than  var2  the  result  is -1,
+                     else the result is 0.
+     
+     All these operantes can be used in the {ASSIGN}, the {IF} and the
+     {CASE} commands.
+     
+     
+     Some final words about WP macros.
+     
+     Any  normal text (not belonging to a command that is.) typed into
+     a  macro  is  echoed  to  the  text. A macro which types a rather
+     complicated word for you would contain nothing more than the word
+     which has to be typed.
+     
+     WP  macros  have  much  more possibilities than I mentioned in my
+     series.  If  you  want  to  gain  more  knowledge of them I would
+     suggest  you  buy  a  book on the subject. Those books go into it
+     with  more  depth  then I can provide here... They also have more
+     space available for examples. But if you have any questions, feel
+     free to ask me!
+     
+     Greetings,
+      Gerhard.
+
+     -----------------------------------------------------------------
+     EMBBS 1-15                   Page 7                   16 Oct 1989
+
+
+     =================================================================
+                               WEEKLY PUZZLE
+     =================================================================
+
+
+     This weeks puzzle. Serialnr. 8915.
+     
+     Late dinner..
+     
+     Three  friends  were  eating a late dinner in a restaurant. After
+     the  meal they order dates for dessert. But through the excessive
+     meal  and  the soft chairs they all fall asleep. After some time,
+     the  first man wakes up and sees the dates. He eats his share and
+     falls  asleep  again. A little later the second man awakes and he
+     also  takes  the  share  which he thinks is his, and falls asleep
+     again.  When  the  last person finally awakes he does the same as
+     his two friends..
+     
+     Some  time  later the first man awakes again and he wakes up both
+     his  friends. A discussion follows, but in the end the last eight
+     dates are fairly divided among the second and third man. How many
+     dates did each person get ?
+     
+     Happy puzzling,
+      Gerhard. (2:286/201.6)
+     
+     
+     You may send your answer to :
+     
+     From : <Your name>
+     To   : EMBBS-PUZZLE
+     Subj : 8915 <-- and nothing else !
+     Addr : 2:286/201 (or one of the distribution sites)
+     
+     If  you  have  a  puzzle  you  would  like  to  see here, send it
+     together  with  the answer to the address above, but put the word
+     PUZZLE on the subject line.
+     
+     ----------
+     
+     The  answer  to puzzle 8911: No answers received, so I had a hard
+     time  to  find  the solution myself.. Anyway, this proves that it
+     CAN be done! ;-)
+     
+     Lets  number  the  12  gold  pieces 1 to 12. First you divide the
+     pieces into three groups of each 4 pieces :
+     
+       1 2 3 4 = 5 6 7 8       9 10 11 12
+     
+     Weigh  the  first  and second group, If there weight is the same,
+     the  false  piece has to be in the last group. So now we weight :
+     
+       1 2 3  =  9 10 11       12 4 5 6 7 8
+     
+     If there weight is equal again, the third weight is
+     
+     EMBBS 1-15                   Page 8                   16 Oct 1989
+
+
+       1 = 12
+     
+     If piece 12 is lighter it goes up, if not, it goes down.
+     
+     For  the  other  possibilities  the system is the same.. It would
+     take  two  or  three  pages  to  describe  them all here, so this
+     exercise is left for the student to solve... ;-)
+
+     -----------------------------------------------------------------
+     EMBBS 1-15                   Page 9                   16 Oct 1989
+
+
+     =================================================================
+                                  NOTICES
+     =================================================================
+
+
+                            Calendar of Events
+     
+     
+      1 Dec 1989
+        All telephone numbers in The Hague (Holland), get an extra
+        (7th) digit, the prefix 3. (ie. 123456 becomes 3123456.)
+     
+     ?? ??? 1990 - ?? ??? 1990
+        EuroCon IV in <WhoKnows>, annual European FidoNet Conference.
+        Not only for sysops, mind you! Also for points, users and
+        everyone else interested in FidoNet communications....
+     
+      1 Jan 1993
+        The European Community opens up its internal borders.
+     
+     If  you  have  something  you would like to see on this calendar,
+     please send a note to the editorial headquarters @ 2:286/201.
+
+     -----------------------------------------------------------------
+     EMBBS 1-15                   Page 10                  16 Oct 1989
+
+
+                    EMBBS Distribution & Support Sites
+     
+     
+     The  following systems offer a variety of services to the readers
+     in their country (BBS as well as users):
+     * Forwarding any submission/comment/puzzle msgs or files for you!
+     * Having new EMBBS issues available a few hours after release.
+     * Keeping available some or all previous issues of EMBBS.
+     * Linking the EMBBS EchoMail Conference to anyone interested.
+     Note:  Please do not request during the Z2MH: 02:30 - 03:30 GMT.
+     
+        Austria:  (FidoNet Region 2:31)
+        -  Deep Node, Vienna; sysop Felix Kasza
+           ++43-222-804244169 at 1200, 2400 and HST 14K4, with MNP5
+           FidoNet Node 2:310/11 (Continuous mail)
+     
+        Belgium:  (FidoNet Region 2:29)
+        -  TRIPOD BBS, Maasmechelen; sysop Johan Zwiekhorst
+           ++32-11-762626 at 300, 1200/75, 1200 and 2400
+           Fidonet Node 2:513/50 (Continuous mail)
+     
+        Denmark:  (FidoNet Region 2:23)
+        -  The Polar Link HST, Billund; sysop Christian Sorensen
+           ++45-75-885596 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           Fidonet Node: 2:230/102 (Continuous mail / No BBS)
+     
+        Finland:  (FidoNet Region 2:22)
+        -  Zone 2 Coordinator System; Z2C Ron Dwight
+           ++358-0-4523389 at 1200, 2400 and PEP, with MNP3
+           Fidonet Node 2:2/0 (Continuous mail)
+        -  Micro Maniacs; sysop Ron Dwight
+           ++358-0-425966 at 1200, 2400, HST 14K4 and V.32, with MNP5
+           FidoNet Node 2:515/1 (Continuous mail)
+     
+        Holland:  (FidoNet Region 2:28)
+        -  AINEX-RBBS (EMBBS HQ), Amersfoort; sysop Arjen Lentz
+           ++31-33-633916 at 1200, 2400, and HST, with MNP5
+           FidoNet Node 2:286/201 aka 2:2/102 (Continuous mail)
+     
+        Spain:    (FidoNet Region 2:34)
+        -  Rocky, Barcelona; sysop Jaime Roca
+           ++34-3-8746155 at 300 and 1200
+           FidoNet Node 2:343/0 aka 2:343/5 (Continuous mail)
+     
+     If  you  would  like to become a distribution system for EMBBS in
+     your region (country), please contact Arjen Lentz at FidoNet Node
+     2:286/201  for  more  information.  More sites in one country are
+     possible, though not necessary at this moment.
+
+     -----------------------------------------------------------------
+
